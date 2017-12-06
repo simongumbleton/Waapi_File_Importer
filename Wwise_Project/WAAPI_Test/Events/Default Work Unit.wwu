@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{74777983-C3C2-4965-80D5-77E8AFEF03CD}" SchemaVersion="80">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{74777983-C3C2-4965-80D5-77E8AFEF03CD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="WAAPI Auto Events" ID="{61F99BD2-8C7F-4AE4-AA6C-4B88E9706C2E}" ShortID="316091882">
+					<ChildrenList>
+						<Event Name="Play_Wappi_Import_Test_01" ID="{6D58D64A-BBB6-4081-A446-59203E4A2542}">
+							<ChildrenList>
+								<Action Name="" ID="{27A874A9-A7E0-4B0F-9F0A-F59034112CFD}" ShortID="713039170">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wappi_Import_Test_01" ID="{9489F6D2-B4A1-4BAF-9519-5A67CB5B5C1F}" WorkUnitID="{B400CBE0-B447-414E-90EA-07B0A5DE0F25}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Wappi_Import_Test_02" ID="{3A8E2166-3C71-4710-9462-1CCE57A19D96}">
+							<ChildrenList>
+								<Action Name="" ID="{548DBE8B-9A2B-46FA-BBF9-8297A8DADED6}" ShortID="789194474">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wappi_Import_Test_02" ID="{628A0FCE-A97A-49F3-8E09-BA092D8B2473}" WorkUnitID="{B400CBE0-B447-414E-90EA-07B0A5DE0F25}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Wappi_Import_Test_03" ID="{0F8259A4-6EEA-4A0B-B791-78459F688CA9}">
+							<ChildrenList>
+								<Action Name="" ID="{290767B3-CBAA-4B65-AAC4-A22100D88963}" ShortID="773783335">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wappi_Import_Test_03" ID="{89F29793-9DF3-4B51-ABED-34BDD16BF21C}" WorkUnitID="{B400CBE0-B447-414E-90EA-07B0A5DE0F25}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
