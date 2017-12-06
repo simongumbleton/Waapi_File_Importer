@@ -1,2 +1,5 @@
 
 *.validationcache
+*.akd
+*.wsettings
+Wwise_Project/WAAPI_Test/.cache/CacheVersion

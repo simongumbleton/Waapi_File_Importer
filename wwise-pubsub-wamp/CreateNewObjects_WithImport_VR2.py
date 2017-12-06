@@ -4,7 +4,7 @@ import sys
 import trollius as asyncio
 from trollius import From
 
-import Tkinter
+import Tkinter #import Tk
 import tkFileDialog
 
 import fnmatch
@@ -86,8 +86,15 @@ class MyComponent(AkComponent):
 
 
         def askUserForImportDirectory():
+
+            root = Tkinter.Tk()
+            root.withdraw()
+            root.update()
             MyComponent.INPUT_audioFilePath = tkFileDialog.askdirectory()
+            root.update()
+            root.destroy()
             print(MyComponent.INPUT_audioFilePath)
+
 
 
         def setupSubscriptions():
@@ -266,6 +273,9 @@ class MyComponent(AkComponent):
             str_InputFilePath = str(MyComponent.INPUT_audioFilePath)
             str_AudioFileName = str(audiofilename)
             originalsSubDir = str_AudioFileName.replace(str_InputFilePath,'')
+            originalsSubDir = os.path.dirname(originalsSubDir)
+            if originalsSubDir == "/":
+                originalsSubDir = ""
 
             importFilelist.append(
                 {
@@ -333,7 +343,14 @@ class MyComponent(AkComponent):
                         print("%s object type is...%s." % (returnObj[u"name"], returnObj[u"type"]))
                         print("%s object path is...%s." % (returnObj[u"name"], returnObj["path"]))
 
+
+
+
+
         askUserForImportDirectory()
+
+
+
 
         setupSubscriptions()
 
