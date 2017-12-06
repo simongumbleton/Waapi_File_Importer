@@ -22,46 +22,6 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7BABEEAC-4342-4DAC-BC1E-F192A4A24992}"/>
 						</Reference>
 					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="Wappi_Import_Test_01" ID="{0D93E976-0C97-4B31-BB98-F11F9FBED450}" ShortID="123969698">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7BABEEAC-4342-4DAC-BC1E-F192A4A24992}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Wappi_Import_Test_01" ID="{48CDBB7A-43F3-4BF9-B258-A8035695A23D}" ShortID="929947274">
-									<Language>SFX</Language>
-									<AudioFile>WAAPI\TestImports\Wappi_Import_Test_01.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Wappi_Import_Test_01" ID="{48CDBB7A-43F3-4BF9-B258-A8035695A23D}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Wappi_Import_Test_02" ID="{60BAFEE3-9D91-4A24-9A03-D451F2EDE91E}" ShortID="437231891">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7BABEEAC-4342-4DAC-BC1E-F192A4A24992}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Wappi_Import_Test_02" ID="{B38CAD2F-E7D3-45C3-84F7-9B8EEDF0D989}" ShortID="382970931">
-									<Language>SFX</Language>
-									<AudioFile>WAAPI\TestImports\Wappi_Import_Test_02.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Wappi_Import_Test_02" ID="{B38CAD2F-E7D3-45C3-84F7-9B8EEDF0D989}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Keach" ID="{239D537B-31FB-4071-B576-03C7FE3AB99F}" ShortID="341791985">
 					<ReferenceList>

@@ -249,7 +249,7 @@ class MyComponent(AkComponent):
             for root, dirs, files in os.walk(path):
             #for file in os.listdir(path):
                 for filename in fnmatch.filter(files, pattern):
-                    absFilePath = os.path.abspath(os.path.join(path, filename))
+                    absFilePath = os.path.abspath(os.path.join(root,filename))
                     filelist.append(absFilePath)
 
             MyComponent.INPUT_audioFileList = filelist
@@ -261,6 +261,12 @@ class MyComponent(AkComponent):
             #for audiofile in fileList:
             foo = fileList.rsplit('.') #remove extension from filename
             audiofilename = foo[0]
+
+            ### Need an extra param in this function to set the originals location for the imported file. Needs to maintain the subfolders after the Main Path
+            str_InputFilePath = str(MyComponent.INPUT_audioFilePath)
+            str_AudioFileName = str(audiofilename)
+            originalsSubDir = str_AudioFileName.replace(str_InputFilePath,'')
+
             importFilelist.append(
                 {
                     "audioFile": fileList,
@@ -273,7 +279,7 @@ class MyComponent(AkComponent):
                 "default": {
                     "importLanguage": "SFX",
                     "importLocation": ParentID,
-                    "originalsSubFolder": originalsPath
+                    "originalsSubFolder": originalsPath+originalsSubDir
                     },
                 "imports": importFilelist
 

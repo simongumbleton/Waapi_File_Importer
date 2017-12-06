@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{74777983-C3C2-4965-80D5-77E8AFEF03CD}" SchemaVersion="80">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{74777983-C3C2-4965-80D5-77E8AFEF03CD}" PersistMode="Standalone">
-			<ChildrenList>
-				<Folder Name="WAAPI Auto Events" ID="{2AF4F742-2E60-40C2-9121-EBF07429228F}" ShortID="569087916">
-					<ChildrenList>
-						<Event Name="Play_Wappi_Import_Test_01" ID="{3598E409-CE7C-47A5-9F93-A3E49D311DAD}">
-							<ChildrenList>
-								<Action Name="" ID="{26FC1506-AD6A-4D8A-9463-76E5B2671EC3}" ShortID="965895665">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_01" ID="{0D93E976-0C97-4B31-BB98-F11F9FBED450}" WorkUnitID="{B400CBE0-B447-414E-90EA-07B0A5DE0F25}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Wappi_Import_Test_02" ID="{F96AE7F1-C292-4125-9B87-78D8B63F7872}">
-							<ChildrenList>
-								<Action Name="" ID="{A26600FF-D465-4FE8-81AC-27F23C3B4943}" ShortID="861301791">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_02" ID="{60BAFEE3-9D91-4A24-9A03-D451F2EDE91E}" WorkUnitID="{B400CBE0-B447-414E-90EA-07B0A5DE0F25}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{74777983-C3C2-4965-80D5-77E8AFEF03CD}" PersistMode="Standalone"/>
 	</Events>
 </WwiseDocument>

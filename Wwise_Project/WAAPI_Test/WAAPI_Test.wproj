@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="80" WwiseVersion="v2017.1.2" WwiseBuild="6361">
+<WwiseDocument Type="Project" SchemaVersion="80" WwiseVersion="v2017.1.0" WwiseBuild="6302">
 	<ProjectInfo>
 		<Project Name="WAAPI_Test" ID="{377367AC-DC93-4E74-9438-BF487C833CAF}">
 			<Platforms>
@@ -563,7 +563,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="254" PluginID="1">
+				<SharedPropertyList ClassName="Bit Crusher" PluginType="3" CompanyID="254" PluginID="1">
 					<PropertyList>
 						<Property Name="BitDepth" Type="Real32">
 							<ValueList>
@@ -634,7 +634,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="254" PluginID="2">
+				<SharedPropertyList ClassName="Visualizer" PluginType="3" CompanyID="254" PluginID="2">
 					<PropertyList>
 						<Property Name="CalculateLevel" Type="bool">
 							<ValueList>
@@ -663,7 +663,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="iZotope Hybrid Reverb" PluginType="3" CompanyID="259" PluginID="2">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="259" PluginID="2">
 					<PropertyList>
 						<Property Name="DecayHighFrequency" Type="Real32">
 							<ValueList>
@@ -975,7 +975,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="iZotope Trash Distortion" PluginType="3" CompanyID="259" PluginID="3">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="259" PluginID="3">
 					<PropertyList>
 						<Property Name="Distortion1InputGain" Type="Real32">
 							<ValueList>
@@ -1109,7 +1109,7 @@
 					</PropertyList>
 				</SharedPropertyList>
 				<SharedPropertyList ClassName="Event" PluginType="0" CompanyID="1" PluginID="4"/>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="254" PluginID="4">
+				<SharedPropertyList ClassName="Stutter Edit" PluginType="3" CompanyID="254" PluginID="4">
 					<PropertyList>
 						<Property Name="Active" Type="bool">
 							<ValueList>
@@ -1153,7 +1153,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="iZotope Trash Delay" PluginType="3" CompanyID="259" PluginID="4">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="259" PluginID="4">
 					<PropertyList>
 						<Property Name="DelayType" Type="int32">
 							<ValueList>
@@ -1356,7 +1356,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="iZotope Trash Dynamics Mono" PluginType="3" CompanyID="259" PluginID="5">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="259" PluginID="5">
 					<PropertyList>
 						<Property Name="Bypass" Type="int32">
 							<ValueList>
@@ -1416,7 +1416,7 @@
 					</PropertyList>
 				</SharedPropertyList>
 				<SharedPropertyList ClassName="State" PluginType="0" CompanyID="1" PluginID="6"/>
-				<SharedPropertyList ClassName="iZotope Trash Filters" PluginType="3" CompanyID="259" PluginID="6">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="259" PluginID="6">
 					<PropertyList>
 						<Property Name="Filter1Frequency" Type="Real32">
 							<ValueList>
@@ -1614,7 +1614,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="iZotope Trash Box Modeler" PluginType="3" CompanyID="259" PluginID="7">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="259" PluginID="7">
 					<PropertyList>
 						<Property Name="BoxModel" Type="int32">
 							<ValueList>
@@ -2486,7 +2486,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="iZotope Trash Multiband Distortion" PluginType="3" CompanyID="259" PluginID="9">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="259" PluginID="9">
 					<PropertyList>
 						<Property Name="Distortion1Band1InputGain" Type="Real32">
 							<ValueList>
@@ -7139,7 +7139,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="McDSP ML1" PluginType="3" CompanyID="256" PluginID="103">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="256" PluginID="103">
 					<PropertyList>
 						<Property Name="Ceiling" Type="Real32">
 							<ValueList>
@@ -7438,7 +7438,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="McDSP FutzBox" PluginType="3" CompanyID="256" PluginID="110">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="256" PluginID="110">
 					<PropertyList>
 						<Property Name="Balance" Type="Real32">
 							<ValueList>
@@ -8703,7 +8703,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Wwise Convolution Reverb" PluginType="3" CompanyID="0" PluginID="127">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="0" PluginID="127">
 					<PropertyList>
 						<Property Name="AlgoTypeSelect" Type="int32">
 							<ValueList>
@@ -9488,6 +9488,11 @@
 								<Value>6549768</Value>
 							</ValueList>
 						</Property>
+						<Property Name="HeightAware" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Inclusion" Type="bool">
 							<ValueList>
 								<Value>True</Value>
@@ -9508,23 +9513,18 @@
 								<Value>1</Value>
 							</ValueList>
 						</Property>
+						<Property Name="SpreadRadius" Type="Real32">
+							<ValueList>
+								<Value>0.1</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="SCE Audio3d Global Settings" PluginType="3" CompanyID="0" PluginID="165">
+				<SharedPropertyList ClassName="SCE Audio3d Passthrough" PluginType="3" CompanyID="0" PluginID="165">
 					<PropertyList>
 						<Property Name="Inclusion" Type="bool">
 							<ValueList>
 								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Passthrough" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Scale" Type="Real32">
-							<ValueList>
-								<Value>1</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -9606,7 +9606,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="6" CompanyID="254" PluginID="206">
+				<SharedPropertyList ClassName="Dynamic Binaural Reverb" PluginType="6" CompanyID="254" PluginID="206">
 					<PropertyList>
 						<Property Name="AmbisonicOrder" Type="int32">
 							<ValueList>
@@ -9735,7 +9735,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="254" PluginID="207">
+				<SharedPropertyList ClassName="AttachableMixerInput" PluginType="3" CompanyID="254" PluginID="207">
 					<PropertyList>
 						<Property Name="ApplyPostFader" Type="bool">
 							<ValueList>
@@ -10001,7 +10001,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Auro Headphone" PluginType="3" CompanyID="263" PluginID="1100">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="263" PluginID="1100">
 					<PropertyList>
 						<Property Name="Bypass" Type="bool">
 							<ValueList>
@@ -10105,7 +10105,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Auro Panner" PluginType="6" CompanyID="263" PluginID="1101">
+				<SharedPropertyList ClassName="" PluginType="6" CompanyID="263" PluginID="1101">
 					<PropertyList>
 						<Property Name="EnableDefaultSpatialization" Type="bool">
 							<ValueList>
@@ -10124,7 +10124,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="AttachableMixerInput" PluginType="3" CompanyID="263" PluginID="1102">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="263" PluginID="1102">
 					<PropertyList>
 						<Property Name="CenterFactorFC" Type="Real32">
 							<ValueList>
@@ -10203,7 +10203,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="64" PluginID="7392">
+				<SharedPropertyList ClassName="ACX_Level_Meter" PluginType="3" CompanyID="64" PluginID="7392">
 					<PropertyList>
 						<Property Name="Inclusion" Type="bool">
 							<ValueList>
@@ -10217,7 +10217,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="64" PluginID="7393">
+				<SharedPropertyList ClassName="ACX Spectrum" PluginType="3" CompanyID="64" PluginID="7393">
 					<PropertyList>
 						<Property Name="Inclusion" Type="bool">
 							<ValueList>
@@ -10226,7 +10226,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="64" PluginID="7397">
+				<SharedPropertyList ClassName="ACX SMS Chorus" PluginType="3" CompanyID="64" PluginID="7397">
 					<PropertyList>
 						<Property Name="AttenFreq" Type="int32">
 							<ValueList>
@@ -10295,7 +10295,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="64" PluginID="7399">
+				<SharedPropertyList ClassName="ACX_Distortion" PluginType="3" CompanyID="64" PluginID="7399">
 					<PropertyList>
 						<Property Name="A" Type="Real32">
 							<ValueList>
@@ -10339,7 +10339,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="64" PluginID="7400">
+				<SharedPropertyList ClassName="ACX SMS WaveHammer" PluginType="3" CompanyID="64" PluginID="7400">
 					<PropertyList>
 						<Property Name="CompAttack" Type="int32">
 							<ValueList>
@@ -10438,7 +10438,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="64" PluginID="7404">
+				<SharedPropertyList ClassName="ACX SMS Mirror" PluginType="3" CompanyID="64" PluginID="7404">
 					<PropertyList>
 						<Property Name="DryOut" Type="Real32">
 							<ValueList>
@@ -10462,7 +10462,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="64" PluginID="7414">
+				<SharedPropertyList ClassName="ACX_Adres" PluginType="3" CompanyID="64" PluginID="7414">
 					<PropertyList>
 						<Property Name="Azimuth" Type="Real32">
 							<ValueList>
@@ -10511,7 +10511,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="64" PluginID="7417">
+				<SharedPropertyList ClassName="ACX SMS Reverb" PluginType="3" CompanyID="64" PluginID="7417">
 					<PropertyList>
 						<Property Name="BassFreq" Type="int32">
 							<ValueList>
@@ -10575,7 +10575,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="64" PluginID="7419">
+				<SharedPropertyList ClassName="ACX_Limiter" PluginType="3" CompanyID="64" PluginID="7419">
 					<PropertyList>
 						<Property Name="AttackTime" Type="Real32">
 							<ValueList>
@@ -10604,7 +10604,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="64" PluginID="7420">
+				<SharedPropertyList ClassName="ACX Elastic" PluginType="3" CompanyID="64" PluginID="7420">
 					<PropertyList>
 						<Property Name="Inclusion" Type="bool">
 							<ValueList>
@@ -10623,7 +10623,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="64" PluginID="8000">
+				<SharedPropertyList ClassName="EvoExciter" PluginType="3" CompanyID="64" PluginID="8000">
 					<PropertyList>
 						<Property Name="DelayHigh" Type="Real32">
 							<ValueList>
@@ -10692,7 +10692,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="254" PluginID="8005">
+				<SharedPropertyList ClassName="Ambisonic_Encoder" PluginType="3" CompanyID="254" PluginID="8005">
 					<PropertyList>
 						<Property Name="Gain" Type="Real32">
 							<ValueList>
@@ -10721,7 +10721,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="254" PluginID="8006">
+				<SharedPropertyList ClassName="Ambisonic_Rotation" PluginType="3" CompanyID="254" PluginID="8006">
 					<PropertyList>
 						<Property Name="Inclusion" Type="bool">
 							<ValueList>
@@ -10769,7 +10769,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="64" PluginID="11265">
+				<SharedPropertyList ClassName="ACX BRB LR1" PluginType="3" CompanyID="64" PluginID="11265">
 					<PropertyList>
 						<Property Name="DrfAbs" Type="Real32">
 							<ValueList>
@@ -10848,7 +10848,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="64" PluginID="11266">
+				<SharedPropertyList ClassName="ACX BRB LR2" PluginType="3" CompanyID="64" PluginID="11266">
 					<PropertyList>
 						<Property Name="DryLevel" Type="Real32">
 							<ValueList>
@@ -10872,7 +10872,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="3" CompanyID="254" PluginID="12345">
+				<SharedPropertyList ClassName="DynamicDelay" PluginType="3" CompanyID="254" PluginID="12345">
 					<PropertyList>
 						<Property Name="DelayTime" Type="Real32">
 							<ValueList>
