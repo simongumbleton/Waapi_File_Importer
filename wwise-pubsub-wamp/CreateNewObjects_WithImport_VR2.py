@@ -13,6 +13,12 @@ from autobahn.asyncio.wamp import ApplicationSession, ApplicationRunner
 from ak_autobahn import AkComponent
 
 
+
+###### TO DO  Set up undo
+
+
+
+
 # You may also copy-paste the waapi.py file alongside this sample
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../../../include/AK/WwiseAuthoringAPI/py'))
 from waapi import WAAPI_URI
@@ -270,9 +276,19 @@ class MyComponent(AkComponent):
             audiofilename = foo[0]
 
             ### Need an extra param in this function to set the originals location for the imported file. Needs to maintain the subfolders after the Main Path
-            str_InputFilePath = str(MyComponent.INPUT_audioFilePath)
-            str_AudioFileName = str(audiofilename)
+            str_InputFilePath = str(MyComponent.INPUT_audioFilePath).replace('\\','/')
+            str_AudioFileName = str(audiofilename).replace('\\','/')
+
+
+
+
             originalsSubDir = str_AudioFileName.replace(str_InputFilePath,'')
+
+            #
+
+
+
+            # Just get the directory name from the audio file path
             originalsSubDir = os.path.dirname(originalsSubDir)
             if originalsSubDir == "/":
                 originalsSubDir = ""
