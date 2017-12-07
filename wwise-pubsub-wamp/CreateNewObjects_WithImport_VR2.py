@@ -54,6 +54,7 @@ class MyComponent(AkComponent):
     createObjArgs = {}
 
 #variables for event creation
+    eventParent = "\\Events\\Default Work Unit"
     eventName = ""
     eventTarget = ""
     evActionType = 1
@@ -202,7 +203,7 @@ class MyComponent(AkComponent):
 
             MyComponent.createEventArgs = {
 
-                "parent": "\\Events\\Default Work Unit",
+                "parent": MyComponent.eventParent,
                 "type": "Folder",
                 "name": "WAAPI Auto Events",
                 "onNameConflict": "merge",
