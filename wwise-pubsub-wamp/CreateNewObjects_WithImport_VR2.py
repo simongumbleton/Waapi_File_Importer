@@ -49,6 +49,7 @@ class MyComponent(AkComponent):
 
 #variables for event creation
     eventParent = "\\Events\\"
+    eventParentVO = "\\Events\\Greybox_Dialogue_DEV\\Greybox_Dialogue_DEV\\"     ##TODO Make this into batch variable
     eventWorkUnit = "Name"
     eventName = ""
     eventTarget = ""
@@ -60,7 +61,7 @@ class MyComponent(AkComponent):
 #args for audio import
     INPUT_audioFilePath = "~/Projects/Wwise/WAAPI/AudioFiles"
     INPUT_audioFileList = []
-    INPUT_originalsPath = "WAAPI/TestImports"
+    INPUT_originalsPath = "WAAPI/TestImports"                       ##TODO Variable this based on import language/SFX
 
     importArgs = {}
 
@@ -68,6 +69,7 @@ class MyComponent(AkComponent):
     INPUT_ObjectType = ""
     INPUT_ObjectName = ""
     OPTION_CreateEvent = True
+    INPUT_ImportLanguage = "SFX"
 
     def printThis(self,msg):
         print(msg)
@@ -314,7 +316,7 @@ class MyComponent(AkComponent):
                 "imports": importFilelist
 
                 }
-            #print (MyComponent.importArgs)
+            print (MyComponent.importArgs)
 
         def getSelectedObject():
             selectedObjectArgs = {
