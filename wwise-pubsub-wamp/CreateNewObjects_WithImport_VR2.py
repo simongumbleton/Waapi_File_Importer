@@ -45,6 +45,7 @@ class MyComponent(AkComponent):
 
 #Variables for object creation
     objParID = "None"
+    objParentName = ""
     objType = "BlendContainer"
     objName = "MyCreatedObject"
     nameConflict = "rename"
@@ -54,7 +55,8 @@ class MyComponent(AkComponent):
     createObjArgs = {}
 
 #variables for event creation
-    eventParent = "\\Events\\Default Work Unit"
+    eventParent = "\\Events\\"
+    eventWorkUnit = "Name"
     eventName = ""
     eventTarget = ""
     evActionType = 1
@@ -81,6 +83,13 @@ class MyComponent(AkComponent):
         print(msg)
 
     def onJoin(self, details):
+
+        def beginUndoGroup():
+            self.call(WAAPI_URI.ak_wwise_core_undo_cancelgroup)
+            self.call(WAAPI_URI.ak_wwise_core_undo_begingroup)
+
+        yield beginUndoGroup()
+
         try:
             res = yield From(self.call(WAAPI_URI.ak_wwise_core_getinfo))  # RPC call without arguments
         except Exception as ex:
@@ -124,6 +133,9 @@ class MyComponent(AkComponent):
         def onParentSelected():
             # subscribe to selection change?
             if not MyComponent.parentSelected:
+
+                #beginUndoGroup()
+
                 print("Method to get the parent to create new object under")
                 success = False
                 parID = None
@@ -136,8 +148,10 @@ class MyComponent(AkComponent):
                     obj = MyComponent.Results.kwresults['objects']
                     # print(obj[0]['id'])
                     MyComponent.parentObject = obj[0]
+                    MyComponent.eventWorkUnit = str(MyComponent.parentObject["workunit"]["name"])
                     print("Selected object name is...{}".format(MyComponent.parentObject[u"name"]))
                     parID = str(MyComponent.parentObject["id"])
+                    MyComponent.objParentName = str(MyComponent.parentObject[u"name"])
                     MyComponent.parentSelected = True
 
                 yield setupAudioFilePath()
@@ -189,10 +203,21 @@ class MyComponent(AkComponent):
 
                 saveWwiseProject()
 
+                endUndoGroup()
+
                 self.leave()
 
         def saveWwiseProject():
             self.call(WAAPI_URI.ak_wwise_core_project_save)
+
+        def endUndoGroup():
+
+            undoArgs = {
+                "displayName": "Script Auto Importer"
+            }
+
+            self.call(WAAPI_URI.ak_wwise_core_undo_endgroup, {}, **undoArgs)
+
 
         def setupEventArgs(oname,otarget,oactionType = 1):
             print("setting up event")
@@ -203,9 +228,9 @@ class MyComponent(AkComponent):
 
             MyComponent.createEventArgs = {
 
-                "parent": MyComponent.eventParent,
+                "parent": MyComponent.eventParent+MyComponent.eventWorkUnit,
                 "type": "Folder",
-                "name": "WAAPI Auto Events",
+                "name": MyComponent.objParentName,
                 "onNameConflict": "merge",
                 "children": [
                     {
@@ -314,8 +339,16 @@ class MyComponent(AkComponent):
             print (MyComponent.importArgs)
 
         def getSelectedObject():
+
+            selectedObjectArgs = {
+                "options": {
+                    "return": ["workunit", "name", "parent", "id", "path"]
+                }
+            }
+
+
             try:
-                x = yield self.call(WAAPI_URI.ak_wwise_ui_getselectedobjects)
+                x = yield self.call(WAAPI_URI.ak_wwise_ui_getselectedobjects, {}, **selectedObjectArgs)
             except Exception as ex:
                 print("call error: {}".format(ex))
             #print (x)
