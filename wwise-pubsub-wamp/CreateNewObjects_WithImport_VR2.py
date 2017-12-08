@@ -13,12 +13,6 @@ from autobahn.asyncio.wamp import ApplicationSession, ApplicationRunner
 from ak_autobahn import AkComponent
 
 
-
-###### TO DO  Set up undo
-
-
-
-
 # You may also copy-paste the waapi.py file alongside this sample
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../../../include/AK/WwiseAuthoringAPI/py'))
 from waapi import WAAPI_URI
@@ -30,7 +24,6 @@ class MyComponent(AkComponent):
 # creates the desired object type underneath the selected parent
 # Optionally, it is possible to create an event at the same time
 # that Plays the recently created object....
-
 
 #store a ref to the selected parent object
     parentObject = None
@@ -76,9 +69,6 @@ class MyComponent(AkComponent):
     INPUT_ObjectName = ""
     OPTION_CreateEvent = True
 
-
-
-
     def printThis(self,msg):
         print(msg)
 
@@ -98,8 +88,7 @@ class MyComponent(AkComponent):
             # Call was successful, displaying information from the payload.
             print("Hello {} {}".format(res.kwresults['displayName'], res.kwresults['version']['displayName']))
 
-        MyComponent.printThis(self,"Test")
-
+        #MyComponent.printThis(self,"Test")
 
         def askUserForImportDirectory():
 
@@ -109,9 +98,7 @@ class MyComponent(AkComponent):
             MyComponent.INPUT_audioFilePath = tkFileDialog.askdirectory()
             root.update()
             root.destroy()
-            print(MyComponent.INPUT_audioFilePath)
-
-
+            #print(MyComponent.INPUT_audioFilePath)
 
         def setupSubscriptions():
             # Subscribe to ak.wwise.core.object.created
@@ -134,17 +121,15 @@ class MyComponent(AkComponent):
             # subscribe to selection change?
             if not MyComponent.parentSelected:
 
-                #beginUndoGroup()
-
-                print("Method to get the parent to create new object under")
+                #print("Method to get the parent to create new object under")
                 success = False
                 parID = None
                 yield getSelectedObject()
-                print("Selected object is...")
+                #print("Selected object is...")
 
                 if MyComponent.Results != None:
                     success = True
-                    print(MyComponent.Results.kwresults['objects'])
+                    #print(MyComponent.Results.kwresults['objects'])
                     obj = MyComponent.Results.kwresults['objects']
                     # print(obj[0]['id'])
                     MyComponent.parentObject = obj[0]
@@ -159,11 +144,12 @@ class MyComponent(AkComponent):
 
                 if success:
                     for file in MyComponent.INPUT_audioFileList:
+                        print(file)
                         f = file.rsplit('.')
                         fname = os.path.basename(f[0])
                         setupCreateArgs(parID, "Sound", fname) # include optional arguments for type/name/conflict
                         yield createWwiseObject(MyComponent.createObjArgs)
-                        print(MyComponent.Results)
+                        #print(MyComponent.Results)
                         MyComponent.objectCreated = True
 
                         importParent = MyComponent.Results.kwresults['id']
@@ -176,7 +162,7 @@ class MyComponent(AkComponent):
                             evTarget = str(MyComponent.Results.kwresults["id"])
                             setupEventArgs(evName, evTarget)
                             yield createWwiseObject(MyComponent.createEventArgs)
-                            print(MyComponent.Results)
+                           # print(MyComponent.Results)
                             MyComponent.eventCreated = True
 
 
@@ -220,7 +206,7 @@ class MyComponent(AkComponent):
 
 
         def setupEventArgs(oname,otarget,oactionType = 1):
-            print("setting up event")
+            #print("setting up event")
 
             MyComponent.eventName = oname
             MyComponent.eventTarget = otarget
@@ -276,12 +262,12 @@ class MyComponent(AkComponent):
             }
 
         def setupAudioFilePath():
-            print("Setting up audio file path")
+            #print("Setting up audio file path")
             pathToFiles = os.path.expanduser(MyComponent.INPUT_audioFilePath)
             setupAudioFileList(pathToFiles)
 
         def setupAudioFileList(path):
-            print("Setting up list of audio files")
+            #print("Setting up list of audio files")
             filelist = []
             pattern='*.wav'
 
@@ -294,7 +280,7 @@ class MyComponent(AkComponent):
             MyComponent.INPUT_audioFileList = filelist
 
         def setupImportArgs(parentID, fileList,originalsPath):
-            print ("Args for audio importing")
+            #print ("Args for audio importing")
             ParentID = str(parentID)
             importFilelist = []
             #for audiofile in fileList:
@@ -304,15 +290,7 @@ class MyComponent(AkComponent):
             ### Need an extra param in this function to set the originals location for the imported file. Needs to maintain the subfolders after the Main Path
             str_InputFilePath = str(MyComponent.INPUT_audioFilePath).replace('\\','/')
             str_AudioFileName = str(audiofilename).replace('\\','/')
-
-
-
-
             originalsSubDir = str_AudioFileName.replace(str_InputFilePath,'')
-
-            #
-
-
 
             # Just get the directory name from the audio file path
             originalsSubDir = os.path.dirname(originalsSubDir)
@@ -336,17 +314,14 @@ class MyComponent(AkComponent):
                 "imports": importFilelist
 
                 }
-            print (MyComponent.importArgs)
+            #print (MyComponent.importArgs)
 
         def getSelectedObject():
-
             selectedObjectArgs = {
                 "options": {
                     "return": ["workunit", "name", "parent", "id", "path"]
                 }
             }
-
-
             try:
                 x = yield self.call(WAAPI_URI.ak_wwise_ui_getselectedobjects, {}, **selectedObjectArgs)
             except Exception as ex:
@@ -370,8 +345,8 @@ class MyComponent(AkComponent):
 
         def onObjectCreated(**kwargs):
             if not MyComponent.eventCreated:
-                print("Object was created")
-                print(kwargs)
+                #print("Object was created")
+                #print(kwargs)
                 ob = kwargs["object"]
                 obID = ob["id"]
                 arguments = {
@@ -385,30 +360,21 @@ class MyComponent(AkComponent):
                 except Exception as ex:
                     print("call error: {}".format(ex))
                 else:
-                    print(res2.kwresults)
+                    #print(res2.kwresults)
                     returnObjs = res2.kwresults[u"return"]
                     for returnObj in returnObjs:
                         #       print("\t{}".format(returnObj[u"type"]))
-                        print("Returned object name is...{}".format(returnObj[u"name"]))
+                        print("Created object name is...{}".format(returnObj[u"name"]))
                         print("%s object type is...%s." % (returnObj[u"name"], returnObj[u"type"]))
                         print("%s object path is...%s." % (returnObj[u"name"], returnObj["path"]))
 
-
-
-
-
         askUserForImportDirectory()
-
-
-
 
         setupSubscriptions()
 
-        #yield setupAudioFilePath()
-
-        print("This is the name of the script", sys.argv[0])
-        print("This is the number of arguments", len(sys.argv))
-        print("The arguments are...", str(sys.argv))
+        #print("This is the name of the script", sys.argv[0])
+       # print("This is the number of arguments", len(sys.argv))
+        #print("The arguments are...", str(sys.argv))
 
 
 
