@@ -69,7 +69,7 @@ class MyComponent(AkComponent):
 #Input variables. TO DO: Drive these from data e.g Reaper
     INPUT_ObjectType = "Sound"
     INPUT_ObjectName = ""
-    OPTION_CreateEvent = True
+    OPTION_CreateEvent = False
     #INPUT_ImportLanguage = "SFX"
     INPUT_ImportLanguage = "English(US)"
 
@@ -148,34 +148,22 @@ class MyComponent(AkComponent):
 
                 if success:
                     for file in MyComponent.INPUT_audioFileList:
+
                         print(file)
                         f = file.rsplit('.')
                         fname = os.path.basename(f[0])
-                        wwiseObjType = MyComponent.INPUT_ObjectType
-                        setupCreateArgs(parID, wwiseObjType, fname)  # include optional arguments for type/name/conflict
-                        yield createWwiseObject(MyComponent.createObjArgs)
-                        #print(MyComponent.Results)
-                        MyComponent.objectCreated = True
 
-                        CreatedObjectID = MyComponent.Results.kwresults['id']
-
-                        #setupObjPropertyArgs(CreatedObjectID, "IsVoice", True)
-                        #yield SetWwiseObjectProperty(MyComponent.ObjPropertyArgs)  #Set a specific propety on the created object
-
-                        yield setupImportArgs(CreatedObjectID, file, MyComponent.INPUT_originalsPath)
+                        yield setupImportArgs(parID, file, MyComponent.INPUT_originalsPath)
                         yield importAudioFiles(MyComponent.importArgs)
 
                         # Setup an event to play the created object
                         if MyComponent.OPTION_CreateEvent:
-                            evName = MyComponent.Results.kwresults["name"]
+                            evName = fname
                             evTarget = str(MyComponent.Results.kwresults["id"])
                             setupEventArgs(evName, evTarget)
                             yield createWwiseObject(MyComponent.createEventArgs)
                            # print(MyComponent.Results)
                             MyComponent.eventCreated = True
-
-
-
 
                 else:
                     print("Something went wrong!!")
@@ -314,7 +302,9 @@ class MyComponent(AkComponent):
                 "default": {
                     "importLanguage": MyComponent.INPUT_ImportLanguage,
                     "importLocation": ParentID,
-                    "originalsSubFolder": originalsPath+originalsSubDir
+                    "originalsSubFolder": originalsPath+originalsSubDir,
+                    "notes":"This object was auto imported",
+                    "event":"\\Events\\"+MyComponent.eventWorkUnit+"\\"+os.path.basename(audiofilename)
                     },
                 "imports": importFilelist
 
@@ -353,7 +343,6 @@ class MyComponent(AkComponent):
                 yield self.call(WAAPI_URI.ak_wwise_core_audio_import, {}, **args)
             except Exception as ex:
                 print("call error: {}".format(ex))
-            #MyComponent.Results = res
 
         def onObjectCreated(**kwargs):
             if not MyComponent.eventCreated:
