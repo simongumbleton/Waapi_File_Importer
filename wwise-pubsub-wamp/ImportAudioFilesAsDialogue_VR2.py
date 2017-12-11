@@ -156,7 +156,7 @@ class MyComponent(AkComponent):
                     MyComponent.parentObject = obj[0]
                     MyComponent.parentObjectPath = str(MyComponent.parentObject["path"])
                     MyComponent.eventWorkUnit = str(MyComponent.parentObject["workunit"]["name"])
-                    print("Selected object name is...{}".format(MyComponent.parentObject[u"name"]))
+                    #print("Selected object name is...{}".format(MyComponent.parentObject[u"name"]))
                     parID = str(MyComponent.parentObject["id"])
                     MyComponent.objParentName = str(MyComponent.parentObject[u"name"])
                     MyComponent.parentSelected = True
@@ -165,8 +165,10 @@ class MyComponent(AkComponent):
 
 
                 if success:
+                    count = 0
                     for file in MyComponent.ImportAudioFileList:
-                        print(file)
+                        #print(file)
+                        count+=1
                         f = file.rsplit('.')
                         fname = os.path.basename(f[0])
                         yield setupImportArgs(parID, file, MyComponent.INPUT_originalsPath)
@@ -179,10 +181,10 @@ class MyComponent(AkComponent):
                 if (MyComponent.ImportOperationSuccess):
                     saveWwiseProject()
                     endUndoGroup()
-                    print("Undo group ended")
+                    print("Import operation success. "+str(count)+" files imported.")
                 else:
+                    print("Import operation failed! Check log for errors!")
                     endUndoGroup()
-                    print("Undo group cancelled")
 
                 self.leave()
 
@@ -295,7 +297,7 @@ class MyComponent(AkComponent):
                 originalsSubDir = ""
 
             eventPath = MyComponent.parentObjectPath.replace("Actor-Mixer Hierarchy", "Events")
-            print(eventPath)
+            #print(eventPath)
 
 
 
@@ -320,7 +322,7 @@ class MyComponent(AkComponent):
                 "imports": importFilelist
 
                 }
-            print (MyComponent.importArgs)
+            #print (MyComponent.importArgs)
 
         def getSelectedObject():
             selectedObjectArgs = {
@@ -377,11 +379,11 @@ class MyComponent(AkComponent):
                 else:
                     #print(res2.kwresults)
                     returnObjs = res2.kwresults[u"return"]
-                    for returnObj in returnObjs:
-                        #       print("\t{}".format(returnObj[u"type"]))
-                        print("Created object name is...{}".format(returnObj[u"name"]))
-                        print("%s object type is...%s." % (returnObj[u"name"], returnObj[u"type"]))
-                        print("%s object path is...%s." % (returnObj[u"name"], returnObj["path"]))
+                    #for returnObj in returnObjs:
+                        #print("\t{}".format(returnObj[u"type"]))
+                        #print("Created object name is...{}".format(returnObj[u"name"]))
+                        #print("%s object type is...%s." % (returnObj[u"name"], returnObj[u"type"]))
+                        #print("%s object path is...%s." % (returnObj[u"name"], returnObj["path"]))
 
         askUserForImportDirectory()
 

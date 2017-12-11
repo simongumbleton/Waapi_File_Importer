@@ -20,7 +20,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Wappi_Import_Test_02" ID="{E3F68594-9759-4E0F-9D44-738DF90C8DB8}" ShortID="982294942">
+						<Sound Name="Wappi_Import_Test_02" ID="{7C87AEF4-50F5-4B4C-85EC-3637C8EC2797}" ShortID="802837020">
 							<Comment>This object was auto imported</Comment>
 							<PropertyList>
 								<Property Name="IsVoice" Type="bool" Value="True"/>
@@ -34,16 +34,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Wappi_Import_Test_02" ID="{C9D54390-766B-42B9-991B-7FE553A9C357}" ShortID="6389623">
+								<AudioFileSource Name="Wappi_Import_Test_02" ID="{FBE76872-2657-4084-8652-442F08BFD980}" ShortID="815414617">
 									<Language>English(US)</Language>
 									<AudioFile>WAAPI\TestImports\Wappi_Import_Test_02.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Wappi_Import_Test_02" ID="{C9D54390-766B-42B9-991B-7FE553A9C357}" Platform="Linked"/>
+								<ActiveSource Name="Wappi_Import_Test_02" ID="{FBE76872-2657-4084-8652-442F08BFD980}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Wappi_Import_Test_01" ID="{B3B72DBD-012C-41FE-90DE-8A359C8247DE}" ShortID="800465490">
+						<Sound Name="Wappi_Import_Test_01" ID="{F7C2AEBE-F01C-450C-B293-A08C3775BFC7}" ShortID="41798825">
 							<Comment>This object was auto imported</Comment>
 							<PropertyList>
 								<Property Name="IsVoice" Type="bool" Value="True"/>
@@ -57,16 +57,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Wappi_Import_Test_01" ID="{B338303F-46F8-4D94-AB5A-8B5330A0DCC5}" ShortID="363390034">
+								<AudioFileSource Name="Wappi_Import_Test_01" ID="{C665A12F-586E-45F8-8DE4-76AD1D20A205}" ShortID="827636586">
 									<Language>English(US)</Language>
 									<AudioFile>WAAPI\TestImports\Wappi_Import_Test_01.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Wappi_Import_Test_01" ID="{B338303F-46F8-4D94-AB5A-8B5330A0DCC5}" Platform="Linked"/>
+								<ActiveSource Name="Wappi_Import_Test_01" ID="{C665A12F-586E-45F8-8DE4-76AD1D20A205}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Wappi_Import_Test_02_Section" ID="{C5553A04-7D53-4BD4-99B3-98667EF11B8C}" ShortID="216680953">
+						<Sound Name="Wappi_Import_Test_02_Section" ID="{37A5B0C1-3221-478F-8B14-330B9AB62F4D}" ShortID="237867158">
 							<Comment>This object was auto imported</Comment>
 							<PropertyList>
 								<Property Name="IsVoice" Type="bool" Value="True"/>
@@ -80,16 +80,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Wappi_Import_Test_02_Section" ID="{2E47B8A2-A9C3-46D6-A216-5FC59CD11AD8}" ShortID="83076770">
+								<AudioFileSource Name="Wappi_Import_Test_02_Section" ID="{DF98A72C-7E24-4186-9734-7F80BC7F55BA}" ShortID="232177551">
 									<Language>English(US)</Language>
 									<AudioFile>WAAPI\TestImports\Section\Wappi_Import_Test_02_Section.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Wappi_Import_Test_02_Section" ID="{2E47B8A2-A9C3-46D6-A216-5FC59CD11AD8}" Platform="Linked"/>
+								<ActiveSource Name="Wappi_Import_Test_02_Section" ID="{DF98A72C-7E24-4186-9734-7F80BC7F55BA}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Wappi_Import_Test_02_SubSection" ID="{3A39E54D-F0AE-40B0-9FD2-87B8A6A8C1F0}" ShortID="284238181">
+						<Sound Name="Wappi_Import_Test_02_SubSection" ID="{0DE27F54-7FF4-457D-B836-F152ACB858C9}" ShortID="341486780">
 							<Comment>This object was auto imported</Comment>
 							<PropertyList>
 								<Property Name="IsVoice" Type="bool" Value="True"/>
@@ -103,13 +103,13 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Wappi_Import_Test_02_SubSection" ID="{CD049A6E-EDFC-4732-BACC-117BB3B512EC}" ShortID="538814666">
+								<AudioFileSource Name="Wappi_Import_Test_02_SubSection" ID="{E3048580-7FCC-4E62-9B8F-86CC5B643D4D}" ShortID="209011493">
 									<Language>English(US)</Language>
 									<AudioFile>WAAPI\TestImports\Section\Subsection\Wappi_Import_Test_02_SubSection.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Wappi_Import_Test_02_SubSection" ID="{CD049A6E-EDFC-4732-BACC-117BB3B512EC}" Platform="Linked"/>
+								<ActiveSource Name="Wappi_Import_Test_02_SubSection" ID="{E3048580-7FCC-4E62-9B8F-86CC5B643D4D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
