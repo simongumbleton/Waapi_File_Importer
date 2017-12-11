@@ -25,8 +25,27 @@ class MyComponent(AkComponent):
 # Optionally, it is possible to create an event at the same time
 # that Plays the recently created object....
 
+
+#args for audio import
+    ImportAudioFilePath = ""
+    ImportAudioFileList = []
+
+
+
+#Input variables. TO DO: Drive these from data e.g Reaper
+    INPUT_ObjectType = "Sound"
+    INPUT_ObjectName = ""
+    OPTION_CreateEvent = False
+
+
+    INPUT_ImportLanguage = "English(US)" #Or SFX
+    INPUT_originalsPath = "WAAPI/TestImports"  ##TODO Variable this based on import language/SFX
+
+
+
 #store a ref to the selected parent object
     parentObject = None
+    parentObjectPath = ""
 
 #flow control
     parentSelected = False
@@ -36,10 +55,12 @@ class MyComponent(AkComponent):
 #dic to store return/results from yield calls
     Results = {}
 
-#Variables for object creation
+    ImportOperationSuccess = False
+
+# Internal Variables for object creation
     objParID = "None"
     objParentName = ""
-    objType = "BlendContainer"
+    objType = ""
     objName = "MyCreatedObject"
     nameConflict = "rename"
     objNotes = "This object was auto created...."
@@ -58,20 +79,8 @@ class MyComponent(AkComponent):
 
 #args dict for event creation
     createEventArgs = {}
-
-#args for audio import
-    INPUT_audioFilePath = "~/Projects/Wwise/WAAPI/AudioFiles"
-    INPUT_audioFileList = []
-    INPUT_originalsPath = "WAAPI/TestImports"                       ##TODO Variable this based on import language/SFX
-
+#args for importing
     importArgs = {}
-
-#Input variables. TO DO: Drive these from data e.g Reaper
-    INPUT_ObjectType = "Sound"
-    INPUT_ObjectName = ""
-    OPTION_CreateEvent = False
-    #INPUT_ImportLanguage = "SFX"
-    INPUT_ImportLanguage = "English(US)"
 
     def printThis(self,msg):
         print(msg)
@@ -79,10 +88,17 @@ class MyComponent(AkComponent):
     def onJoin(self, details):
 
         def beginUndoGroup():
-            self.call(WAAPI_URI.ak_wwise_core_undo_cancelgroup)
             self.call(WAAPI_URI.ak_wwise_core_undo_begingroup)
 
-        yield beginUndoGroup()
+        def cancelUndoGroup():
+            self.call(WAAPI_URI.ak_wwise_core_undo_cancelgroup)
+
+        def endUndoGroup():
+            undoArgs = {"displayName": "Script Auto Importer"}
+            self.call(WAAPI_URI.ak_wwise_core_undo_endgroup, {}, **undoArgs)
+
+        #cancelUndoGroup()
+        beginUndoGroup()
 
         try:
             res = yield From(self.call(WAAPI_URI.ak_wwise_core_getinfo))  # RPC call without arguments
@@ -99,7 +115,7 @@ class MyComponent(AkComponent):
             root = Tkinter.Tk()
             root.withdraw()
             root.update()
-            MyComponent.INPUT_audioFilePath = tkFileDialog.askdirectory()
+            MyComponent.ImportAudioFilePath = tkFileDialog.askdirectory()
             root.update()
             root.destroy()
             #print(MyComponent.INPUT_audioFilePath)
@@ -123,6 +139,7 @@ class MyComponent(AkComponent):
 
         def onParentSelected():
             # subscribe to selection change?
+
             if not MyComponent.parentSelected:
 
                 #print("Method to get the parent to create new object under")
@@ -137,6 +154,7 @@ class MyComponent(AkComponent):
                     obj = MyComponent.Results.kwresults['objects']
                     # print(obj[0]['id'])
                     MyComponent.parentObject = obj[0]
+                    MyComponent.parentObjectPath = str(MyComponent.parentObject["path"])
                     MyComponent.eventWorkUnit = str(MyComponent.parentObject["workunit"]["name"])
                     print("Selected object name is...{}".format(MyComponent.parentObject[u"name"]))
                     parID = str(MyComponent.parentObject["id"])
@@ -147,44 +165,31 @@ class MyComponent(AkComponent):
 
 
                 if success:
-                    for file in MyComponent.INPUT_audioFileList:
-
+                    for file in MyComponent.ImportAudioFileList:
                         print(file)
                         f = file.rsplit('.')
                         fname = os.path.basename(f[0])
-
                         yield setupImportArgs(parID, file, MyComponent.INPUT_originalsPath)
                         yield importAudioFiles(MyComponent.importArgs)
-
-                        # Setup an event to play the created object
-                        if MyComponent.OPTION_CreateEvent:
-                            evName = fname
-                            evTarget = str(MyComponent.Results.kwresults["id"])
-                            setupEventArgs(evName, evTarget)
-                            yield createWwiseObject(MyComponent.createEventArgs)
-                           # print(MyComponent.Results)
-                            MyComponent.eventCreated = True
 
                 else:
                     print("Something went wrong!!")
                     return
 
-                saveWwiseProject()
-
-                endUndoGroup()
+                if (MyComponent.ImportOperationSuccess):
+                    saveWwiseProject()
+                    endUndoGroup()
+                    print("Undo group ended")
+                else:
+                    endUndoGroup()
+                    print("Undo group cancelled")
 
                 self.leave()
 
         def saveWwiseProject():
             self.call(WAAPI_URI.ak_wwise_core_project_save)
 
-        def endUndoGroup():
 
-            undoArgs = {
-                "displayName": "Script Auto Importer"
-            }
-
-            self.call(WAAPI_URI.ak_wwise_core_undo_endgroup, {}, **undoArgs)
 
 
         def setupEventArgs(oname,otarget,oactionType = 1):
@@ -255,7 +260,7 @@ class MyComponent(AkComponent):
 
         def setupAudioFilePath():
             #print("Setting up audio file path")
-            pathToFiles = os.path.expanduser(MyComponent.INPUT_audioFilePath)
+            pathToFiles = os.path.expanduser(MyComponent.ImportAudioFilePath)
             setupAudioFileList(pathToFiles)
 
         def setupAudioFileList(path):
@@ -269,7 +274,7 @@ class MyComponent(AkComponent):
                     absFilePath = os.path.abspath(os.path.join(root,filename))
                     filelist.append(absFilePath)
 
-            MyComponent.INPUT_audioFileList = filelist
+            MyComponent.ImportAudioFileList = filelist
 
         def setupImportArgs(parentID, fileList,originalsPath):
             #print ("Args for audio importing")
@@ -280,7 +285,7 @@ class MyComponent(AkComponent):
             audiofilename = foo[0]
 
             ### Need an extra param in this function to set the originals location for the imported file. Needs to maintain the subfolders after the Main Path
-            str_InputFilePath = str(MyComponent.INPUT_audioFilePath).replace('\\','/')
+            str_InputFilePath = str(MyComponent.ImportAudioFilePath).replace('\\', '/')
             str_AudioFileName = str(audiofilename).replace('\\','/')
             originalsSubDir = str_AudioFileName.replace(str_InputFilePath,'')
 
@@ -288,6 +293,11 @@ class MyComponent(AkComponent):
             originalsSubDir = os.path.dirname(originalsSubDir)
             if originalsSubDir == "/":
                 originalsSubDir = ""
+
+            eventPath = MyComponent.parentObjectPath.replace("Actor-Mixer Hierarchy", "Events")
+            print(eventPath)
+
+
 
             importFilelist.append(
                 {
@@ -304,7 +314,8 @@ class MyComponent(AkComponent):
                     "importLocation": ParentID,
                     "originalsSubFolder": originalsPath+originalsSubDir,
                     "notes":"This object was auto imported",
-                    "event":"\\Events\\"+MyComponent.eventWorkUnit+"\\"+os.path.basename(audiofilename)
+                    "event": eventPath+"\\"+os.path.basename(audiofilename)+"@Play" #"\\Events\\"+MyComponent.eventWorkUnit+"\\"+os.path.basename(audiofilename)
+                    #,"ErrorTest":"Failme"
                     },
                 "imports": importFilelist
 
@@ -343,6 +354,9 @@ class MyComponent(AkComponent):
                 yield self.call(WAAPI_URI.ak_wwise_core_audio_import, {}, **args)
             except Exception as ex:
                 print("call error: {}".format(ex))
+                MyComponent.ImportOperationSuccess = False
+            else:
+                MyComponent.ImportOperationSuccess = True
 
         def onObjectCreated(**kwargs):
             if not MyComponent.eventCreated:
@@ -370,6 +384,11 @@ class MyComponent(AkComponent):
                         print("%s object path is...%s." % (returnObj[u"name"], returnObj["path"]))
 
         askUserForImportDirectory()
+
+        if MyComponent.ImportAudioFilePath == '':
+            print("Error. Directory not selected. Exiting application.")
+            self.leave()
+            return
 
         setupSubscriptions()
 
