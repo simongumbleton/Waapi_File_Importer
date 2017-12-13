@@ -173,6 +173,11 @@ class MyComponent(AkComponent):
                         f = file.rsplit('.')
                         fname = os.path.basename(f[0])
                         yield setupImportArgs(parID, file, MyComponent.INPUT_originalsPath)
+                        print(MyComponent.importArgs["default"]["event"])
+                        deleteEvent = str(MyComponent.importArgs["default"]["event"]).replace("@Play","")
+                        #Delete any existing event - otherwise replace operation creates broken play references
+                        yield deleteWwiseObject(deleteEvent)
+
                         yield importAudioFiles(MyComponent.importArgs)
 
                 else:
@@ -191,8 +196,6 @@ class MyComponent(AkComponent):
 
         def saveWwiseProject():
             self.call(WAAPI_URI.ak_wwise_core_project_save)
-
-
 
 
         def setupEventArgs(oname,otarget,oactionType = 1):
@@ -362,6 +365,13 @@ class MyComponent(AkComponent):
                 MyComponent.ImportOperationSuccess = False
             else:
                 MyComponent.ImportOperationSuccess = True
+
+        def deleteWwiseObject(object):
+            args = {"object":object}
+            try:
+                yield self.call(WAAPI_URI.ak_wwise_core_object_delete, {}, **args)
+            except Exception as ex:
+                print("call error: {}".format(ex))
 
         def onObjectCreated(**kwargs):
             if not MyComponent.eventCreated:
