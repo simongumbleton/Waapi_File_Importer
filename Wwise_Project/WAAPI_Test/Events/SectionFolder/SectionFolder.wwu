@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7D42C778-71F9-423C-8EE5-4FF4CFEBD7FB}" SchemaVersion="80">
+	<Events>
+		<WorkUnit Name="SectionFolder" ID="{7D42C778-71F9-423C-8EE5-4FF4CFEBD7FB}" PersistMode="Standalone"/>
+	</Events>
+</WwiseDocument>

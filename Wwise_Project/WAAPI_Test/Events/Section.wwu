@@ -3,59 +3,59 @@
 	<Events>
 		<WorkUnit Name="Section" ID="{62CACA21-8FF3-411E-8AA0-1A628F5C7CCC}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="AMSection" ID="{2E7BC315-3607-4FA2-8231-9E00E03C5BAD}" ShortID="660315475">
+				<Folder Name="AMSection" ID="{884D1866-3DE7-4C2D-AEA1-DB69BFA422A5}" ShortID="567551716">
 					<ChildrenList>
-						<Event Name="Wappi_Import_Test_02" ID="{0DB7CA2C-3D42-48BF-8AD9-F86062E9DDFD}">
+						<Event Name="Wappi_Import_Test_01" ID="{5720F18D-90FB-481F-98E9-55F3601EE0CF}">
 							<ChildrenList>
-								<Action Name="" ID="{587129B6-7CB5-4B6F-97E8-EE70F1939E08}" ShortID="234003239">
+								<Action Name="" ID="{AFDD2B64-BC7D-4471-B7AB-536A80FFCC83}" ShortID="842943210">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_02" ID="{7C87AEF4-50F5-4B4C-85EC-3637C8EC2797}" WorkUnitID="{390C5BB5-7DC6-4D03-95D3-33EE6FF50BD5}"/>
+											<ObjectRef Name="Wappi_Import_Test_01" ID="{28675839-F688-410C-A403-8AA70BE88C9B}" WorkUnitID="{390C5BB5-7DC6-4D03-95D3-33EE6FF50BD5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Wappi_Import_Test_01" ID="{3273926D-7385-4078-B7D6-E7D32B793F82}">
+						<Event Name="Wappi_Import_Test_02" ID="{E5E1B799-722B-4FF9-ABAA-493CBA390AA8}">
 							<ChildrenList>
-								<Action Name="" ID="{55477CF1-232E-4A2F-BF97-CA880B62B30A}" ShortID="303914704">
+								<Action Name="" ID="{E804B4A4-83AA-4703-BEA0-2A5E1CEB748C}" ShortID="553783859">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_01" ID="{F7C2AEBE-F01C-450C-B293-A08C3775BFC7}" WorkUnitID="{390C5BB5-7DC6-4D03-95D3-33EE6FF50BD5}"/>
+											<ObjectRef Name="Wappi_Import_Test_02" ID="{E20162A6-4255-43F7-A844-709ACC18027D}" WorkUnitID="{390C5BB5-7DC6-4D03-95D3-33EE6FF50BD5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Wappi_Import_Test_02_Section" ID="{EB93669A-F6FD-4FDC-B0E8-8807B8A17445}">
+						<Event Name="Wappi_Import_Test_02_Section" ID="{7BE07467-4E33-4DFF-9C45-373E243D1FD7}">
 							<ChildrenList>
-								<Action Name="" ID="{F818B837-7905-4191-BF13-CEB7A7A9333E}" ShortID="365172928">
+								<Action Name="" ID="{6A4D5565-9B63-4429-B5EA-089A4F1AA00B}" ShortID="679300231">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_02_Section" ID="{37A5B0C1-3221-478F-8B14-330B9AB62F4D}" WorkUnitID="{390C5BB5-7DC6-4D03-95D3-33EE6FF50BD5}"/>
+											<ObjectRef Name="Wappi_Import_Test_02_Section" ID="{C8D6702E-DC51-4867-81C9-ED06C0972FE8}" WorkUnitID="{390C5BB5-7DC6-4D03-95D3-33EE6FF50BD5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Wappi_Import_Test_02_SubSection" ID="{33C766B8-5842-4DCD-A22A-1B4D95A1F0FC}">
+						<Event Name="Wappi_Import_Test_02_SubSection" ID="{2113662F-63F8-41EB-A6E6-3BBE86D61AF6}">
 							<ChildrenList>
-								<Action Name="" ID="{4F4EC752-FCBE-4476-A724-46C92471C1A7}" ShortID="589933706">
+								<Action Name="" ID="{9F5C568E-2B99-48F0-A6E9-874CF4F59051}" ShortID="315126553">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_02_SubSection" ID="{0DE27F54-7FF4-457D-B836-F152ACB858C9}" WorkUnitID="{390C5BB5-7DC6-4D03-95D3-33EE6FF50BD5}"/>
+											<ObjectRef Name="Wappi_Import_Test_02_SubSection" ID="{B8562240-4202-433D-958D-B3D99C961270}" WorkUnitID="{390C5BB5-7DC6-4D03-95D3-33EE6FF50BD5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

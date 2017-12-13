@@ -36,9 +36,10 @@ class MyComponent(AkComponent):
     INPUT_ObjectType = "Sound"
     INPUT_ObjectName = ""
     OPTION_CreateEvent = False
+    OPTION_IsStreaming = True
 
 
-    INPUT_ImportLanguage = "English(US)" #Or SFX
+    INPUT_ImportLanguage = "English(US)" #Default language for Wwise projects, Or SFX
     INPUT_originalsPath = "WAAPI/TestImports"  ##TODO Variable this based on import language/SFX
 
 
@@ -316,6 +317,8 @@ class MyComponent(AkComponent):
                     "importLocation": ParentID,
                     "originalsSubFolder": originalsPath+originalsSubDir,
                     "notes":"This object was auto imported",
+                    "@IsStreamingEnabled": MyComponent.OPTION_IsStreaming,
+                    "@IsZeroLantency": MyComponent.OPTION_IsStreaming,
                     "event": eventPath+"\\"+os.path.basename(audiofilename)+"@Play" #"\\Events\\"+MyComponent.eventWorkUnit+"\\"+os.path.basename(audiofilename)
                     #,"ErrorTest":"Failme"
                     },
@@ -385,6 +388,18 @@ class MyComponent(AkComponent):
                         #print("%s object type is...%s." % (returnObj[u"name"], returnObj[u"type"]))
                         #print("%s object path is...%s." % (returnObj[u"name"], returnObj["path"]))
 
+        def setupBatchFileSysArgs():
+            print("Import language is "+sys.argv[1])  # Import Language
+            MyComponent.INPUT_ImportLanguage = str(sys.argv[1])
+            print("Streaming = "+ str(bool(sys.argv[2])))
+            MyComponent.OPTION_IsStreaming = bool(sys.argv[2])
+            # print("This is the name of the script", sys.argv[0])
+            # print("This is the number of arguments", len(sys.argv))
+            # print("The arguments are...", str(sys.argv))
+
+        if (len(sys.argv) > 1):     #If the sys args are longer than the default 1 (script name)
+            setupBatchFileSysArgs()
+
         askUserForImportDirectory()
 
         if MyComponent.ImportAudioFilePath == '':
@@ -394,9 +409,7 @@ class MyComponent(AkComponent):
 
         setupSubscriptions()
 
-        #print("This is the name of the script", sys.argv[0])
-       # print("This is the number of arguments", len(sys.argv))
-        #print("The arguments are...", str(sys.argv))
+
 
 
 

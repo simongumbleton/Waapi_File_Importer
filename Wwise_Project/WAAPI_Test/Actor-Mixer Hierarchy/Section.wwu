@@ -20,10 +20,20 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Wappi_Import_Test_02" ID="{7C87AEF4-50F5-4B4C-85EC-3637C8EC2797}" ShortID="802837020">
+						<Sound Name="Wappi_Import_Test_01" ID="{28675839-F688-410C-A403-8AA70BE88C9B}" ShortID="38433682">
 							<Comment>This object was auto imported</Comment>
 							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -34,42 +44,29 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Wappi_Import_Test_02" ID="{FBE76872-2657-4084-8652-442F08BFD980}" ShortID="815414617">
-									<Language>English(US)</Language>
-									<AudioFile>WAAPI\TestImports\Wappi_Import_Test_02.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Wappi_Import_Test_02" ID="{FBE76872-2657-4084-8652-442F08BFD980}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Wappi_Import_Test_01" ID="{F7C2AEBE-F01C-450C-B293-A08C3775BFC7}" ShortID="41798825">
-							<Comment>This object was auto imported</Comment>
-							<PropertyList>
-								<Property Name="IsVoice" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7BABEEAC-4342-4DAC-BC1E-F192A4A24992}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Wappi_Import_Test_01" ID="{C665A12F-586E-45F8-8DE4-76AD1D20A205}" ShortID="827636586">
+								<AudioFileSource Name="Wappi_Import_Test_01" ID="{93A9DB25-E469-4F31-B08B-E1BFA4E9F6ED}" ShortID="1035935544">
 									<Language>English(US)</Language>
 									<AudioFile>WAAPI\TestImports\Wappi_Import_Test_01.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Wappi_Import_Test_01" ID="{C665A12F-586E-45F8-8DE4-76AD1D20A205}" Platform="Linked"/>
+								<ActiveSource Name="Wappi_Import_Test_01" ID="{93A9DB25-E469-4F31-B08B-E1BFA4E9F6ED}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Wappi_Import_Test_02_Section" ID="{37A5B0C1-3221-478F-8B14-330B9AB62F4D}" ShortID="237867158">
+						<Sound Name="Wappi_Import_Test_02" ID="{E20162A6-4255-43F7-A844-709ACC18027D}" ShortID="785108258">
 							<Comment>This object was auto imported</Comment>
 							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -80,19 +77,62 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Wappi_Import_Test_02_Section" ID="{DF98A72C-7E24-4186-9734-7F80BC7F55BA}" ShortID="232177551">
+								<AudioFileSource Name="Wappi_Import_Test_02" ID="{B14BCBA1-8CA0-4E62-9052-4038D10CF917}" ShortID="489009939">
+									<Language>English(US)</Language>
+									<AudioFile>WAAPI\TestImports\Wappi_Import_Test_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wappi_Import_Test_02" ID="{B14BCBA1-8CA0-4E62-9052-4038D10CF917}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Wappi_Import_Test_02_Section" ID="{C8D6702E-DC51-4867-81C9-ED06C0972FE8}" ShortID="1010655524">
+							<Comment>This object was auto imported</Comment>
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7BABEEAC-4342-4DAC-BC1E-F192A4A24992}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Wappi_Import_Test_02_Section" ID="{C331C3FF-F1A2-447D-A7F8-8346DCC56C70}" ShortID="718692637">
 									<Language>English(US)</Language>
 									<AudioFile>WAAPI\TestImports\Section\Wappi_Import_Test_02_Section.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Wappi_Import_Test_02_Section" ID="{DF98A72C-7E24-4186-9734-7F80BC7F55BA}" Platform="Linked"/>
+								<ActiveSource Name="Wappi_Import_Test_02_Section" ID="{C331C3FF-F1A2-447D-A7F8-8346DCC56C70}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Wappi_Import_Test_02_SubSection" ID="{0DE27F54-7FF4-457D-B836-F152ACB858C9}" ShortID="341486780">
+						<Sound Name="Wappi_Import_Test_02_SubSection" ID="{B8562240-4202-433D-958D-B3D99C961270}" ShortID="935434665">
 							<Comment>This object was auto imported</Comment>
 							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -103,13 +143,13 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Wappi_Import_Test_02_SubSection" ID="{E3048580-7FCC-4E62-9B8F-86CC5B643D4D}" ShortID="209011493">
+								<AudioFileSource Name="Wappi_Import_Test_02_SubSection" ID="{F450847C-A0A2-4B66-AFE2-626A45A3D448}" ShortID="864263243">
 									<Language>English(US)</Language>
 									<AudioFile>WAAPI\TestImports\Section\Subsection\Wappi_Import_Test_02_SubSection.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Wappi_Import_Test_02_SubSection" ID="{E3048580-7FCC-4E62-9B8F-86CC5B643D4D}" Platform="Linked"/>
+								<ActiveSource Name="Wappi_Import_Test_02_SubSection" ID="{F450847C-A0A2-4B66-AFE2-626A45A3D448}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
