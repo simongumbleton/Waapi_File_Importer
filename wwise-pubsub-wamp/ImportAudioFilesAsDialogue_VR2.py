@@ -77,6 +77,7 @@ class MyComponent(AkComponent):
     eventName = ""
     eventTarget = ""
     evActionType = 1
+    eventAlreadyExists = None
 
 #args dict for event creation
     createEventArgs = {}
@@ -173,10 +174,13 @@ class MyComponent(AkComponent):
                         f = file.rsplit('.')
                         fname = os.path.basename(f[0])
                         yield setupImportArgs(parID, file, MyComponent.INPUT_originalsPath)
-                        print(MyComponent.importArgs["default"]["event"])
+                        #print(MyComponent.importArgs["default"]["event"])
                         deleteEvent = str(MyComponent.importArgs["default"]["event"]).replace("@Play","")
-                        #Delete any existing event - otherwise replace operation creates broken play references
-                        yield deleteWwiseObject(deleteEvent)
+                        MyComponent.eventAlreadyExists = None
+                        yield checkIfObjectExists(deleteEvent)
+                        if (MyComponent.eventAlreadyExists):
+                            #Delete any existing event - otherwise replace operation creates broken play references
+                            yield deleteWwiseObject(deleteEvent)
 
                         yield importAudioFiles(MyComponent.importArgs)
 
@@ -343,6 +347,21 @@ class MyComponent(AkComponent):
             #print (x)
             MyComponent.Results = x
 
+        def checkIfObjectExists(object):
+            #print("Checking if wwise object exists already")
+            arguments = {
+                "from": {"path": [object]},
+                "options": {
+                    "return": ["type", "name","path"]
+                }
+            }
+            try:
+                yield From(self.call(WAAPI_URI.ak_wwise_core_object_get, **arguments))
+            except Exception as ex:
+                MyComponent.eventAlreadyExists =False
+            else:
+                MyComponent.eventAlreadyExists = True
+
         def createWwiseObject(args):
             try:
                 res = yield self.call(WAAPI_URI.ak_wwise_core_object_create, {}, **args)
@@ -368,6 +387,7 @@ class MyComponent(AkComponent):
 
         def deleteWwiseObject(object):
             args = {"object":object}
+            print("Event already exists in wwise project. Will be replaced.")
             try:
                 yield self.call(WAAPI_URI.ak_wwise_core_object_delete, {}, **args)
             except Exception as ex:
