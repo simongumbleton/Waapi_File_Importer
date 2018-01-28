@@ -370,13 +370,6 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Character01" ID="{800ADEBF-7C92-4F1A-900D-A40A63C9927A}" ShortID="975247733">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-4</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
