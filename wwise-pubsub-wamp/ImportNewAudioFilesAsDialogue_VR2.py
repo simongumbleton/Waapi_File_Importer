@@ -263,17 +263,29 @@ class MyComponent(AkComponent):
             if originalsSubDir == "/":
                 originalsSubDir = ""
 
+            baseDirName = os.path.basename(originalsSubDir)
+
             eventPath = MyComponent.parentObjectPath.replace("Actor-Mixer Hierarchy", "Events")
             #print(eventPath)
+
+            objectType = "<Sound Voice>"
+
+            # "\\Actor-Mixer Hierarchy\\Script Import\\<Actor-Mixer>Test 0\\<Sequence Container>Container 0\\<Sound SFX>My SFX 0"
+            if baseDirName:
+                objectPath = "<Actor-Mixer>"+baseDirName+"\\"
+            else:
+                objectPath = ""
+
             importFilelist.append(
                 {
                     "audioFile": fileList,
                     #"objectPath": "<Sound SFX>"+os.path.basename(audiofilename
-                    "objectPath": "<Sound Voice>" + os.path.basename(audiofilename)
+                    "objectPath": objectPath + objectType + os.path.basename(audiofilename)
+                    #"objectPath": "<Sound Voice>" + os.path.basename(audiofilename)
                 }
             )
             MyComponent.importArgs = {
-                "importOperation": "replaceExisting",
+                "importOperation": "useExisting",
                 "default": {
                     "importLanguage": MyComponent.INPUT_ImportLanguage,
                     "importLocation": ParentID,

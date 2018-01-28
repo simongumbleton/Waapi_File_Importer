@@ -3,192 +3,384 @@
 	<Events>
 		<WorkUnit Name="SectionFolder" ID="{7D42C778-71F9-423C-8EE5-4FF4CFEBD7FB}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Section" ID="{CBD16FD9-DD06-4275-9BD5-38BF4E947ABD}" ShortID="422519539">
+				<Event Name="Wappi_Import_Test_SS02_CH02" ID="{E9D4C144-6173-46AD-A3D4-32630A824B18}">
 					<ChildrenList>
-						<Event Name="Wappi_Import_Test_02" ID="{7A11C394-D905-4B71-88D1-BBA8A13F952B}">
-							<ChildrenList>
-								<Action Name="" ID="{1120D875-1F3E-44D3-A140-C056575A65DA}" ShortID="612620867">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_02" ID="{B1631FE9-56A7-41C9-9E38-E9A0224FBF69}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Wappi_Import_Test_03" ID="{4DE051C0-633B-4DCA-9188-C6192A36700F}">
-							<ChildrenList>
-								<Action Name="" ID="{801EBAC1-77C5-425B-872F-5CDE7FE03A8C}" ShortID="745112516">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_03" ID="{70D44E1A-6DB1-42AC-8198-BEA570162B29}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Wappi_Import_Test_01" ID="{2BBD774F-489B-442B-A26A-6618223A0F9C}">
-							<ChildrenList>
-								<Action Name="" ID="{846866C5-8263-44B5-A0F0-3E05287BA248}" ShortID="739799468">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_01" ID="{7354364E-C92C-4B3F-946E-F3E0EBE79F69}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Wappi_Import_Test_04" ID="{1CEB07A6-64A0-416A-BDBB-09AA9FAD9AED}">
-							<ChildrenList>
-								<Action Name="" ID="{EDE04052-28D0-46F7-9AE7-D099AD3A4968}" ShortID="534770520">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_04" ID="{79D4A6D7-9087-4A0F-91B6-56C09C3D0A71}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Wappi_Import_Test_02_Section" ID="{038C805C-1625-46A8-A365-31D77B555E58}">
-							<ChildrenList>
-								<Action Name="" ID="{AAAC2BBA-BB23-42F6-ACF5-EE06B25A1A79}" ShortID="169744655">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_02_Section" ID="{22CE82BA-5CD0-4A87-804F-101E020CEF30}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Wappi_Import_Test_02_SubSection" ID="{4747D325-8F30-4F7A-94B0-530F10DB065A}">
-							<ChildrenList>
-								<Action Name="" ID="{2493A864-99C0-4A77-A0F2-1186984BC26E}" ShortID="984857335">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_02_SubSection" ID="{B6D36EF8-7046-46FD-8F0E-D7A917E407FE}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Wappi_Import_Test_04_copy_3" ID="{BECB96DD-1D86-4E15-9756-AE8B7BF1B388}">
-							<ChildrenList>
-								<Action Name="" ID="{E12F91BB-790C-4D90-AF6D-FC186EA911C6}" ShortID="13023267">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_04 copy 3" ID="{6F063832-86AE-4F6A-8BAF-7AC8CDF452F7}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Wappi_Import_Test_04_copy_2" ID="{42908DE7-EE65-4BDE-A825-D45F94820EB1}">
-							<ChildrenList>
-								<Action Name="" ID="{DBCBFF9F-94A9-4D91-88D7-BF348F247CAF}" ShortID="347173223">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_04 copy 2" ID="{0681D23C-2008-4622-82E0-4E027101D76B}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Wappi_Import_Test_04_copy" ID="{9543574E-C4FE-41C3-8907-6119BEED64B5}">
-							<ChildrenList>
-								<Action Name="" ID="{FBB0E58D-BD75-4454-871E-A489E5ACEB7E}" ShortID="412711546">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_04 copy" ID="{0875DBA8-9F56-4FA0-8515-D6F8C199B68B}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Wappi_Import_Test_03_copy_2" ID="{CF27E475-98F7-44D5-BC67-AEB75AD11218}">
-							<ChildrenList>
-								<Action Name="" ID="{15FDD2B1-1CC5-40BE-B736-52D01F2C0A91}" ShortID="268113622">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_03 copy 2" ID="{19E12FEF-4788-490C-B602-C6334302D2C7}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Wappi_Import_Test_03_copy" ID="{35807D04-02CE-4028-9A50-E3F0F9BBC791}">
-							<ChildrenList>
-								<Action Name="" ID="{A88FDF71-B983-472F-932C-6851A2F4A91C}" ShortID="620614622">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_03 copy" ID="{4CD73C1D-3CED-41C8-A6D7-5FFF67CF07CC}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Wappi_Import_Test_02_copy" ID="{B8754E05-CF57-40EE-A13D-720F5E7F5C8D}">
-							<ChildrenList>
-								<Action Name="" ID="{A1436DEE-3E8F-4104-BB19-DB06291C4470}" ShortID="814447750">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_02 copy" ID="{3680F771-9E50-4F3B-ABBC-40C6E65F7FF9}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Wappi_Import_Test_02_copy_2" ID="{EADA60E0-5E75-420B-BA2D-EC52B5614234}">
-							<ChildrenList>
-								<Action Name="" ID="{518A263F-3B28-468C-A3D6-8671DA54291D}" ShortID="930454306">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wappi_Import_Test_02 copy 2" ID="{95451116-0CD0-42DA-AFDC-0358C77407E5}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
+						<Action Name="" ID="{4CE2DE40-E00A-4002-BEB4-14DE4EC5B62E}" ShortID="446279530">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS02_CH02" ID="{D14D4E18-10CF-4F37-A2B2-1BCAD8ADC4D2}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
-				</Folder>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS02_CH01" ID="{2BC741FE-5C9A-4820-87AF-D1D91ACFA633}">
+					<ChildrenList>
+						<Action Name="" ID="{226391D5-F068-4FFB-9BB8-DEDC0C28A2D7}" ShortID="451256371">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS02_CH01" ID="{B83834DD-E40A-4F9D-AC35-1376E477B6E0}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH02" ID="{5D491D61-EC2A-4BF0-8535-144C06473FB1}">
+					<ChildrenList>
+						<Action Name="" ID="{30DC72DE-BB22-48E5-8512-DFA1CFF0447F}" ShortID="990628541">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH02" ID="{ACCA654A-C047-464A-8D04-452998DCF355}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH01" ID="{65154B74-236E-4CEF-8BB5-F845F07F0710}">
+					<ChildrenList>
+						<Action Name="" ID="{245E4502-A09A-43BE-8D74-EAAC9995CEA6}" ShortID="901260575">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH01" ID="{5DD60E65-257A-47AA-8102-BA1220033E25}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS02_CH02_copy_3" ID="{160BCEDF-54C6-431A-9109-061ECD9E7BA5}">
+					<ChildrenList>
+						<Action Name="" ID="{CC22CE02-19EC-477D-A499-C904F7DC11A3}" ShortID="109104504">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS02_CH02 copy 3" ID="{AA5296CB-D974-4875-9A02-B484C1DD69AE}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS02_CH02_copy_2" ID="{6D47A238-6E59-498E-B7A8-E06764AB6A7A}">
+					<ChildrenList>
+						<Action Name="" ID="{516BEFED-DC44-4A47-AD5C-E8636AFC0CE7}" ShortID="841989792">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS02_CH02 copy 2" ID="{E8FF80C2-7B5D-4153-BF84-8137458C5F28}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS02_CH02_copy" ID="{14C0F6B8-7778-48BB-8400-2E546ED98FE3}">
+					<ChildrenList>
+						<Action Name="" ID="{4004665B-8E5B-40BC-8E20-797C858B4DA6}" ShortID="859497789">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS02_CH02 copy" ID="{1B16D14B-48CA-4B41-AA79-D48D04EE8584}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS02_CH01_copy" ID="{CCDB72A9-D8D0-49BB-9A66-A49D97EA735C}">
+					<ChildrenList>
+						<Action Name="" ID="{4604BB12-4982-43FA-A336-41BAAC448161}" ShortID="603433867">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS02_CH01 copy" ID="{E86713F9-556C-4953-B48D-BDC251D245D0}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS02_CH01_copy_2" ID="{E353D319-8ED3-4781-805C-96A3FE6BAC24}">
+					<ChildrenList>
+						<Action Name="" ID="{E2044C24-D3FC-475C-9FD4-F424C8E8EE01}" ShortID="616468225">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS02_CH01 copy 2" ID="{8D659690-D7B4-4614-B264-98974029C424}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH03_copy" ID="{5FF4FA14-9D77-4D64-8D82-D16E1725B424}">
+					<ChildrenList>
+						<Action Name="" ID="{F6698435-5736-466D-965E-939AF19896B3}" ShortID="586623238">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH03 copy" ID="{18118E7A-F38E-42CF-A93D-4A44FA1DF872}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH03_copy_2" ID="{20D38734-FC34-4329-96E2-AD096573D297}">
+					<ChildrenList>
+						<Action Name="" ID="{C7EA7BE4-6CA1-4F82-A57F-70C41A808AC2}" ShortID="825025638">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH03 copy 2" ID="{59353051-5377-41B2-9470-F8777923FBE0}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH03" ID="{ABD57406-7BDA-4CA8-A9EF-60EB6905A918}">
+					<ChildrenList>
+						<Action Name="" ID="{3D946C1B-3BE7-47E1-ACCE-C2ADBDEBE4EF}" ShortID="437231935">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH03" ID="{FDC73CDD-816C-46D2-8C15-DCE50C0C0867}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH02_copy_2" ID="{927AB628-AFF5-444A-BB6C-D09AAA3DE533}">
+					<ChildrenList>
+						<Action Name="" ID="{51BA8474-8DD4-4B62-BCCF-D072636DDA33}" ShortID="176600631">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH02 copy 2" ID="{0E4E1D75-DD14-4B1B-BD11-8CB39E1DF831}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH02_copy" ID="{0096BFA2-3F7A-448C-B377-39FEAD18775D}">
+					<ChildrenList>
+						<Action Name="" ID="{DCED7CAC-0B4C-40A5-ACD9-9302645B3373}" ShortID="701669287">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH02 copy" ID="{8AE60BBA-8B24-4D54-B3ED-E63E291C5A18}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH01_copy" ID="{D4664B63-6A3E-475E-B424-3560B62DAB1E}">
+					<ChildrenList>
+						<Action Name="" ID="{B8288B99-4D5F-4A66-A7DF-26E526910A9E}" ShortID="413054024">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH01 copy" ID="{0FB03906-B29F-4EC9-A081-3379B27839C4}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH01_copy_3" ID="{4A2ADB36-53C1-4BA2-B6BE-8FA3951444AD}">
+					<ChildrenList>
+						<Action Name="" ID="{F2FD3266-9FDD-48EF-9735-97E6D616063B}" ShortID="855488138">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH01 copy 3" ID="{9A24C40B-3C9F-48D7-A04C-AFA851BED0F7}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH01_copy_2" ID="{18654ABB-18A8-41F5-8FB4-11F6CB2B3DD5}">
+					<ChildrenList>
+						<Action Name="" ID="{1532F52D-B3EC-4A7E-87DC-0270AE17AA81}" ShortID="233143842">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH01 copy 2" ID="{9E7DD530-79CD-4648-9D09-8B6FFB4E6CF3}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH03_copy_4" ID="{EE90D192-D9FC-4937-B511-4838C66122EB}">
+					<ChildrenList>
+						<Action Name="" ID="{83D62C1B-FEAD-4E94-8C6F-00A1B52318A8}" ShortID="265287219">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH03 copy 4" ID="{86ECC4BF-7D4C-408D-80D2-970FEB56BE11}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH03_copy_5" ID="{545286D6-7126-480F-88FB-7793A2B37FBE}">
+					<ChildrenList>
+						<Action Name="" ID="{C9D7B47B-056C-4712-ACF0-99CC8FB80A4D}" ShortID="454885859">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH03 copy 5" ID="{A76D79BE-D97B-43AF-A141-621412F21C1C}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH03_copy_3" ID="{467FE3BB-4692-4746-9A18-E16865CC53A5}">
+					<ChildrenList>
+						<Action Name="" ID="{6FA9D32C-0E77-4821-8F67-3263A79E5496}" ShortID="356855505">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH03 copy 3" ID="{C2C114CF-EC2F-4DBD-B30D-7722475E7176}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH02_copy_3" ID="{8B9B11CF-E4B1-4DEC-957A-93E82B7C41A2}">
+					<ChildrenList>
+						<Action Name="" ID="{2D3C8B65-2B32-48A7-A2F8-E85B8DDAC933}" ShortID="851843336">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH02 copy 3" ID="{16C16522-529C-4976-9AF3-D5732BC3A807}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH02_copy_4" ID="{4A08D98F-1CC5-4191-9086-1E5C726D0562}">
+					<ChildrenList>
+						<Action Name="" ID="{4AC15E33-56CB-48D9-8B6C-3C68DC6CFBA9}" ShortID="129824533">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH02 copy 4" ID="{403DD9FC-2BA0-43C3-A14B-ABB0BFC41AAD}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH02_copy_5" ID="{858157F4-53B9-4A3B-A96C-E097FC30F1A2}">
+					<ChildrenList>
+						<Action Name="" ID="{A49DDA90-CB80-4BC9-8146-B2140F66913D}" ShortID="350461607">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH02 copy 5" ID="{D4D42DE2-97A0-4693-A574-63AFB4526186}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH01_copy_5" ID="{2351F484-0943-479E-8A6D-536AD74033BC}">
+					<ChildrenList>
+						<Action Name="" ID="{669974CF-2135-4958-91FC-2956AA519C68}" ShortID="161291034">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH01 copy 5" ID="{95ADA4E2-36C1-4CF2-B19F-E869341A7E6A}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH01_copy_4" ID="{BC3B9A41-0956-4966-A459-18759F6E8CE2}">
+					<ChildrenList>
+						<Action Name="" ID="{71A9BEE9-6801-4B0F-B096-8FE1EE89AF91}" ShortID="1050500803">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH01 copy 4" ID="{28B41A9E-3CD1-446A-8EEB-A3F27DAE4623}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH01_copy_6" ID="{96EC7E24-EC0A-4270-A34B-F6F65F5FCDBE}">
+					<ChildrenList>
+						<Action Name="" ID="{3802A049-D74C-456C-942F-161D4030D1FB}" ShortID="991694497">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH01 copy 6" ID="{FAC0E428-FC0B-4203-AA6B-C1C7A2537B80}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wappi_Import_Test_SS01_CH01_copy_7" ID="{D3619ED7-6856-41C4-8703-0FBC298C751A}">
+					<ChildrenList>
+						<Action Name="" ID="{FD76AF3D-E68B-44BA-8030-BE4704F8BD2D}" ShortID="983529023">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wappi_Import_Test_SS01_CH01 copy 7" ID="{3228DE2D-50D8-4762-BD7E-69E3577B6DFB}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
