@@ -137,7 +137,7 @@ class MyComponent(AkComponent):
             self.subscribe(onObjectCreated, WAAPI_URI.ak_wwise_core_object_created, **objCreateSubArgs)
 
         def getExistingAudioInWwise(object):
-            #print("Get a list of the audio files currently in the project")
+            #print("Get a list of the audio files currently in the project, under the selected object")
             arguments = {
                 "from": {"id": [object]},
                 "transform":[
@@ -169,15 +169,12 @@ class MyComponent(AkComponent):
 
         def onParentSelected():
             # subscribe to selection change?
-
             if not MyComponent.parentSelected:
-
                 #print("Method to get the parent to create new object under")
                 success = False
                 parID = None
                 yield getSelectedObject()
                 #print("Selected object is...")
-
                 if MyComponent.Results != None:
                     success = True
                     #print(MyComponent.Results.kwresults['objects'])
@@ -191,14 +188,10 @@ class MyComponent(AkComponent):
                     MyComponent.objParentName = str(MyComponent.parentObject[u"name"])
                     MyComponent.parentSelected = True
 
-                yield getExistingAudioInWwise(str(parID))
-
-                yield createExistingAudioList(MyComponent.WwiseQueryResults)
-
-                yield setupAudioFilePath()
-
-
                 if success:
+                    yield getExistingAudioInWwise(str(parID))
+                    yield createExistingAudioList(MyComponent.WwiseQueryResults)
+                    yield setupAudioFilePath()
                     count = 0
                     for file in MyComponent.ImportAudioFileList:
                         #print(file)
