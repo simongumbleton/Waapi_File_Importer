@@ -1,0 +1,69 @@
+missing module named fcntl - imported by tempfile, subprocess, trollius.unix_events
+missing module named readline - imported by cmd, pdb
+missing module named org - imported by copy
+missing module named 'org.python' - imported by pickle, xml.sax
+missing module named _sysconfigdata - imported by distutils.sysconfig, sysconfig
+missing module named grp - imported by shutil, tarfile
+missing module named pwd - imported by posixpath, getpass, shutil, tarfile
+missing module named 'multiprocessing.popen_fork' - imported by c:\python27\lib\site-packages\PyInstaller\loader\rthooks\pyi_rth_multiprocessing.py
+missing module named 'multiprocessing.popen_spawn_win32' - imported by c:\python27\lib\site-packages\PyInstaller\loader\rthooks\pyi_rth_multiprocessing.py
+missing module named 'multiprocessing.spawn' - imported by c:\python27\lib\site-packages\PyInstaller\loader\rthooks\pyi_rth_multiprocessing.py
+missing module named _dummy_threading - imported by dummy_threading
+missing module named _scproxy - imported by urllib, future.backports.urllib.request
+missing module named EasyDialogs - imported by getpass
+missing module named termios - imported by getpass
+missing module named SOCKS - imported by ftplib
+missing module named rourl2path - imported by urllib
+missing module named 'java.lang' - imported by platform, xml.sax._exceptions
+missing module named _xmlplus - imported by xml
+missing module named _xmlrpclib - imported by xmlrpclib
+missing module named ubjson - imported by autobahn.wamp.serializer
+missing module named cbor - imported by autobahn.wamp.serializer
+missing module named umsgpack - imported by autobahn.wamp.serializer
+missing module named 'six.moves.urllib' - imported by 'six.moves.urllib'
+runtime module named six.moves - imported by autobahn.websocket.util, autobahn.websocket.protocol
+missing module named snappy - imported by autobahn.websocket.compress, autobahn.websocket.compress_snappy
+missing module named 'wsaccel.xormask' - imported by autobahn.websocket.xormasker
+missing module named wsaccel - imported by autobahn.websocket.utf8validator
+missing module named asyncio - imported by trollius.events, txaio.aio, autobahn.asyncio.websocket, autobahn.asyncio.wamp, autobahn.asyncio.rawsocket
+missing module named 'twisted.python' - imported by txaio.tx
+missing module named 'zope.interface' - imported by txaio.tx
+missing module named 'twisted.logger' - imported by txaio.tx
+missing module named zope - imported by txaio.tx
+missing module named 'twisted.internet' - imported by txaio.tx
+missing module named twisted - imported by txaio.tx
+missing module named vms_lib - imported by platform
+missing module named java - imported by platform
+missing module named 'Carbon.File' - imported by plistlib
+missing module named 'Carbon.Files' - imported by plistlib
+missing module named Carbon - imported by plistlib
+missing module named MacOS - imported by platform
+missing module named macresource - imported by MacOS
+missing module named gestalt - imported by platform
+missing module named winreg.HKEY_LOCAL_MACHINE - imported by winreg, platform
+missing module named winreg.CloseKey - imported by winreg, platform
+missing module named winreg.QueryValueEx - imported by winreg, platform
+missing module named winreg.OpenKeyEx - imported by winreg, platform
+missing module named _winapi - imported by trollius.py33_winapi
+missing module named 'dbm.ndbm' - imported by future.moves.dbm.ndbm
+missing module named gdbm - imported by anydbm, future.moves.dbm.gnu
+missing module named 'dbm.gnu' - imported by future.moves.dbm.gnu
+missing module named 'dbm.dumb' - imported by future.moves.dbm.dumb
+missing module named bsddb3 - imported by bsddb
+missing module named _pybsddb - imported by bsddb, bsddb.db
+missing module named dbm - imported by future.standard_library, future.moves.dbm, whichdb, anydbm, future.moves.dbm.ndbm
+missing module named 'test.support' - imported by future.moves.test.support
+missing module named _datetime - imported by future.backports.datetime
+missing module named reprlib.recursive_repr - imported by reprlib, future.backports.misc
+missing module named _thread.get_ident - imported by _thread, future.backports.misc
+missing module named ordereddict - imported by trollius.base_events
+missing module named 'collections.abc' - imported by trollius.coroutines
+missing module named trollius.DefaultEventLoopPolicy - imported by trollius, trollius.events
+missing module named riscosenviron - imported by os
+missing module named riscospath - imported by os
+missing module named riscos - imported by os
+missing module named ce - imported by os
+missing module named _emx_link - imported by os
+missing module named os2 - imported by os
+missing module named posix - imported by os
+missing module named resource - imported by posix
