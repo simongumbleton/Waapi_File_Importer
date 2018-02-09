@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{62CACA21-8FF3-411E-8AA0-1A628F5C7CCC}" SchemaVersion="80">
+<WwiseDocument Type="WorkUnit" ID="{62CACA21-8FF3-411E-8AA0-1A628F5C7CCC}" SchemaVersion="85">
 	<Events>
 		<WorkUnit Name="Section" ID="{62CACA21-8FF3-411E-8AA0-1A628F5C7CCC}" PersistMode="Standalone"/>
 	</Events>

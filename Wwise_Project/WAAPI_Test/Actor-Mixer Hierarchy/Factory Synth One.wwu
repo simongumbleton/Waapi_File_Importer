@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{D9329DB3-E4D7-45AA-BD40-6EB28C6C4D39}" SchemaVersion="80">
+<WwiseDocument Type="WorkUnit" ID="{D9329DB3-E4D7-45AA-BD40-6EB28C6C4D39}" SchemaVersion="85">
 	<AudioObjects>
 		<WorkUnit Name="Factory Synth One" ID="{D9329DB3-E4D7-45AA-BD40-6EB28C6C4D39}" PersistMode="Standalone">
 			<ChildrenList>
@@ -1296,7 +1296,7 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 									<PropertyList>
 										<Property Name="BaseFrequency" Type="Real32" Value="440"/>
-										<Property Name="FmAmount" Type="Real32" Value="55.8">
+										<Property Name="FmAmount" Type="Real32">
 											<RTPCList>
 												<RTPC Name="" ID="{96801B48-EB21-47C8-9392-08A69906EDCB}" ShortID="135288928">
 													<ReferenceList>
@@ -1459,7 +1459,7 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 									<PropertyList>
 										<Property Name="BaseFrequency" Type="Real32" Value="440"/>
-										<Property Name="FmAmount" Type="Real32" Value="61.1">
+										<Property Name="FmAmount" Type="Real32">
 											<RTPCList>
 												<RTPC Name="" ID="{FF52BAA9-7720-4DF1-86EF-D2CEFF958355}" ShortID="950210786">
 													<ReferenceList>
@@ -2601,7 +2601,7 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 									<PropertyList>
 										<Property Name="BaseFrequency" Type="Real32" Value="500"/>
-										<Property Name="FmAmount" Type="Real32" Value="30">
+										<Property Name="FmAmount" Type="Real32">
 											<RTPCList>
 												<RTPC Name="" ID="{73669332-350B-4DD2-815A-7544649A94A1}" ShortID="673539784">
 													<ReferenceList>
@@ -2776,7 +2776,7 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 									<PropertyList>
 										<Property Name="BaseFrequency" Type="Real32" Value="500"/>
-										<Property Name="FmAmount" Type="Real32" Value="44.7">
+										<Property Name="FmAmount" Type="Real32">
 											<RTPCList>
 												<RTPC Name="" ID="{DB4FD978-47EC-46C0-94BF-79CAF5C0F28D}" ShortID="532830855">
 													<ReferenceList>
@@ -2999,7 +2999,7 @@ Content provided by Vincent Gagnon
 												</RTPC>
 											</RTPCList>
 										</Property>
-										<Property Name="FmAmount" Type="Real32" Value="52.6">
+										<Property Name="FmAmount" Type="Real32">
 											<RTPCList>
 												<RTPC Name="" ID="{A14B77D8-21E6-4DAE-891E-95A180DD373F}" ShortID="1042540471">
 													<ReferenceList>
@@ -3113,7 +3113,7 @@ Content provided by Vincent Gagnon
 											</RTPCList>
 										</Property>
 										<Property Name="Osc1Level" Type="Real32" Value="0"/>
-										<Property Name="Osc1Pwm" Type="Real32">
+										<Property Name="Osc1Pwm" Type="Real32" Value="0">
 											<RTPCList>
 												<RTPC Name="" ID="{F6B56634-E05A-40BB-B75E-9D86D318AFA4}" ShortID="521666942">
 													<ReferenceList>
@@ -3227,7 +3227,7 @@ Content provided by Vincent Gagnon
 										</Property>
 										<Property Name="Osc1Waveform" Type="int32" Value="1"/>
 										<Property Name="Osc2Level" Type="Real32" Value="-5"/>
-										<Property Name="Osc2Pwm" Type="Real32" Value="44">
+										<Property Name="Osc2Pwm" Type="Real32" Value="0">
 											<RTPCList>
 												<RTPC Name="" ID="{FCED91F7-D9E0-4BB5-A597-799051CBE097}" ShortID="344699780">
 													<ReferenceList>
@@ -3413,7 +3413,7 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 									<PropertyList>
 										<Property Name="BaseFrequency" Type="Real32" Value="500"/>
-										<Property Name="FmAmount" Type="Real32" Value="56.8">
+										<Property Name="FmAmount" Type="Real32">
 											<RTPCList>
 												<RTPC Name="" ID="{4B100D08-4F7C-40FB-A0DE-68A119DCDA13}" ShortID="672206646">
 													<ReferenceList>
@@ -6805,7 +6805,7 @@ Content provided by Vincent Gagnon
 											</RTPCList>
 										</Property>
 										<Property Name="Osc1Level" Type="Real32" Value="-3"/>
-										<Property Name="Osc1Pwm" Type="Real32" Value="26.1">
+										<Property Name="Osc1Pwm" Type="Real32" Value="0">
 											<RTPCList>
 												<RTPC Name="" ID="{502FD05C-DC18-4E66-810E-5BB3777BFA06}" ShortID="515512878">
 													<ReferenceList>
@@ -7349,7 +7349,7 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 									<PropertyList>
 										<Property Name="BaseFrequency" Type="Real32" Value="500"/>
-										<Property Name="FmAmount" Type="Real32" Value="31.1">
+										<Property Name="FmAmount" Type="Real32">
 											<RTPCList>
 												<RTPC Name="" ID="{68589283-7CE4-4F63-853A-3AB402BE45F8}" ShortID="58522366">
 													<ReferenceList>
@@ -8365,7 +8365,7 @@ Content provided by Vincent Gagnon
 										<Property Name="FmAmount" Type="Real32" Value="4.2"/>
 										<Property Name="FrequencyMode" Type="int32" Value="1"/>
 										<Property Name="Osc1Level" Type="Real32" Value="0"/>
-										<Property Name="Osc1Pwm" Type="Real32" Value="77.1">
+										<Property Name="Osc1Pwm" Type="Real32" Value="0">
 											<RTPCList>
 												<RTPC Name="" ID="{9CC39C63-CC5E-4BBD-AB8B-C4FC805B51EF}" ShortID="119381047">
 													<ReferenceList>
@@ -8405,7 +8405,7 @@ Content provided by Vincent Gagnon
 										</Property>
 										<Property Name="Osc1Waveform" Type="int32" Value="2"/>
 										<Property Name="Osc2Level" Type="Real32" Value="-2"/>
-										<Property Name="Osc2Pwm" Type="Real32" Value="47">
+										<Property Name="Osc2Pwm" Type="Real32" Value="0">
 											<RTPCList>
 												<RTPC Name="" ID="{76D38FE1-BA61-4E40-891E-E3DCA1E454A8}" ShortID="78629993">
 													<ReferenceList>
@@ -9113,7 +9113,7 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 									<PropertyList>
 										<Property Name="BaseFrequency" Type="Real32" Value="500"/>
-										<Property Name="FmAmount" Type="Real32" Value="38.4">
+										<Property Name="FmAmount" Type="Real32">
 											<RTPCList>
 												<RTPC Name="" ID="{21B57A86-7FD3-4E56-95E3-AB06F70AFFAC}" ShortID="228204996">
 													<ReferenceList>
@@ -9483,7 +9483,7 @@ Content provided by Vincent Gagnon
 										<Property Name="BaseFrequency" Type="Real32" Value="500"/>
 										<Property Name="FrequencyMode" Type="int32" Value="1"/>
 										<Property Name="Osc1Level" Type="Real32" Value="0"/>
-										<Property Name="Osc1Pwm" Type="Real32" Value="77.1">
+										<Property Name="Osc1Pwm" Type="Real32" Value="0">
 											<RTPCList>
 												<RTPC Name="" ID="{7D3218BD-290F-4C54-A296-9C0634512317}" ShortID="562724848">
 													<ReferenceList>
@@ -10066,7 +10066,7 @@ Content provided by Vincent Gagnon
 										<Property Name="NoiseLevel" Type="Real32" Value="-30"/>
 										<Property Name="NoiseShape" Type="int32" Value="1"/>
 										<Property Name="Osc1Level" Type="Real32" Value="-4"/>
-										<Property Name="Osc1Pwm" Type="Real32" Value="56.1">
+										<Property Name="Osc1Pwm" Type="Real32" Value="0">
 											<RTPCList>
 												<RTPC Name="" ID="{BFA03623-318C-44B5-84AE-FD2935A3733D}" ShortID="398834926">
 													<ReferenceList>

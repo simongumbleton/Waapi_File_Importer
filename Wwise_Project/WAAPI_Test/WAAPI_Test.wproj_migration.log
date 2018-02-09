@@ -1,0 +1,25 @@
+Project migration to XML Schema (XSD) version 81 is completed.
+Warning: Effects on Auxiliary Busses will no longer ignore dry levels. Effects that used to ignore dry levels had their dry levels muted by the migration if they were placed on Auxiliary Busses to keep the project's previous behavior. There may be differences in behavior if the same Effect is applied to an Auxiliary Bus and another object. Please refer to the migration notes for more information.
+Project migration to XML Schema (XSD) version 82 is completed.
+Project migration to XML Schema (XSD) version 83 is completed.
+Project migration to XML Schema (XSD) version 84 is completed.
+Project migration to XML Schema (XSD) version 85 is completed.
+The .xml file for plugin 'Auro Headphone' is missing or is invalid.
+\Effects\Factory Auro Headphone\Dry_AHP uses the audio effect plugin 'Auro Headphone', which is not installed.
+The .xml file for plugin 'Auro Headphone' is missing or is invalid.
+\Effects\Factory Auro Headphone\Big_Church_AHP uses the audio effect plugin 'Auro Headphone', which is not installed.
+The .xml file for plugin 'Auro Headphone' is missing or is invalid.
+\Effects\Factory Auro Headphone\Church_AHP uses the audio effect plugin 'Auro Headphone', which is not installed.
+The .xml file for plugin 'Auro Headphone' is missing or is invalid.
+\Effects\Factory Auro Headphone\Large_Hall_AHP uses the audio effect plugin 'Auro Headphone', which is not installed.
+The .xml file for plugin 'Auro Headphone' is missing or is invalid.
+\Effects\Factory Auro Headphone\Big_Room_AHP uses the audio effect plugin 'Auro Headphone', which is not installed.
+The .xml file for plugin 'Auro Headphone' is missing or is invalid.
+\Effects\Factory Auro Headphone\Medium_Room_AHP uses the audio effect plugin 'Auro Headphone', which is not installed.
+The .xml file for plugin 'Auro Headphone' is missing or is invalid.
+\Effects\Factory Auro Headphone\Small_Room_AHP uses the audio effect plugin 'Auro Headphone', which is not installed.
+The .xml file for plugin 'Auro Headphone' is missing or is invalid.
+\Effects\Factory Auro Headphone\Smal_Reflection_Room_AHP uses the audio effect plugin 'Auro Headphone', which is not installed.
+The .xml file for plugin 'Auro Headphone' is missing or is invalid.
+\Effects\Factory Auro Headphone\Small_Standard_Room_AHP uses the audio effect plugin 'Auro Headphone', which is not installed.
+Some new object properties have been added or obsolete properties deleted. The project file was updated. These changes will not have an impact on your project.

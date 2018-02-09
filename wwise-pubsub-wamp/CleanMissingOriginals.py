@@ -15,14 +15,20 @@ from ak_autobahn import AkComponent
 
 from waapi import WAAPI_URI
 
-Results = {}
-parentObject = {}
-WwiseQueryResults = {}
-WwiseAudioMissingOriginals = {}
-WwiseEventsToDelete = []
+
+
 
 
 class MyComponent(AkComponent):
+    Results = {}
+    parentObject = {}
+
+    WwiseQueryResults = {}
+    WwiseAudioMissingOriginals = {}
+    WwiseEventsToDelete = []
+    parentID = ""
+    Input_ParentObjectName = ""
+    ActorMixerPath = "\Actor-Mixer Hierarchy\SectionFolder"
 
 
     def onJoin(self, details):
@@ -38,7 +44,7 @@ class MyComponent(AkComponent):
             self.call(WAAPI_URI.ak_wwise_core_undo_cancelgroup)
 
         def endUndoGroup():
-            undoArgs = {"displayName": "Script Auto Importer"}
+            undoArgs = {"displayName": "Script Auto Cleaning"}
             self.call(WAAPI_URI.ak_wwise_core_undo_endgroup, {}, **undoArgs)
 
         def saveWwiseProject():
@@ -97,7 +103,21 @@ class MyComponent(AkComponent):
             except Exception as ex:
                 print("call error: {}".format(ex))
             else:
-                MyComponent.WwiseEventsToDelete.append(res.kwresults["return"])
+                MyComponent.WwiseEventsToDelete.append(res.kwresults["return"][0])
+
+        def getIDofParent(ActorMixerPath,parentObject):
+            arguments = {
+                "from": {"path": [ActorMixerPath + parentObject]},
+                "options": {
+                    "return": ["id", "name", "path"]
+                }
+            }
+            try:
+                res = yield From(self.call(WAAPI_URI.ak_wwise_core_object_get, **arguments))
+            except Exception as ex:
+                print("call error: {}".format(ex))
+            else:
+                MyComponent.parentID = (res.kwresults["return"][0]["id"])
 
         def createListOfBrokenAudio(WwiseQueryResults):
             #print("creating a list of existing wwise sounds")
@@ -109,28 +129,22 @@ class MyComponent(AkComponent):
                     list.append(i)
             MyComponent.WwiseAudioMissingOriginals = list
 
-        def onParentSelected():
-            yield getSelectedObject()
-            obj = MyComponent.Results.kwresults['objects']
-            # print(obj[0]['id'])
-            MyComponent.parentObject = obj[0]
-            # print("Selected object name is...{}".format(MyComponent.parentObject[u"name"]))
-            parID = str(MyComponent.parentObject["id"])
-
-            yield getAudioFilesInWwise(parID)
-            createListOfBrokenAudio(MyComponent.WwiseQueryResults)
-
-            for x in MyComponent.WwiseAudioMissingOriginals:
-                name = x["name"]
-                yield getWwiseEventByName(name)
-
-            print("Stop")
+        def deleteWwiseObject(object):
+            args = {"object":object}
+            try:
+                yield self.call(WAAPI_URI.ak_wwise_core_object_delete, {}, **args)
+            except Exception as ex:
+                print("call error: {}".format(ex))
 
 
-
+        def setupBatchFileSysArgs():
+            #print("Parent Object is "+sys.argv[1])
+            MyComponent.Input_ParentObjectName = str(sys.argv[1])
+            # print("This is the name of the script", sys.argv[0])
+            # print("This is the number of arguments", len(sys.argv))
+            # print("The arguments are...", str(sys.argv))
 
         ###### End of function definitions  #########
-
 
 
         ###### Main logic flow #########
@@ -142,14 +156,33 @@ class MyComponent(AkComponent):
             # Call was successful, displaying information from the payload.
             print("Hello {} {}".format(res.kwresults['displayName'], res.kwresults['version']['displayName']))
 
+        #setupSubscriptions()
 
-        setupSubscriptions()
+        if (len(sys.argv) > 1):     #If the sys args are longer than the default 1 (script name)
+            setupBatchFileSysArgs()
+
+        if MyComponent.Input_ParentObjectName == "":
+            exit()
+
+        beginUndoGroup()
+
+        yield getIDofParent(MyComponent.ActorMixerPath,MyComponent.Input_ParentObjectName)
+        yield getAudioFilesInWwise(MyComponent.parentID)
+        createListOfBrokenAudio(MyComponent.WwiseQueryResults)
+
+        for x in MyComponent.WwiseAudioMissingOriginals:
+            name = str(x["name"])
+            yield getWwiseEventByName(name)
+            yield deleteWwiseObject(x["id"])
+
+        for x in MyComponent.WwiseEventsToDelete:
+            id = str(x["id"])
+            yield deleteWwiseObject(id)
 
 
+        endUndoGroup()
 
-
-
-        #exit()
+        exit()
 
 
     def onDisconnect(self):
