@@ -45,6 +45,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{02171004-8AD8-4CAC-AF1C-56066CB33267}">
+					<ChildrenList>
+						<Action Name="" ID="{7D3275BC-FF6C-447B-A924-8FFF97BD943F}" ShortID="1060512108">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{912E1BD1-6720-4A72-BBD8-A3EF51A20C42}" WorkUnitID="{9B182BF6-2167-48C6-A351-9E9C328470D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

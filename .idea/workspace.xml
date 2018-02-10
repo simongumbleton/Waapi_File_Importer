@@ -3,7 +3,53 @@
   <component name="ChangeListManager">
     <list default="true" id="697e822b-057f-49f5-9d7e-69bebc5c7b42" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Actor-Mixer Hierarchy/SectionFolder/SectionFolder.wwu" afterPath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Actor-Mixer Hierarchy/SectionFolder/SectionFolder.wwu" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/.cache/PS4/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy 2_1C9C67B2.wem" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/.cache/PS4/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy 3_1C9C67B2.wem" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/.cache/PS4/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy 4_1C9C67B2.wem" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/.cache/PS4/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy 5_1C9C67B2.wem" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/.cache/PS4/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy 6_1C9C67B2.wem" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/.cache/PS4/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy 7_1C9C67B2.wem" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/.cache/PS4/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy 8_1C9C67B2.wem" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/.cache/PS4/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy_1C9C67B2.wem" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/.cache/PS4/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01_1C9C67B2.wem" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/.cache/PS4/Voices/English(US)/Section01/Subsection01/Character01/Wwise.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/.cache/PS4/Voices/English(US)/Section01/Subsection02/Character01/Wappi_Import_Test_SS02_CH01 copy 2_1C9C67B2.wem" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/.cache/PS4/Voices/English(US)/Section01/Subsection02/Character01/Wappi_Import_Test_SS02_CH01 copy_1C9C67B2.wem" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/.cache/PS4/Voices/English(US)/Section01/Subsection02/Character01/Wappi_Import_Test_SS02_CH01_1C9C67B2.wem" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/.cache/PS4/Voices/English(US)/Section01/Subsection02/Character01/Wwise.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Actor-Mixer Hierarchy/SectionFolder/SectionFolder.wwu" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Events/SectionFolder/SectionFolder.wwu" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy 2.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy 3.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy 4.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy 5.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy 6.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy 7.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy 8.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01 copy.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character01/Wappi_Import_Test_SS01_CH01.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character02/Wappi_Import_Test_SS01_CH02 copy 2.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character02/Wappi_Import_Test_SS01_CH02 copy 3.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character02/Wappi_Import_Test_SS01_CH02 copy 4.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character02/Wappi_Import_Test_SS01_CH02 copy 5.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character02/Wappi_Import_Test_SS01_CH02 copy.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character02/Wappi_Import_Test_SS01_CH02.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character03/Wappi_Import_Test_SS01_CH03 copy 2.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character03/Wappi_Import_Test_SS01_CH03 copy 3.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character03/Wappi_Import_Test_SS01_CH03 copy 4.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character03/Wappi_Import_Test_SS01_CH03 copy 5.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character03/Wappi_Import_Test_SS01_CH03 copy.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection01/Character03/Wappi_Import_Test_SS01_CH03.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection02/Character01/Wappi_Import_Test_SS02_CH01 copy 2.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection02/Character01/Wappi_Import_Test_SS02_CH01 copy.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection02/Character01/Wappi_Import_Test_SS02_CH01.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection02/Character02/Wappi_Import_Test_SS02_CH02 copy 2.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection02/Character02/Wappi_Import_Test_SS02_CH02 copy 3.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection02/Character02/Wappi_Import_Test_SS02_CH02 copy.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/Section01/Subsection02/Character02/Wappi_Import_Test_SS02_CH02.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/WAAPI/TestImports/Subsection02/Character01/Wappi_Import_Test_SS02_CH01.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(US)/WAAPI/TestImports/Subsection02/Character02/Wappi_Import_Test_SS02_CH02.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/WAAPI_Test.wproj" afterPath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/WAAPI_Test.wproj" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,32 +60,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ImportNewAudioFilesAsDialogue_VR2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CleanMissingOriginals.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/CleanMissingOriginals.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1125">
+              <caret line="90" column="12" lean-forward="false" selection-start-line="90" selection-start-column="12" selection-end-line="104" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImportNewAudioFilesAsDialogue_VR2_automated.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2_automated.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="276" column="49" lean-forward="false" selection-start-line="276" selection-start-column="49" selection-end-line="276" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImportNewAudioFilesAsDialogue_VR2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4758">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ak_autobahn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ak_autobahn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3840">
-              <caret line="256" column="0" lean-forward="false" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="2310">
+              <caret line="154" column="71" lean-forward="false" selection-start-line="154" selection-start-column="48" selection-end-line="154" selection-end-column="71" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,11 +100,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>objParID</find>
-      <find>tim</find>
-      <find>getSelectedObject</find>
-      <find>return</find>
-      <find>INPUT_ObjectType</find>
       <find>setupObjPropertyArgs</find>
       <find>createWwiseObject</find>
       <find>setupCreateArgs</find>
@@ -60,10 +107,29 @@
       <find>ak.wwise.invalid_property</find>
       <find>setupImportArgs</find>
       <find>importAudioFiles</find>
-      <find>eventWorkUnit</find>
       <find>objType</find>
       <find>print</find>
       <find>deleteWwiseObject</find>
+      <find>dele</find>
+      <find>Input_ParentObjectName</find>
+      <find>ActorMixerPath</find>
+      <find>OPTION_CreateEvent</find>
+      <find>INPUT_ObjectType</find>
+      <find>INPUT_ObjectName</find>
+      <find>OPTION_IsStreaming</find>
+      <find>INPUT_ImportLanguage</find>
+      <find>INPUT_originalsPath</find>
+      <find>parentSelected</find>
+      <find>onObjectCreated</find>
+      <find>actor</find>
+      <find>getExistingAudioInWwise</find>
+      <find>parentObjectPath</find>
+      <find>SetupImportParentObject</find>
+      <find>eventWorkUnit</find>
+      <find>objParentName</find>
+      <find>INPUT_SectionName</find>
+      <find>importlan</find>
+      <find>return</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -76,13 +142,16 @@
         <option value="$PROJECT_DIR$/wwise-pubsub-wamp/CreateNewObjects_WithImport_VR2.py" />
         <option value="$PROJECT_DIR$/wwise-pubsub-wamp/ImportAudioFilesAsDialogue_VR2.py" />
         <option value="$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py" />
+        <option value="$PROJECT_DIR$/wwise-pubsub-wamp/SetRTPCs_Test.py" />
+        <option value="$PROJECT_DIR$/wwise-pubsub-wamp/CleanMissingOriginals.py" />
+        <option value="$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2_automated.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="927" />
-    <option name="height" value="727" />
+    <option name="y" value="23" />
+    <option name="width" value="849" />
+    <option name="height" value="762" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -120,6 +189,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,7 +206,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -151,8 +220,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ImportNewAudioFilesAsDialogue_VR2">
-    <configuration name="CreateNewObjects_WithImport_VR2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.ImportNewAudioFilesAsDialogue_VR2_automated">
+    <configuration name="CleanMissingOriginals" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -164,7 +233,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Waapi_File_Importer" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wwise-pubsub-wamp/CreateNewObjects_WithImport_VR2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wwise-pubsub-wamp/CleanMissingOriginals.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -206,16 +275,56 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Python.CreateNewObjects_WithImport_VR2" />
-      <item index="1" class="java.lang.String" itemvalue="Python.ImportAudioFilesAsDialogue_VR2" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ImportNewAudioFilesAsDialogue_VR2" />
+    <configuration name="ImportNewAudioFilesAsDialogue_VR2_automated" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wwise-pubsub-wamp" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Waapi_File_Importer" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2_automated.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="SetRTPCs_Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wwise-pubsub-wamp" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Waapi_File_Importer" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wwise-pubsub-wamp/SetRTPCs_Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.ImportAudioFilesAsDialogue_VR2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ImportNewAudioFilesAsDialogue_VR2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.SetRTPCs_Test" />
+      <item index="3" class="java.lang.String" itemvalue="Python.CleanMissingOriginals" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ImportNewAudioFilesAsDialogue_VR2_automated" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.ImportNewAudioFilesAsDialogue_VR2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ImportAudioFilesAsDialogue_VR2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.CreateNewObjects_WithImport_VR2" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.ImportNewAudioFilesAsDialogue_VR2_automated" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ImportNewAudioFilesAsDialogue_VR2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ImportAudioFilesAsDialogue_VR2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.CleanMissingOriginals" />
+        <item index="4" class="java.lang.String" itemvalue="Python.SetRTPCs_Test" />
       </list>
     </recent_temporary>
   </component>
@@ -236,24 +345,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="927" height="727" extended-state="0" />
+    <frame x="0" y="23" width="849" height="762" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23966943" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3815029" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2519084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27586207" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3541985" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35232383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -289,25 +398,110 @@
           <line>155</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/wwise-pubsub-wamp/SetRTPCs_Test.py</url>
+          <line>129</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py</url>
+          <line>226</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py</url>
+          <line>227</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py</url>
+          <line>363</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="68" />
+      <option name="time" value="118" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="150" column="33" lean-forward="false" selection-start-line="150" selection-start-column="22" selection-end-line="150" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/SetRTPCs_Test.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk/Tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16935">
+          <caret line="1129" column="0" lean-forward="false" selection-start-line="1129" selection-start-column="0" selection-end-line="1129" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3840">
-          <caret line="256" column="0" lean-forward="false" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="3870">
+          <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="150" column="33" lean-forward="false" selection-start-line="150" selection-start-column="22" selection-end-line="150" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/SetRTPCs_Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/CreateNewObjects_WithImport_VR2_SingleObjectBackup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/SetRTPCs_Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -315,7 +509,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ak_autobahn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -323,7 +526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3840">
           <caret line="256" column="0" lean-forward="false" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -331,7 +533,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -339,7 +543,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3840">
           <caret line="256" column="0" lean-forward="false" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3840">
+          <caret line="256" column="0" lean-forward="false" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3840">
+          <caret line="256" column="0" lean-forward="false" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -531,34 +768,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportAudioFilesAsDialogue_VR2.py">
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ak_autobahn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+        <state relative-caret-position="578">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/CreateNewObjects_WithImport_VR2_SingleObjectBackup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.spec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/SetRTPCs_Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="133" column="37" lean-forward="false" selection-start-line="133" selection-start-column="37" selection-end-line="133" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3840">
-          <caret line="256" column="0" lean-forward="false" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="4395">
+          <caret line="293" column="0" lean-forward="false" selection-start-line="293" selection-start-column="0" selection-end-line="293" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ak_autobahn.py">
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportAudioFilesAsDialogue_VR2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="111">
+          <caret line="387" column="8" lean-forward="true" selection-start-line="387" selection-start-column="8" selection-end-line="393" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk/Tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16935">
+          <caret line="1129" column="0" lean-forward="false" selection-start-line="1129" selection-start-column="0" selection-end-line="1129" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/CleanMissingOriginals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="90" column="12" lean-forward="false" selection-start-line="90" selection-start-column="12" selection-end-line="104" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4758">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="2310">
+          <caret line="154" column="71" lean-forward="false" selection-start-line="154" selection-start-column="48" selection-end-line="154" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2_automated.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="276" column="49" lean-forward="false" selection-start-line="276" selection-start-column="49" selection-end-line="276" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

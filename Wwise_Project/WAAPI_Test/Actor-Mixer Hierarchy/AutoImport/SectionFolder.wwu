@@ -28,7 +28,7 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="Wappi_Import_Test_SS02_CH02" ID="{64EED4C6-4D96-4B16-B821-C7D4505310F6}" ShortID="560206735">
-							<Language>English(US)</Language>
+							<Language>English(UK)</Language>
 							<AudioFile>WAAPI\TestImports\Subsection02\Character02\Wappi_Import_Test_SS02_CH02.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
@@ -61,7 +61,7 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="Wappi_Import_Test_SS02_CH01" ID="{F264F17B-887E-40B8-9272-F876689D4655}" ShortID="654042979">
-							<Language>English(US)</Language>
+							<Language>English(UK)</Language>
 							<AudioFile>WAAPI\TestImports\Subsection02\Character01\Wappi_Import_Test_SS02_CH01.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
@@ -94,7 +94,7 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="Wappi_Import_Test_SS01_CH02" ID="{BC1C9807-F39E-4DF6-9668-DC4DEA043CAC}" ShortID="699155229">
-							<Language>English(US)</Language>
+							<Language>English(UK)</Language>
 							<AudioFile>WAAPI\TestImports\Subsection01\Character02\Wappi_Import_Test_SS01_CH02.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
@@ -102,6 +102,51 @@
 						<ActiveSource Name="Wappi_Import_Test_SS01_CH02" ID="{BC1C9807-F39E-4DF6-9668-DC4DEA043CAC}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<ActorMixer Name="Tony" ID="{B69F3C88-5631-4BA2-92A0-C25FF9E4ADF5}" ShortID="144980449">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7BABEEAC-4342-4DAC-BC1E-F192A4A24992}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{912E1BD1-6720-4A72-BBD8-A3EF51A20C42}" ShortID="657822191">
+							<Comment>This object was auto imported</Comment>
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7BABEEAC-4342-4DAC-BC1E-F192A4A24992}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{929BD8C0-5871-4B34-97D4-EDE093791DF8}" ShortID="266822152">
+									<Language>English(UK)</Language>
+									<AudioFile>ArtGalleryMission\DayLobby\Tony\TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{929BD8C0-5871-4B34-97D4-EDE093791DF8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

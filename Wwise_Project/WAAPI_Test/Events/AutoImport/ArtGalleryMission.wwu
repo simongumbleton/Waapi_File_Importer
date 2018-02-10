@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C2C516D3-2803-4DAF-800D-C9A14C979127}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="ArtGalleryMission" ID="{C2C516D3-2803-4DAF-800D-C9A14C979127}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{FC3DE6DE-5B24-4D72-BA02-96ABB4A4D810}">
+					<ChildrenList>
+						<Action Name="" ID="{29CEEFFC-DA50-400B-B22B-70AF0420E4B4}" ShortID="331855828">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{68974711-C783-463D-A5F0-D2365B2CB195}" WorkUnitID="{CF216BE3-33E9-4440-B547-E44FC9564B86}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

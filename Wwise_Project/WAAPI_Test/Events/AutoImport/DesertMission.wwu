@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{20BC97F5-FB88-43A7-952C-8711ECEE4392}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="DesertMission" ID="{20BC97F5-FB88-43A7-952C-8711ECEE4392}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="TEST_VO_DesertMission_Ryan" ID="{C3E706E4-1C3D-45D2-A290-C75AFAEDE1EE}">
+					<ChildrenList>
+						<Action Name="" ID="{3ADA00BA-1107-4AC4-8F0E-B178E45EA96F}" ShortID="926116049">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TEST_VO_DesertMission_Ryan" ID="{2C96DF34-A0E4-4924-8248-210BB32CC751}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TEST_VO_DesertMission_Ryan_01" ID="{1BDFF6DE-8530-4175-BEC3-F293B28FF431}">
+					<ChildrenList>
+						<Action Name="" ID="{E6E36F64-A6B5-42AF-85D8-56B0C64EF178}" ShortID="222405130">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TEST_VO_DesertMission_Ryan_01" ID="{624E6DC0-EF8D-4FAA-8EC0-3399D5F7962C}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

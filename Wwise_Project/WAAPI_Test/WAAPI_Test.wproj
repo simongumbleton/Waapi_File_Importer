@@ -7,12 +7,13 @@
 				<Platform Name="Windows" ReferencePlatform="Windows" ID="{D062B204-45FF-441F-A93D-38E3C4773E92}"/>
 			</Platforms>
 			<LanguageList>
-				<Language Name="English(US)" ID="{35A64E0C-CEDF-4217-B1CE-8EA6CD430290}"/>
+				<Language Name="English(UK)" ID="{35A64E0C-CEDF-4217-B1CE-8EA6CD430290}"/>
 				<Language Name="External" ID="{209FF75C-094C-45B7-9814-2A5B3057C290}"/>
 				<Language Name="Mixed" ID="{2E5C6F02-2D86-482C-A99B-3221DC5CA8A0}"/>
 				<Language Name="SFX" ID="{A2BFE519-A0BD-4E28-83B2-0A9F41A391FF}"/>
 			</LanguageList>
 			<PropertyList>
+				<Property Name="DefaultLanguage" Type="string" Value="English(UK)"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="PS4"></Value>
@@ -11299,8 +11300,8 @@
 				<PhysicalFolder Path="Actor-Mixer Hierarchy">
 					<WorkUnit Name="Actor-Mixer Hierarchy" ID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" PersistMode="Standalone"/>
 				</PhysicalFolder>
-				<PhysicalFolder Path="Actor-Mixer Hierarchy\SectionFolder">
-					<WorkUnit Name="SectionFolder" ID="{0538E049-2066-4C57-B820-96E021958605}" PersistMode="Standalone"/>
+				<PhysicalFolder Path="Actor-Mixer Hierarchy\AutoImport">
+					<WorkUnit Name="AutoImport" ID="{0538E049-2066-4C57-B820-96E021958605}" PersistMode="Standalone"/>
 				</PhysicalFolder>
 				<PhysicalFolder Path="Attenuations">
 					<WorkUnit Name="Attenuations" ID="{017BDDA0-1BB1-4CE1-8077-79594EC4585C}" PersistMode="Standalone"/>
@@ -11323,8 +11324,8 @@
 				<PhysicalFolder Path="Events">
 					<WorkUnit Name="Events" ID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" PersistMode="Standalone"/>
 				</PhysicalFolder>
-				<PhysicalFolder Path="Events\SectionFolder">
-					<WorkUnit Name="SectionFolder" ID="{7F92CB4F-E5DA-4964-B2E3-B63B1C2E894C}" PersistMode="Standalone"/>
+				<PhysicalFolder Path="Events\AutoImport">
+					<WorkUnit Name="AutoImport" ID="{7F92CB4F-E5DA-4964-B2E3-B63B1C2E894C}" PersistMode="Standalone"/>
 				</PhysicalFolder>
 				<PhysicalFolder Path="Game Parameters">
 					<WorkUnit Name="Game Parameters" ID="{4025818E-097F-4A72-B692-B8A2E2663DCB}" PersistMode="Standalone"/>
