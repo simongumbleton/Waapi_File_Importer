@@ -27,8 +27,14 @@ class MyComponent(AkComponent):
     WwiseAudioMissingOriginals = {}
     WwiseEventsToDelete = []
     parentID = ""
-    Input_ParentObjectName = ""
-    ActorMixerPath = "\Actor-Mixer Hierarchy\SectionFolder"
+    Input_ParentObjectName = "DesertMission"
+    ActorMixerPath = "\Actor-Mixer Hierarchy"
+
+    ImportAudioFilePath = ""    #full path to root folder for files to import
+    ImportLanguage = "English(UK)" #Default language for Wwise projects, Or SFX
+    pathToOriginalsFromProjectRoot = ["Originals","Voices",ImportLanguage] # Where are the English VO files
+    stepsUpToCommonDirectory = 2    # How many folders up from the script is the shared dir with wwise project
+    DirOfWwiseProjectRoot = ["Wwise_Project","WAAPI_Test"] ## Name/path of wwise project relative to the common directory
 
 
     def onJoin(self, details):
@@ -136,6 +142,36 @@ class MyComponent(AkComponent):
             except Exception as ex:
                 print("call error: {}".format(ex))
 
+        def SetupImportParentObject(objectName):
+            # Setting up the import parent object
+            arguments = {
+                "from": {"path": ["\Actor-Mixer Hierarchy"]},
+                "transform": [
+                    {"select":['descendants']},
+                    {"where": ["name:matches", objectName]}
+                ],
+                "options": {
+                    "return": ["id","type", "name", "path"]
+                }
+            }
+            try:
+                res = yield From(self.call(WAAPI_URI.ak_wwise_core_object_get, **arguments))
+            except Exception as ex:
+                print("call error: {}".format(ex))
+                cancelUndoGroup()
+            else:
+                ID = ""
+                obj = ""
+                path = ""
+                for x in res.kwresults["return"]:
+                    if x["type"] == "WorkUnit":
+                        ID = str(x["id"])
+                        obj = x
+                        path = str(x["path"])
+                MyComponent.parentObject = obj
+                MyComponent.parentObjectPath = path
+                MyComponent.parentID = ID
+
 
         def setupBatchFileSysArgs():
             #print("Parent Object is "+sys.argv[1])
@@ -143,6 +179,13 @@ class MyComponent(AkComponent):
             # print("This is the name of the script", sys.argv[0])
             # print("This is the number of arguments", len(sys.argv))
             # print("The arguments are...", str(sys.argv))
+
+        def walk_up_folder(path, depth):
+            _cur_depth = 0
+            while _cur_depth < depth:
+                path = os.path.dirname(path)
+                _cur_depth += 1
+            return path
 
         ###### End of function definitions  #########
 
@@ -166,7 +209,19 @@ class MyComponent(AkComponent):
 
         beginUndoGroup()
 
-        yield getIDofParent(MyComponent.ActorMixerPath,MyComponent.Input_ParentObjectName)
+        #### Construct the import audio file path. Use Section name from args
+        ## Go up from the script to the dir shared with the Wwise project
+        ## Construct the path down to the Originals section folder containing the files to import
+        sharedDir = walk_up_folder(sys.argv[0], MyComponent.stepsUpToCommonDirectory)
+        pathToWwiseProject = os.path.join(sharedDir, *MyComponent.DirOfWwiseProjectRoot)
+        pathToOriginalFiles = os.path.join(pathToWwiseProject, *MyComponent.pathToOriginalsFromProjectRoot)
+        pathToSectionFiles = os.path.join(pathToOriginalFiles, MyComponent.Input_ParentObjectName)
+        MyComponent.ImportAudioFilePath = os.path.abspath(pathToSectionFiles)
+
+
+        yield SetupImportParentObject(MyComponent.Input_ParentObjectName)
+
+        #yield getIDofParent(MyComponent.ActorMixerPath,MyComponent.Input_ParentObjectName)
         yield getAudioFilesInWwise(MyComponent.parentID)
         createListOfBrokenAudio(MyComponent.WwiseQueryResults)
 
@@ -192,7 +247,7 @@ class MyComponent(AkComponent):
 
 
 if __name__ == '__main__':
-    runner = ApplicationRunner(url=u"ws://127.0.0.1:8080/waapi", realm=u"realm1")
+    runner = ApplicationRunner(url=u"ws://127.0.0.1:8095/waapi", realm=u"realm1")
     try:
         runner.run(MyComponent)
     except Exception as e:

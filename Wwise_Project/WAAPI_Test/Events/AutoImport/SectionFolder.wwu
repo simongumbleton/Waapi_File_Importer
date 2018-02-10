@@ -45,7 +45,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{02171004-8AD8-4CAC-AF1C-56066CB33267}">
+				<Event Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony_01" ID="{02171004-8AD8-4CAC-AF1C-56066CB33267}">
 					<ChildrenList>
 						<Action Name="" ID="{7D3275BC-FF6C-447B-A924-8FFF97BD943F}" ShortID="1060512108">
 							<PropertyList>

@@ -3,15 +3,29 @@
 	<Events>
 		<WorkUnit Name="ArtGalleryMission" ID="{C2C516D3-2803-4DAF-800D-C9A14C979127}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{FC3DE6DE-5B24-4D72-BA02-96ABB4A4D810}">
+				<Event Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{19F460DA-F132-43CA-83FA-39E27FA5824C}">
 					<ChildrenList>
-						<Action Name="" ID="{29CEEFFC-DA50-400B-B22B-70AF0420E4B4}" ShortID="331855828">
+						<Action Name="" ID="{0F0B2469-2E57-43B3-91CE-22BC7772C557}" ShortID="443050668">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{68974711-C783-463D-A5F0-D2365B2CB195}" WorkUnitID="{CF216BE3-33E9-4440-B547-E44FC9564B86}"/>
+									<ObjectRef Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{D6EA19C7-A50C-4DF4-95B2-FCAB0A2A9BE1}" WorkUnitID="{CF216BE3-33E9-4440-B547-E44FC9564B86}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony_A" ID="{A514E005-7699-4C7C-A351-DB92B8112CE0}">
+					<ChildrenList>
+						<Action Name="" ID="{50C7D1A8-C0B8-4243-8788-3E96DCEBF5DE}" ShortID="653428606">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony_A" ID="{11D641E3-D825-444E-84B8-93E3D6F68B56}" WorkUnitID="{CF216BE3-33E9-4440-B547-E44FC9564B86}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

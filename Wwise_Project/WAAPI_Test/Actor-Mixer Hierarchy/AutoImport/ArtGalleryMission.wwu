@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="ArtGalleryMission" ID="{CF216BE3-33E9-4440-B547-E44FC9564B86}" PersistMode="Standalone">
 			<ChildrenList>
-				<ActorMixer Name="Tony" ID="{3E360511-6569-452E-B63D-65D583DCE347}" ShortID="253321072">
+				<ActorMixer Name="ArtGalleryMission" ID="{9047527E-688E-4079-A489-CEC005C8DAB6}" ShortID="590746939">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
@@ -13,21 +13,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{68974711-C783-463D-A5F0-D2365B2CB195}" ShortID="298937674">
-							<Comment>This object was auto imported</Comment>
-							<PropertyList>
-								<Property Name="IsStreamingEnabled" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IsVoice" Type="bool" Value="True"/>
-								<Property Name="IsZeroLantency" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
+						<ActorMixer Name="Tony" ID="{CD3907DF-EC2F-4F11-8DFC-D476C621E713}" ShortID="458535017">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
@@ -37,15 +23,77 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{DAC019D8-21D8-443F-8945-6EBD0DCAB8AA}" ShortID="55893914">
-									<Language>English(UK)</Language>
-									<AudioFile>ArtGalleryMission\DayLobby\Tony\TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony.wav</AudioFile>
-								</AudioFileSource>
+								<Sound Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{D6EA19C7-A50C-4DF4-95B2-FCAB0A2A9BE1}" ShortID="988940149">
+									<Comment>This object was auto imported</Comment>
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7BABEEAC-4342-4DAC-BC1E-F192A4A24992}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{E4719E86-71F3-4EEC-BFA0-7E554AD5162F}" ShortID="464985596">
+											<Language>English(UK)</Language>
+											<AudioFile>ArtGalleryMission\DayLobby\Tony\TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="55893914"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{E4719E86-71F3-4EEC-BFA0-7E554AD5162F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony_A" ID="{11D641E3-D825-444E-84B8-93E3D6F68B56}" ShortID="854337702">
+									<Comment>This object was auto imported</Comment>
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7BABEEAC-4342-4DAC-BC1E-F192A4A24992}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony_A" ID="{5B62C5F7-0A00-40C0-AF05-2A4E94C8C7AD}" ShortID="652996920">
+											<Language>English(UK)</Language>
+											<AudioFile>ArtGalleryMission\DayLobby\Tony\TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony_A.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony_A" ID="{5B62C5F7-0A00-40C0-AF05-2A4E94C8C7AD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{DAC019D8-21D8-443F-8945-6EBD0DCAB8AA}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

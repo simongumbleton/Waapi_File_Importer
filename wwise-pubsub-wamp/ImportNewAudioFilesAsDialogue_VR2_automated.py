@@ -4,8 +4,6 @@ import sys
 import trollius as asyncio
 from trollius import From
 
-import Tkinter #import Tk
-import tkFileDialog
 
 import fnmatch
 
@@ -13,33 +11,31 @@ from autobahn.asyncio.wamp import ApplicationSession, ApplicationRunner
 from ak_autobahn import AkComponent
 
 
-# You may also copy-paste the waapi.py file alongside this sample
-sys.path.append(os.path.join(os.path.dirname(__file__), '../../../../include/AK/WwiseAuthoringAPI/py'))
 from waapi import WAAPI_URI
 
 class MyComponent(AkComponent):
 
 # this script allows auto importing of new VO files, creating associated events.
-# It asks the user for an input folder (audio to import)
-# It responds to an object selected callback from WAAPI
+# It takes a string input (section name) to construct the path to the files and the import path in wwise
 # It creates a list of exisiting sound objects underneath the selected import parent
 # It imports any NEW audio files, leaving exisiting structures intact
 # It also creates events for any new audio files imported
 
+# When this script runs, it will look up in the folder tree for a common ancestor folder with the Wwise project.
+# It uses the stepsUpToCommonDirectory variable to walk up the tree.
 
 #args for audio import
     ImportAudioFilePath = ""    #full path to root folder for files to import
 
-    INPUT_SectionName = "ArtGalleryMission"      #the section name, from BAT file. Use to find actor mixer and events parent for importing
+    INPUT_SectionName = "DesertMission"      #the section name, from BAT file. Use to find actor mixer and events parent for importing
 
     ImportLanguage = "English(UK)" #Default language for Wwise projects, Or SFX
 
-    pathToOriginalsFromProjectRoot = ["Originals","Voices",ImportLanguage]
+    pathToOriginalsFromProjectRoot = ["Originals","Voices",ImportLanguage] # Where are the English VO files
 
-    stepsUpToCommonDirectory = 2
+    stepsUpToCommonDirectory = 2    # How many folders up from the script is the shared dir with wwise project
 
-    DirOfWwiseProjectRoot = ["Wwise_Project","WAAPI_Test"]
-
+    DirOfWwiseProjectRoot = ["Wwise_Project","WAAPI_Test"] ## Name/path of wwise project relative to the common directory
 
     ImportAudioFileList = []
 
@@ -50,54 +46,22 @@ class MyComponent(AkComponent):
 
     DefaultOriginalsPathForNewFiles = "WAAPI/TestImports"  ##TODO Variable this based on import language/SFX
 
-
-
 #store a ref to the selected parent object
     parentObject = None
     parentObjectPath = ""
     parentID = ""
-
-#flow control
-    parentSelected = False
-    objectCreated = False
-    eventCreated = False
 
 #dic to store return/results from yield calls
     Results = {}
 
     ImportOperationSuccess = False
 
-# Internal Variables for object creation
-    objParID = "None"
-
-    objType = ""
-    objName = "MyCreatedObject"
-    nameConflict = "rename"
-    objNotes = "This object was auto created...."
-
-#args dict for object creation For use with create object call
-    createObjArgs = {}
-    ObjPropertyArgs = {}
-
-#variables for event creation
-    eventParent = "\\Events\\"
-    eventParentVO = "\\Events\\Greybox_Dialogue_DEV\\Greybox_Dialogue_DEV\\"     ##TODO Make this into batch variable
-
-    eventName = ""
-    eventTarget = ""
-    evActionType = 1
-    eventAlreadyExists = None
-
-#args dict for event creation
-    createEventArgs = {}
 #args for importing
     importArgs = {}
 
-    def printThis(self,msg):
-        print(msg)
+    def onJoin(self, details):  # onJoin called by WAAPI when the asyncIO process is run (script is run)
 
-    def onJoin(self, details):
-
+###### MyComponent Helper Function Definitions #######
         def beginUndoGroup():
             self.call(WAAPI_URI.ak_wwise_core_undo_begingroup)
 
@@ -108,18 +72,24 @@ class MyComponent(AkComponent):
             undoArgs = {"displayName": "Script Auto Importer"}
             self.call(WAAPI_URI.ak_wwise_core_undo_endgroup, {}, **undoArgs)
 
+        def saveWwiseProject():
+            self.call(WAAPI_URI.ak_wwise_core_project_save)
+
         def exit():
             self.leave()
 
-        try:
-            res = yield From(self.call(WAAPI_URI.ak_wwise_core_getinfo))  # RPC call without arguments
-        except Exception as ex:
-            print("call error: {}".format(ex))
-        else:
-            # Call was successful, displaying information from the payload.
-            print("Hello {} {}".format(res.kwresults['displayName'], res.kwresults['version']['displayName']))
+        def setupBatchFileSysArgs():
+            print("Importing Audio files into.. "+sys.argv[1])  # Import section name
+            MyComponent.INPUT_SectionName = str(sys.argv[1])
 
+        def walk_up_folder(path, depth):
+            _cur_depth = 0
+            while _cur_depth < depth:
+                path = os.path.dirname(path)
+                _cur_depth += 1
+            return path
 
+###### MyComponent Importer Function Definitions #######
         def getExistingAudioInWwise(object):
             #print("Get a list of the audio files currently in the project, under the selected object")
             arguments = {
@@ -139,7 +109,6 @@ class MyComponent(AkComponent):
             else:
                 MyComponent.WwiseQueryResults = res.kwresults["return"]
 
-
         def createExistingAudioList(WwiseQueryResults):
             #print("creating a list of existing wwise sounds")
             list = []
@@ -150,48 +119,6 @@ class MyComponent(AkComponent):
                     soundName = str(i["name"])
                     list.append(soundName)
             MyComponent.ExistingWwiseAudio = list
-
-
-        def ImportIntoWwiseUnderParentObject(parentObjectID):
-            # subscribe to selection change?
-            #print("Method to get the parent to create new object under")
-            success = False
-            parID = parentObjectID
-
-            #print("Selected object is...")
-            if parID != None:
-                success = True
-            if success:
-                yield getExistingAudioInWwise(str(parID))
-                yield createExistingAudioList(MyComponent.WwiseQueryResults)
-                yield setupAudioFilePath()
-                count = 0
-                for file in MyComponent.ImportAudioFileList:
-                    #print(file)
-                    f = file.rsplit('.')
-                    fname = os.path.basename(f[0])
-                    if not fname in MyComponent.ExistingWwiseAudio:
-                        yield setupImportArgs(parID, file, MyComponent.DefaultOriginalsPathForNewFiles)
-                        yield importAudioFiles(MyComponent.importArgs)
-                        count += 1
-                MyComponent.ImportOperationSuccess = True
-
-            else:
-                print("Something went wrong!!")
-                MyComponent.ImportOperationSuccess = False
-                return
-
-            if (MyComponent.ImportOperationSuccess):
-                saveWwiseProject()
-                endUndoGroup()
-                print("Import operation success. "+str(count)+" new files imported.")
-            else:
-                print("Import operation failed! Check log for errors!")
-                endUndoGroup()
-
-        def saveWwiseProject():
-            self.call(WAAPI_URI.ak_wwise_core_project_save)
-
 
         def setupAudioFilePath():
             #print("Setting up audio file path")
@@ -240,11 +167,13 @@ class MyComponent(AkComponent):
             else:
                 objectPath = ""
 
+            sectionActorMixer = "<Actor-Mixer>"+MyComponent.INPUT_SectionName+"\\"
+
             importFilelist.append(
                 {
                     "audioFile": fileList,
                     #"objectPath": "<Sound SFX>"+os.path.basename(audiofilename
-                    "objectPath": objectPath + objectType + os.path.basename(audiofilename)
+                    "objectPath": sectionActorMixer + objectPath + objectType + os.path.basename(audiofilename)
                     #"objectPath": "<Sound Voice>" + os.path.basename(audiofilename)
                 }
             )
@@ -303,31 +232,64 @@ class MyComponent(AkComponent):
                 MyComponent.parentObjectPath = path
                 MyComponent.parentID = ID
 
+        def ImportIntoWwiseUnderParentObject(parentObjectID):
+            # subscribe to selection change?
+            #print("Method to get the parent to create new object under")
+            success = False
+            parID = parentObjectID
 
-        def setupBatchFileSysArgs():
-            print("Importing Audio files into.. "+sys.argv[1])  # Import section name
-            MyComponent.INPUT_SectionName = str(sys.argv[1])
+            #print("Selected object is...")
+            if parID != None:
+                success = True
+            if success:
+                yield getExistingAudioInWwise(str(parID))
+                yield createExistingAudioList(MyComponent.WwiseQueryResults)
+                yield setupAudioFilePath()
+                count = 0
+                for file in MyComponent.ImportAudioFileList:
+                    #print(file)
+                    f = file.rsplit('.')
+                    fname = os.path.basename(f[0])
+                    if not fname in MyComponent.ExistingWwiseAudio:
+                        yield setupImportArgs(parID, file, MyComponent.DefaultOriginalsPathForNewFiles)
+                        yield importAudioFiles(MyComponent.importArgs)
+                        count += 1
+                MyComponent.ImportOperationSuccess = True
 
+            else:
+                print("Something went wrong!!")
+                MyComponent.ImportOperationSuccess = False
+                return
 
-        def walk_up_folder(path, depth):
-            _cur_depth = 0
-            while _cur_depth < depth:
-                path = os.path.dirname(path)
-                _cur_depth += 1
-            return path
+            if (MyComponent.ImportOperationSuccess):
+                saveWwiseProject()
+                endUndoGroup()
+                print("Import operation success. "+str(count)+" new files imported.")
+            else:
+                print("Import operation failed! Check log for errors!")
+                endUndoGroup()
 
-        if (len(sys.argv) > 1):     #If the sys args are longer than the default 1 (script name)
+###################  Main script flow  ###################
+        #### Establish Wwise connection
+        try:
+            res = yield From(self.call(WAAPI_URI.ak_wwise_core_getinfo))  # RPC call without arguments
+        except Exception as ex:
+            print("call error: {}".format(ex))
+        else:
+            # Call was successful, displaying information from the payload.
+            print("Hello {} {}".format(res.kwresults['displayName'], res.kwresults['version']['displayName']))
+
+        #### If the sys args are longer than the default 1 (script name)
+        if (len(sys.argv) > 1):
             setupBatchFileSysArgs()
 
-        #askUserForImportDirectory() # instead set this with vars: MyComponent.ImportAudioFilePath
-
-        #Construct the import audio file path
+        #### Construct the import audio file path. Use Section name from args
+        ## Go up from the script to the dir shared with the Wwise project
+        ## Construct the path down to the Originals section folder containing the files to import
         sharedDir = walk_up_folder(sys.argv[0],MyComponent.stepsUpToCommonDirectory)
-
         pathToWwiseProject = os.path.join(sharedDir, *MyComponent.DirOfWwiseProjectRoot)
         pathToOriginalFiles = os.path.join(pathToWwiseProject, *MyComponent.pathToOriginalsFromProjectRoot)
         pathToSectionFiles = os.path.join(pathToOriginalFiles,MyComponent.INPUT_SectionName)
-
         MyComponent.ImportAudioFilePath = os.path.abspath(pathToSectionFiles)
 
         if MyComponent.ImportAudioFilePath == '':
@@ -335,17 +297,14 @@ class MyComponent(AkComponent):
             self.leave()
             return
 
-        #Get the ID of the parent object from Wwise
-        wwiseParentObjectPath = MyComponent.INPUT_SectionName
-
         beginUndoGroup()
 
-        yield SetupImportParentObject(wwiseParentObjectPath)
+        ## Get the Section work unit object and store ID and path
+        yield SetupImportParentObject(MyComponent.INPUT_SectionName)
 
+        ## Main import function - Takes the ID of an object, to import files under.
+        ## This method calls several other methods as it executes
         yield ImportIntoWwiseUnderParentObject(MyComponent.parentID)
-
-
-
 
         exit()
 
@@ -358,7 +317,7 @@ class MyComponent(AkComponent):
 
 
 if __name__ == '__main__':
-    runner = ApplicationRunner(url=u"ws://127.0.0.1:8080/waapi", realm=u"realm1")
+    runner = ApplicationRunner(url=u"ws://127.0.0.1:8095/waapi", realm=u"realm1")
     try:
         runner.run(MyComponent)
     except Exception as e:

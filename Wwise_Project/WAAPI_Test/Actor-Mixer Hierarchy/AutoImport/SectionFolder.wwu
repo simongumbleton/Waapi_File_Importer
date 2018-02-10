@@ -139,6 +139,9 @@
 								<AudioFileSource Name="TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony" ID="{929BD8C0-5871-4B34-97D4-EDE093791DF8}" ShortID="266822152">
 									<Language>English(UK)</Language>
 									<AudioFile>ArtGalleryMission\DayLobby\Tony\TEST__VO_ArtGalleryMission_DayLobby_AudioTour_01_Tony.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="55893914"/>
+									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>

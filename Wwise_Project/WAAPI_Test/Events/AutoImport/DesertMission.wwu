@@ -3,29 +3,43 @@
 	<Events>
 		<WorkUnit Name="DesertMission" ID="{20BC97F5-FB88-43A7-952C-8711ECEE4392}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="TEST_VO_DesertMission_Ryan" ID="{C3E706E4-1C3D-45D2-A290-C75AFAEDE1EE}">
+				<Event Name="TEST_VO_DesertMission_Ryan" ID="{04DD0A03-5430-4292-BB20-2EF67B0AD45E}">
 					<ChildrenList>
-						<Action Name="" ID="{3ADA00BA-1107-4AC4-8F0E-B178E45EA96F}" ShortID="926116049">
+						<Action Name="" ID="{FDC336B3-79E9-4BBE-93C5-9078881EF3B4}" ShortID="945268517">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TEST_VO_DesertMission_Ryan" ID="{2C96DF34-A0E4-4924-8248-210BB32CC751}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
+									<ObjectRef Name="TEST_VO_DesertMission_Ryan" ID="{4D4FC270-D865-4646-B214-554FE3AF7885}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="TEST_VO_DesertMission_Ryan_01" ID="{1BDFF6DE-8530-4175-BEC3-F293B28FF431}">
+				<Event Name="TEST_VO_DesertMission_Ryan_03" ID="{D965806F-2085-48B7-8055-4B5E2EDD63FB}">
 					<ChildrenList>
-						<Action Name="" ID="{E6E36F64-A6B5-42AF-85D8-56B0C64EF178}" ShortID="222405130">
+						<Action Name="" ID="{EEB7364F-1E65-4646-ACD5-05E4E3C4F821}" ShortID="893977207">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TEST_VO_DesertMission_Ryan_01" ID="{624E6DC0-EF8D-4FAA-8EC0-3399D5F7962C}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
+									<ObjectRef Name="TEST_VO_DesertMission_Ryan_03" ID="{EB7F78A5-72A3-4439-9CF7-2C8ACF90F0EB}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TEST_VO_DesertMission_Ryan_04" ID="{B96C7E04-373A-4517-A3C1-3C94BED84E22}">
+					<ChildrenList>
+						<Action Name="" ID="{03F10373-FC1B-48B0-B1E7-20989C8EEC4C}" ShortID="130722157">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TEST_VO_DesertMission_Ryan_04" ID="{704E2933-1F94-4C62-AB2E-2DD615506DC5}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

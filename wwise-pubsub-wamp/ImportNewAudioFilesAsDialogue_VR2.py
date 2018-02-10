@@ -269,11 +269,13 @@ class MyComponent(AkComponent):
             else:
                 objectPath = ""
 
+            sectionActorMixer = "<Actor-Mixer>" + MyComponent.INPUT_SectionName + "\\"
+
             importFilelist.append(
                 {
                     "audioFile": fileList,
                     #"objectPath": "<Sound SFX>"+os.path.basename(audiofilename
-                    "objectPath": objectPath + objectType + os.path.basename(audiofilename)
+                    "objectPath": sectionActorMixer + objectPath + objectType + os.path.basename(audiofilename)
                     #"objectPath": "<Sound Voice>" + os.path.basename(audiofilename)
                 }
             )
@@ -386,7 +388,7 @@ class MyComponent(AkComponent):
 
 
 if __name__ == '__main__':
-    runner = ApplicationRunner(url=u"ws://127.0.0.1:8080/waapi", realm=u"realm1")
+    runner = ApplicationRunner(url=u"ws://127.0.0.1:8095/waapi", realm=u"realm1")
     try:
         runner.run(MyComponent)
     except Exception as e:
