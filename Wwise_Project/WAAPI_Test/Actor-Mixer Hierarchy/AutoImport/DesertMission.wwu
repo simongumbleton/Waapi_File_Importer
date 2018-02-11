@@ -56,7 +56,7 @@
 										<ActiveSource Name="TEST_VO_DesertMission_Ryan" ID="{21F982B6-8430-435A-9335-8796EB8C239F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="TEST_VO_DesertMission_Ryan_03" ID="{EB7F78A5-72A3-4439-9CF7-2C8ACF90F0EB}" ShortID="733051611">
+								<Sound Name="TEST_VO_DesertMission_Ryan_03" ID="{F107BBBF-69F4-40D0-A7F2-5D26DF87E90F}" ShortID="151409803">
 									<Comment>This object was auto imported</Comment>
 									<PropertyList>
 										<Property Name="IsStreamingEnabled" Type="bool">
@@ -80,16 +80,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_03" ID="{85BC3FE0-8D28-4CAB-A1B5-EB702D297B71}" ShortID="979951283">
+										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_03" ID="{96229F0D-2F02-4506-9188-63D3D4B52472}" ShortID="792666232">
 											<Language>English(UK)</Language>
 											<AudioFile>DesertMission\Desert\Ryan\TEST_VO_DesertMission_Ryan_03.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="TEST_VO_DesertMission_Ryan_03" ID="{85BC3FE0-8D28-4CAB-A1B5-EB702D297B71}" Platform="Linked"/>
+										<ActiveSource Name="TEST_VO_DesertMission_Ryan_03" ID="{96229F0D-2F02-4506-9188-63D3D4B52472}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="TEST_VO_DesertMission_Ryan_04" ID="{704E2933-1F94-4C62-AB2E-2DD615506DC5}" ShortID="1046088555">
+								<Sound Name="TEST_VO_DesertMission_Ryan_04" ID="{A284A7F9-28E2-476A-B0DA-F5CF86C87175}" ShortID="931613407">
 									<Comment>This object was auto imported</Comment>
 									<PropertyList>
 										<Property Name="IsStreamingEnabled" Type="bool">
@@ -113,13 +113,13 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_04" ID="{93B197C5-7406-4EFA-BDAF-AC113409ADD1}" ShortID="161737021">
+										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_04" ID="{B5B406A3-E741-4962-89D1-75E7FE339184}" ShortID="921442525">
 											<Language>English(UK)</Language>
 											<AudioFile>DesertMission\Desert\Ryan\TEST_VO_DesertMission_Ryan_04.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="TEST_VO_DesertMission_Ryan_04" ID="{93B197C5-7406-4EFA-BDAF-AC113409ADD1}" Platform="Linked"/>
+										<ActiveSource Name="TEST_VO_DesertMission_Ryan_04" ID="{B5B406A3-E741-4962-89D1-75E7FE339184}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

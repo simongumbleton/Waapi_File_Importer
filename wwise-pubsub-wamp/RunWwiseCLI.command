@@ -1,0 +1,1 @@
+'/Applications/Audiokinetic/Wwise 2017.2.1.6524/Wwise.app/Contents/Tools/WwiseCLI.sh' "/Users/simongumbleton/Projects/Wwise/WAAPI/Waapi_File_Importer/Wwise_Project/WAAPI_Test/WAAPI_Test.wproj" -Waapi -WaapiWampPort 8095 -Save
