@@ -3,57 +3,99 @@
 	<Events>
 		<WorkUnit Name="DesertMission" ID="{20BC97F5-FB88-43A7-952C-8711ECEE4392}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="TEST_VO_DesertMission_Ryan" ID="{04DD0A03-5430-4292-BB20-2EF67B0AD45E}">
+				<Event Name="TEST_VO_DesertMission_Ryan_04" ID="{F6260911-DDDF-4023-AC15-329C6BA1C816}">
 					<ChildrenList>
-						<Action Name="" ID="{FDC336B3-79E9-4BBE-93C5-9078881EF3B4}" ShortID="945268517">
+						<Action Name="" ID="{FFB059B6-E72D-4C3D-8471-F6B79BF7570C}" ShortID="346898890">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TEST_VO_DesertMission_Ryan" ID="{4D4FC270-D865-4646-B214-554FE3AF7885}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
+									<ObjectRef Name="TEST_VO_DesertMission_Ryan_04" ID="{0473816B-8F3C-4E88-8841-F481FC9B6413}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="TEST_VO_DesertMission_Ryan_04" ID="{89C8D54C-1919-4A7E-9ADE-BDD4B7CCDB1F}">
+				<Event Name="TEST_VO_DesertMission_Ryan_05" ID="{A1555B52-C906-4991-BBB8-DA5B14F9F4DD}">
 					<ChildrenList>
-						<Action Name="" ID="{D5C83A31-D1F2-4F8F-9EE6-05CF4D26EF70}" ShortID="474570587">
+						<Action Name="" ID="{6DFEB817-45F1-4A15-A2C4-5F6BBCE20C15}" ShortID="393391870">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TEST_VO_DesertMission_Ryan_04" ID="{E79FFA50-314D-4781-AB77-C70A19F3E02A}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
+									<ObjectRef Name="TEST_VO_DesertMission_Ryan_05" ID="{FAE1ABF9-3CCF-4225-90F5-341AE6701F29}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="TEST_VO_DesertMission_Ryan_05" ID="{E474EB8B-2402-4451-AFCB-9FC8241A7F70}">
+				<Event Name="TEST_VO_DesertMission_Ryan_02" ID="{25539735-623C-4874-B8B2-97DB1A115531}">
 					<ChildrenList>
-						<Action Name="" ID="{8DB55475-A44F-40F0-A53A-4EC3990F63A9}" ShortID="748517724">
+						<Action Name="" ID="{4DBADE5F-173E-4A2A-A44D-2B580BCF5575}" ShortID="947594344">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TEST_VO_DesertMission_Ryan_05" ID="{F78B6249-823B-401C-8C24-CAF39011DB92}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
+									<ObjectRef Name="TEST_VO_DesertMission_Ryan_02" ID="{68CC284D-669C-4950-83A2-8A2BEB703D55}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="TEST_VO_DesertMission_Ryan_06" ID="{19966C5A-407E-407F-BEFD-D13FFFAEA90C}">
+				<Event Name="TEST_VO_DesertMission_Ryan_06" ID="{B967BBBE-E767-4ECA-8C40-2FBB03912C7D}">
 					<ChildrenList>
-						<Action Name="" ID="{34E35286-F78C-4F9C-85F1-FAC2B272DE8F}" ShortID="374582966">
+						<Action Name="" ID="{B16938A5-5161-4813-A29F-ECDE4136E1EB}" ShortID="169497433">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TEST_VO_DesertMission_Ryan_06" ID="{DB09A011-621C-411E-9448-216914ACC009}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
+									<ObjectRef Name="TEST_VO_DesertMission_Ryan_06" ID="{99AD63AE-2125-4415-83A9-784E06BBD267}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TEST_VO_DesertMission_Ryan_07" ID="{E436A327-FC46-463C-BD22-FDFA7F25537A}">
+					<ChildrenList>
+						<Action Name="" ID="{3C813A0B-84F3-41DB-AE12-CD98904FE506}" ShortID="43571563">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TEST_VO_DesertMission_Ryan_07" ID="{06044DFF-138D-4E59-B59E-87B1888819D6}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TEST_VO_DesertMission_Ryan_08" ID="{43900808-C72C-424B-BF1B-5376F990F31B}">
+					<ChildrenList>
+						<Action Name="" ID="{056BAFEC-AA9F-4BE7-A511-4CAAAEEEB9A2}" ShortID="1016042328">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TEST_VO_DesertMission_Ryan_08" ID="{BA44F1DD-06C9-460C-A331-347D5AABCF2C}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TEST_VO_DesertMission_Ryan_11" ID="{C813FE30-74D8-4C3B-82B1-DA197F814E62}">
+					<ChildrenList>
+						<Action Name="" ID="{B3C214A7-0FD3-40DF-ADDD-A10E9EE2920C}" ShortID="426057029">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TEST_VO_DesertMission_Ryan_11" ID="{638E9DAF-88DC-48BF-9882-142C5FA4971F}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

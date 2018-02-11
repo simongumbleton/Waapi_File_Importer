@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A3D7DC5D-2807-41B4-945C-9168C12BD677}" SchemaVersion="85">
+	<AudioObjects>
+		<WorkUnit Name="VR2_Dialogue" ID="{A3D7DC5D-2807-41B4-945C-9168C12BD677}" PersistMode="Standalone"/>
+	</AudioObjects>
+</WwiseDocument>

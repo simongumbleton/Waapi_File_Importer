@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C2FC01D3-A509-43F1-BCDB-FA1977625B44}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="VR2_Dialogue" ID="{C2FC01D3-A509-43F1-BCDB-FA1977625B44}" PersistMode="Standalone"/>
+	</Events>
+</WwiseDocument>

@@ -33,7 +33,7 @@ class MyComponent(AkComponent):
 
     pathToOriginalsFromProjectRoot = ["Originals","Voices",ImportLanguage] # Where are the English VO files
 
-    stepsUpToCommonDirectory = 2    # How many folders up from the script is the shared dir with wwise project
+    stepsUpToCommonDirectory = 1    # How many folders up from the script is the shared dir with wwise project
 
     DirOfWwiseProjectRoot = ["Wwise_Project","WAAPI_Test"] ## Name/path of wwise project relative to the common directory
 
@@ -81,13 +81,10 @@ class MyComponent(AkComponent):
         def setupBatchFileSysArgs():
             print("Importing Audio files into.. "+sys.argv[1])  # Import section name
             MyComponent.INPUT_SectionName = str(sys.argv[1])
-            try:
-                sys.argv[2]
-            except IndexError:
-                print("ERROR!! Missing argument - Depth to common folder with wwise project")
-            else:
-                print("Depth to common root with Wwise project folder = " + sys.argv[2])
-                MyComponent.stepsUpToCommonDirectory = int(sys.argv[2])
+            StringInputOfDirOfWwiseProjectRoot = (sys.argv[2])
+            MyComponent.DirOfWwiseProjectRoot = StringInputOfDirOfWwiseProjectRoot.split("/")
+            MyComponent.stepsUpToCommonDirectory = int(sys.argv[3])
+
 
 
         def walk_up_folder(path, depth):
@@ -293,19 +290,19 @@ class MyComponent(AkComponent):
 
         #### If the sys args are longer than the default 1 (script name)
         if (len(sys.argv) > 1):
-            setupBatchFileSysArgs()
-            absPathToScript = os.path.abspath(sys.argv[0])
-            absPathToScript = os.path.dirname(absPathToScript)
+            if(len(sys.argv)) >= 4:
+                setupBatchFileSysArgs()
+            else:
+                print("ERROR! Not enough arguments")
 
-        else:
-            absPathToScript = sys.argv[0]
-
-        print(sys.argv)
+        print("Arguments passed in..."+str(sys.argv))
+        currentWorkingDir = os.getcwd()
+        print("Current Working Directory = " + currentWorkingDir)
 
         #### Construct the import audio file path. Use Section name from args
         ## Go up from the script to the dir shared with the Wwise project
         ## Construct the path down to the Originals section folder containing the files to import
-        sharedDir = walk_up_folder(absPathToScript,MyComponent.stepsUpToCommonDirectory)
+        sharedDir = walk_up_folder(currentWorkingDir,MyComponent.stepsUpToCommonDirectory)
         pathToWwiseProject = os.path.join(sharedDir, *MyComponent.DirOfWwiseProjectRoot)
         pathToOriginalFiles = os.path.join(pathToWwiseProject, *MyComponent.pathToOriginalsFromProjectRoot)
         pathToSectionFiles = os.path.join(pathToOriginalFiles,MyComponent.INPUT_SectionName)

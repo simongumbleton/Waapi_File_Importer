@@ -4,11 +4,6 @@ import sys
 import trollius as asyncio
 from trollius import From
 
-import Tkinter #import Tk
-import tkFileDialog
-from Tkinter import *
-
-import fnmatch
 
 from autobahn.asyncio.wamp import ApplicationSession, ApplicationRunner
 from ak_autobahn import AkComponent
@@ -33,9 +28,8 @@ class MyComponent(AkComponent):
     ImportAudioFilePath = ""    #full path to root folder for files to import
     ImportLanguage = "English(UK)" #Default language for Wwise projects, Or SFX
     pathToOriginalsFromProjectRoot = ["Originals","Voices",ImportLanguage] # Where are the English VO files
-    stepsUpToCommonDirectory = 2    # How many folders up from the script is the shared dir with wwise project
+    stepsUpToCommonDirectory = 1    # How many folders up from the script is the shared dir with wwise project
     DirOfWwiseProjectRoot = ["Wwise_Project","WAAPI_Test"] ## Name/path of wwise project relative to the common directory
-
 
     def onJoin(self, details):
         ###### Function definitions #########
@@ -174,11 +168,11 @@ class MyComponent(AkComponent):
 
 
         def setupBatchFileSysArgs():
-            #print("Parent Object is "+sys.argv[1])
+            print("Cleaning missing files from.. " + sys.argv[1])  # Import section name
             MyComponent.Input_ParentObjectName = str(sys.argv[1])
-            # print("This is the name of the script", sys.argv[0])
-            # print("This is the number of arguments", len(sys.argv))
-            # print("The arguments are...", str(sys.argv))
+            StringInputOfDirOfWwiseProjectRoot = (sys.argv[2])
+            MyComponent.DirOfWwiseProjectRoot = StringInputOfDirOfWwiseProjectRoot.split("/")
+            MyComponent.stepsUpToCommonDirectory = int(sys.argv[3])
 
         def walk_up_folder(path, depth):
             _cur_depth = 0
@@ -201,18 +195,24 @@ class MyComponent(AkComponent):
 
         #setupSubscriptions()
 
-        if (len(sys.argv) > 1):     #If the sys args are longer than the default 1 (script name)
-            setupBatchFileSysArgs()
+        if (len(sys.argv) > 1):
+            if(len(sys.argv)) >= 4:
+                setupBatchFileSysArgs()
+            else:
+                print("ERROR! Not enough arguments")
 
         if MyComponent.Input_ParentObjectName == "":
             exit()
 
         beginUndoGroup()
 
+        currentWorkingDir = os.getcwd()
+        print("Current Working Directory = " + currentWorkingDir)
+
         #### Construct the import audio file path. Use Section name from args
         ## Go up from the script to the dir shared with the Wwise project
         ## Construct the path down to the Originals section folder containing the files to import
-        sharedDir = walk_up_folder(sys.argv[0], MyComponent.stepsUpToCommonDirectory)
+        sharedDir = walk_up_folder(currentWorkingDir, MyComponent.stepsUpToCommonDirectory)
         pathToWwiseProject = os.path.join(sharedDir, *MyComponent.DirOfWwiseProjectRoot)
         pathToOriginalFiles = os.path.join(pathToWwiseProject, *MyComponent.pathToOriginalsFromProjectRoot)
         pathToSectionFiles = os.path.join(pathToOriginalFiles, MyComponent.Input_ParentObjectName)
@@ -234,6 +234,8 @@ class MyComponent(AkComponent):
             id = str(x["id"])
             yield deleteWwiseObject(id)
 
+        numberOfFilesCleaned = len(MyComponent.WwiseAudioMissingOriginals)
+        print(str(numberOfFilesCleaned) + " Files cleaned from " + MyComponent.Input_ParentObjectName)
 
         endUndoGroup()
 
