@@ -23,72 +23,6 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="TEST_VO_DesertMission_Ryan_04" ID="{0473816B-8F3C-4E88-8841-F481FC9B6413}" ShortID="966227024">
-									<Comment>This object was auto imported</Comment>
-									<PropertyList>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsVoice" Type="bool" Value="True"/>
-										<Property Name="IsZeroLantency" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7BABEEAC-4342-4DAC-BC1E-F192A4A24992}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_04" ID="{3EF7670B-25ED-4CB1-902A-203CDE02922D}" ShortID="331939264">
-											<Language>English(UK)</Language>
-											<AudioFile>DesertMission\Desert\Ryan\TEST_VO_DesertMission_Ryan_04.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="TEST_VO_DesertMission_Ryan_04" ID="{3EF7670B-25ED-4CB1-902A-203CDE02922D}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="TEST_VO_DesertMission_Ryan_05" ID="{FAE1ABF9-3CCF-4225-90F5-341AE6701F29}" ShortID="221189558">
-									<Comment>This object was auto imported</Comment>
-									<PropertyList>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsVoice" Type="bool" Value="True"/>
-										<Property Name="IsZeroLantency" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7BABEEAC-4342-4DAC-BC1E-F192A4A24992}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_05" ID="{8E1E0EB9-2BE9-460C-ACE3-E18B4E49ACBF}" ShortID="150403958">
-											<Language>English(UK)</Language>
-											<AudioFile>DesertMission\Desert\Ryan\TEST_VO_DesertMission_Ryan_05.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="TEST_VO_DesertMission_Ryan_05" ID="{8E1E0EB9-2BE9-460C-ACE3-E18B4E49ACBF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="TEST_VO_DesertMission_Ryan_02" ID="{68CC284D-669C-4950-83A2-8A2BEB703D55}" ShortID="155454637">
 									<Comment>This object was auto imported</Comment>
 									<PropertyList>
@@ -122,7 +56,7 @@
 										<ActiveSource Name="TEST_VO_DesertMission_Ryan_02" ID="{E8F6A84B-0CA8-4EC7-B4F4-FD0021D6739D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="TEST_VO_DesertMission_Ryan_06" ID="{99AD63AE-2125-4415-83A9-784E06BBD267}" ShortID="526938224">
+								<Sound Name="TEST_VO_DesertMission_Ryan_04_A" ID="{CE5F79F4-9203-43F3-AF01-C0595B80CBDC}" ShortID="39747601">
 									<Comment>This object was auto imported</Comment>
 									<PropertyList>
 										<Property Name="IsStreamingEnabled" Type="bool">
@@ -146,16 +80,49 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_06" ID="{03421319-BADB-4AB8-9366-6EDDAB748E20}" ShortID="285686884">
+										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_04_A" ID="{326C1BB8-C367-47FE-AA0D-EC62B3E9AAB3}" ShortID="53287626">
+											<Language>English(UK)</Language>
+											<AudioFile>DesertMission\Desert\Ryan\TEST_VO_DesertMission_Ryan_04_A.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TEST_VO_DesertMission_Ryan_04_A" ID="{326C1BB8-C367-47FE-AA0D-EC62B3E9AAB3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TEST_VO_DesertMission_Ryan_06" ID="{0EC8976B-E131-485E-823E-76C7388A6D2A}" ShortID="826745131">
+									<Comment>This object was auto imported</Comment>
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7BABEEAC-4342-4DAC-BC1E-F192A4A24992}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_06" ID="{558C44C9-B222-40D4-A29C-949204D7DCA1}" ShortID="835422471">
 											<Language>English(UK)</Language>
 											<AudioFile>DesertMission\Desert\Ryan\TEST_VO_DesertMission_Ryan_06.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="TEST_VO_DesertMission_Ryan_06" ID="{03421319-BADB-4AB8-9366-6EDDAB748E20}" Platform="Linked"/>
+										<ActiveSource Name="TEST_VO_DesertMission_Ryan_06" ID="{558C44C9-B222-40D4-A29C-949204D7DCA1}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="TEST_VO_DesertMission_Ryan_07" ID="{06044DFF-138D-4E59-B59E-87B1888819D6}" ShortID="289699222">
+								<Sound Name="TEST_VO_DesertMission_Ryan_07" ID="{AFABE93C-4310-4504-891D-51CC1437B876}" ShortID="573531855">
 									<Comment>This object was auto imported</Comment>
 									<PropertyList>
 										<Property Name="IsStreamingEnabled" Type="bool">
@@ -179,16 +146,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_07" ID="{74A287C5-D2AA-467A-88D4-FECBD79FECEE}" ShortID="361429253">
+										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_07" ID="{68D21A1B-4109-4B34-918E-99B21FB889C9}" ShortID="176617049">
 											<Language>English(UK)</Language>
 											<AudioFile>DesertMission\Desert\Ryan\TEST_VO_DesertMission_Ryan_07.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="TEST_VO_DesertMission_Ryan_07" ID="{74A287C5-D2AA-467A-88D4-FECBD79FECEE}" Platform="Linked"/>
+										<ActiveSource Name="TEST_VO_DesertMission_Ryan_07" ID="{68D21A1B-4109-4B34-918E-99B21FB889C9}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="TEST_VO_DesertMission_Ryan_08" ID="{BA44F1DD-06C9-460C-A331-347D5AABCF2C}" ShortID="1018866233">
+								<Sound Name="TEST_VO_DesertMission_Ryan_08" ID="{2D376DFF-2D92-4091-98EF-7EBA33019E40}" ShortID="829869637">
 									<Comment>This object was auto imported</Comment>
 									<PropertyList>
 										<Property Name="IsStreamingEnabled" Type="bool">
@@ -212,16 +179,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_08" ID="{3E77F550-7E77-43E1-A7C8-6A66FB8301CE}" ShortID="927672632">
+										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_08" ID="{0ECEBE20-AD30-4966-9D12-6DF8CD4F95F1}" ShortID="411576357">
 											<Language>English(UK)</Language>
 											<AudioFile>DesertMission\Desert\Ryan\TEST_VO_DesertMission_Ryan_08.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="TEST_VO_DesertMission_Ryan_08" ID="{3E77F550-7E77-43E1-A7C8-6A66FB8301CE}" Platform="Linked"/>
+										<ActiveSource Name="TEST_VO_DesertMission_Ryan_08" ID="{0ECEBE20-AD30-4966-9D12-6DF8CD4F95F1}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="TEST_VO_DesertMission_Ryan_11" ID="{638E9DAF-88DC-48BF-9882-142C5FA4971F}" ShortID="373848875">
+								<Sound Name="TEST_VO_DesertMission_Ryan_11" ID="{D2E0C3A7-DA04-4BFD-B102-B8C6546AF624}" ShortID="294234030">
 									<Comment>This object was auto imported</Comment>
 									<PropertyList>
 										<Property Name="IsStreamingEnabled" Type="bool">
@@ -245,13 +212,112 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_11" ID="{8CC32F9C-D1B9-4828-ABAD-6EB56EB451C3}" ShortID="845832495">
+										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_11" ID="{51D9D61D-B1E4-4FFE-BFD0-61D71139FDCB}" ShortID="766741465">
 											<Language>English(UK)</Language>
 											<AudioFile>DesertMission\Desert\Ryan\TEST_VO_DesertMission_Ryan_11.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="TEST_VO_DesertMission_Ryan_11" ID="{8CC32F9C-D1B9-4828-ABAD-6EB56EB451C3}" Platform="Linked"/>
+										<ActiveSource Name="TEST_VO_DesertMission_Ryan_11" ID="{51D9D61D-B1E4-4FFE-BFD0-61D71139FDCB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TEST_VO_DesertMission_Ryan_03" ID="{8D9B46CB-8AFA-49A5-AB88-9F994E7E270B}" ShortID="836426559">
+									<Comment>This object was auto imported</Comment>
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7BABEEAC-4342-4DAC-BC1E-F192A4A24992}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TEST_VO_DesertMission_Ryan_03" ID="{7F00B0DF-9E9B-4FC4-A802-3F2DFABCFECB}" ShortID="439078205">
+											<Language>English(UK)</Language>
+											<AudioFile>DesertMission\Desert\Ryan\TEST_VO_DesertMission_Ryan_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TEST_VO_DesertMission_Ryan_03" ID="{7F00B0DF-9E9B-4FC4-A802-3F2DFABCFECB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TEST_VO_DesertMission_Tony_01" ID="{DE3419F9-8C55-49DF-A52A-145E032B171D}" ShortID="544301443">
+									<Comment>This object was auto imported</Comment>
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7BABEEAC-4342-4DAC-BC1E-F192A4A24992}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TEST_VO_DesertMission_Tony_01" ID="{E5668476-ED35-4633-98D7-4E43826FAC5B}" ShortID="1022074977">
+											<Language>English(UK)</Language>
+											<AudioFile>DesertMission\Desert\Ryan\TEST_VO_DesertMission_Tony_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TEST_VO_DesertMission_Tony_01" ID="{E5668476-ED35-4633-98D7-4E43826FAC5B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TEST_VO_DesertMission_Tony_05" ID="{6D354FC3-3F76-4720-9063-9D9B81A9F947}" ShortID="993546595">
+									<Comment>This object was auto imported</Comment>
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{26B4C647-A500-4ED2-B132-92BA731C135A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7BABEEAC-4342-4DAC-BC1E-F192A4A24992}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TEST_VO_DesertMission_Tony_05" ID="{C9891332-6713-4137-85F9-6B129BE02D33}" ShortID="25926069">
+											<Language>English(UK)</Language>
+											<AudioFile>DesertMission\Desert\Ryan\TEST_VO_DesertMission_Tony_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TEST_VO_DesertMission_Tony_05" ID="{C9891332-6713-4137-85F9-6B129BE02D33}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

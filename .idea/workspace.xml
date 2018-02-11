@@ -14,7 +14,7 @@
       <file leaf-file-name="CleanMissingOriginals.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/CleanMissingOriginals.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
+            <state relative-caret-position="1496">
               <caret line="172" column="12" lean-forward="false" selection-start-line="172" selection-start-column="12" selection-end-line="173" selection-end-column="93" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -31,7 +31,7 @@
       <file leaf-file-name="ImportNewAudioFilesAsDialogue_VR2_automated.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2_automated.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="508">
               <caret line="84" column="93" lean-forward="false" selection-start-line="84" selection-start-column="93" selection-end-line="84" selection-end-column="93" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -363,11 +363,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wwise-pubsub-wamp/CreateNewObjects_WithImport_VR2.py</url>
-          <line>155</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/wwise-pubsub-wamp/SetRTPCs_Test.py</url>
           <line>129</line>
@@ -735,7 +730,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/CleanMissingOriginals.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="1496">
           <caret line="172" column="12" lean-forward="false" selection-start-line="172" selection-start-column="12" selection-end-line="173" selection-end-column="93" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -750,7 +745,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2_automated.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="508">
           <caret line="84" column="93" lean-forward="false" selection-start-line="84" selection-start-column="93" selection-end-line="84" selection-end-column="93" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />

@@ -3,3 +3,4 @@
 *.akd
 *.wsettings
 Wwise_Project/WAAPI_Test/.cache/CacheVersion
+wwise-pubsub-wamp/CleanMissingOriginalsExe.bat
