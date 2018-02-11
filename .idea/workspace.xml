@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="697e822b-057f-49f5-9d7e-69bebc5c7b42" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Actor-Mixer Hierarchy/AutoImport/ArtGalleryMission.wwu" afterPath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Actor-Mixer Hierarchy/AutoImport/ArtGalleryMission.wwu" />
-      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Actor-Mixer Hierarchy/AutoImport/DesertMission.wwu" afterPath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Actor-Mixer Hierarchy/AutoImport/DesertMission.wwu" />
-      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Actor-Mixer Hierarchy/AutoImport/SectionFolder.wwu" afterPath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Actor-Mixer Hierarchy/AutoImport/SectionFolder.wwu" />
-      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Events/AutoImport/ArtGalleryMission.wwu" afterPath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Events/AutoImport/ArtGalleryMission.wwu" />
-      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Events/AutoImport/DesertMission.wwu" afterPath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Events/AutoImport/DesertMission.wwu" />
-      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Events/AutoImport/SectionFolder.wwu" afterPath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Events/AutoImport/SectionFolder.wwu" />
-      <change beforePath="$PROJECT_DIR$/Wwise_Project/WAAPI_Test/Originals/Voices/English(UK)/DesertMission/Desert/Ryan/TEST_VO_DesertMission_Ryan_01.wav" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/wwise-pubsub-wamp/CleanMissingOriginals.command" afterPath="$PROJECT_DIR$/wwise-pubsub-wamp/CleanMissingOriginals.command" />
-      <change beforePath="$PROJECT_DIR$/wwise-pubsub-wamp/CleanMissingOriginals.py" afterPath="$PROJECT_DIR$/wwise-pubsub-wamp/CleanMissingOriginals.py" />
-      <change beforePath="$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py" afterPath="$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py" />
-      <change beforePath="$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2_automated.py" afterPath="$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2_automated.py" />
-    </list>
+    <list default="true" id="697e822b-057f-49f5-9d7e-69bebc5c7b42" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CleanMissingOriginals.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CleanMissingOriginals.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/CleanMissingOriginals.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="249" column="56" lean-forward="false" selection-start-line="249" selection-start-column="56" selection-end-line="249" selection-end-column="56" />
+            <state relative-caret-position="3196">
+              <caret line="203" column="0" lean-forward="false" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -36,22 +23,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImportNewAudioFilesAsDialogue_VR2_automated.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ImportNewAudioFilesAsDialogue_VR2_automated.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2_automated.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="319" column="56" lean-forward="false" selection-start-line="319" selection-start-column="56" selection-end-line="319" selection-end-column="56" />
+            <state relative-caret-position="587">
+              <caret line="145" column="181" lean-forward="true" selection-start-line="145" selection-start-column="181" selection-end-line="145" selection-end-column="181" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#2699#2833#0" expanded="false" />
-                <element signature="e#2888#3041#0" expanded="false" />
-                <element signature="e#3157#3850#0" expanded="false" />
-                <element signature="e#3920#4269#0" expanded="false" />
-                <element signature="e#4317#4475#0" expanded="false" />
-                <element signature="e#4527#4963#0" expanded="false" />
-                <element signature="e#7655#7997#0" expanded="false" />
-                <element signature="e#8060#9147#0" expanded="false" />
+                <element signature="e#5603#8168#0" expanded="false" />
+                <element signature="e#8218#8560#0" expanded="false" />
+                <element signature="e#8623#9710#0" expanded="false" />
+                <element signature="e#9786#11347#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/site-packages/trollius/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4386">
+              <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,8 +52,8 @@
       <file leaf-file-name="ImportNewAudioFilesAsDialogue_VR2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="390" column="56" lean-forward="false" selection-start-line="390" selection-start-column="56" selection-end-line="390" selection-end-column="56" />
+            <state relative-caret-position="6137">
+              <caret line="369" column="0" lean-forward="false" selection-start-line="369" selection-start-column="0" selection-end-line="369" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <element signature="e#3387#3639#0" expanded="false" />
@@ -73,9 +66,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setupCreateArgs</find>
-      <find>invali</find>
-      <find>ak.wwise.invalid_property</find>
       <find>setupImportArgs</find>
       <find>importAudioFiles</find>
       <find>objType</find>
@@ -103,6 +93,9 @@
       <find>ActorMixerPath</find>
       <find>parentID</find>
       <find>actor</find>
+      <find>argv</find>
+      <find>walk_up_folder</find>
+      <find>StepsUpToCommonDirectory</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,15 +109,16 @@
         <option value="$PROJECT_DIR$/wwise-pubsub-wamp/ImportAudioFilesAsDialogue_VR2.py" />
         <option value="$PROJECT_DIR$/wwise-pubsub-wamp/SetRTPCs_Test.py" />
         <option value="$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py" />
-        <option value="$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2_automated.py" />
         <option value="$PROJECT_DIR$/wwise-pubsub-wamp/CleanMissingOriginals.py" />
+        <option value="$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2_automated.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="909" />
-    <option name="height" value="777" />
+    <option name="x" value="59" />
+    <option name="y" value="18" />
+    <option name="width" value="1591" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -181,6 +175,9 @@
       </pane>
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -200,7 +197,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wwise-pubsub-wamp" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -210,7 +207,6 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="ImportAudioFilesAsDialogue_VR2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,7 +214,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wwise-pubsub-wamp" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -228,7 +224,6 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="ImportNewAudioFilesAsDialogue_VR2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -236,7 +231,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wwise-pubsub-wamp" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -246,7 +241,6 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="ImportNewAudioFilesAsDialogue_VR2_automated" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,7 +248,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wwise-pubsub-wamp" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -264,7 +258,6 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="SetRTPCs_Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -272,7 +265,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wwise-pubsub-wamp" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -282,7 +275,6 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.ImportAudioFilesAsDialogue_VR2" />
@@ -318,26 +310,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="909" height="777" extended-state="0" />
+    <frame x="59" y="18" width="1591" height="980" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3815029" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27586207" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22403733" sideWeight="0.5039604" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2744861" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35043988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47341114" sideWeight="0.4960396" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31559855" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -392,32 +384,16 @@
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2_automated.py</url>
-          <line>140</line>
-          <option name="timeStamp" value="122" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2_automated.py</url>
-          <line>156</line>
-          <option name="timeStamp" value="123" />
+          <url>file://$PROJECT_DIR$/wwise-pubsub-wamp/CleanMissingOriginals.py</url>
+          <line>193</line>
+          <option name="timeStamp" value="125" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="124" />
+      <option name="time" value="136" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="150" column="33" lean-forward="false" selection-start-line="150" selection-start-column="22" selection-end-line="150" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#3387#3639#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/SetRTPCs_Test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -428,20 +404,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk/Tkinter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16935">
-          <caret line="1129" column="0" lean-forward="false" selection-start-line="1129" selection-start-column="0" selection-end-line="1129" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3870">
-          <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk/Tkinter.py" />
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py" />
     <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2070">
@@ -509,13 +473,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3840">
-          <caret line="256" column="0" lean-forward="false" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py" />
     <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -527,13 +485,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3840">
-          <caret line="256" column="0" lean-forward="false" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py" />
     <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -545,13 +497,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3840">
-          <caret line="256" column="0" lean-forward="false" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py" />
     <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -563,13 +509,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3840">
-          <caret line="256" column="0" lean-forward="false" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py" />
     <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportAudioFilesAsDialogue_VR2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2700">
@@ -713,13 +653,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/autobahn/asyncio/wamp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="230" column="66" lean-forward="false" selection-start-line="230" selection-start-column="66" selection-end-line="230" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/autobahn/asyncio/wamp.py" />
     <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/waapi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -727,20 +661,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/events.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/base_events.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/events.py" />
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/base_events.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -772,13 +694,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.spec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.spec" />
     <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/SetRTPCs_Test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -789,13 +705,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4395">
-          <caret line="293" column="0" lean-forward="false" selection-start-line="293" selection-start-column="0" selection-end-line="293" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/trollius/tasks.py" />
     <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportAudioFilesAsDialogue_VR2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -803,17 +713,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk/Tkinter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16935">
-          <caret line="1129" column="0" lean-forward="false" selection-start-line="1129" selection-start-column="0" selection-end-line="1129" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk/Tkinter.py" />
     <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="390" column="56" lean-forward="false" selection-start-line="390" selection-start-column="56" selection-end-line="390" selection-end-column="56" />
+        <state relative-caret-position="6137">
+          <caret line="369" column="0" lean-forward="false" selection-start-line="369" selection-start-column="0" selection-end-line="369" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <element signature="e#3387#3639#0" expanded="false" />
@@ -821,30 +725,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2_automated.py">
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/CleanMissingOriginals.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="319" column="56" lean-forward="false" selection-start-line="319" selection-start-column="56" selection-end-line="319" selection-end-column="56" />
+        <state relative-caret-position="3196">
+          <caret line="203" column="0" lean-forward="false" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#2699#2833#0" expanded="false" />
-            <element signature="e#2888#3041#0" expanded="false" />
-            <element signature="e#3157#3850#0" expanded="false" />
-            <element signature="e#3920#4269#0" expanded="false" />
-            <element signature="e#4317#4475#0" expanded="false" />
-            <element signature="e#4527#4963#0" expanded="false" />
-            <element signature="e#7655#7997#0" expanded="false" />
-            <element signature="e#8060#9147#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/CleanMissingOriginals.py">
+    <entry file="file://C:/Python27/Lib/site-packages/trollius/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="249" column="56" lean-forward="false" selection-start-line="249" selection-start-column="56" selection-end-line="249" selection-end-column="56" />
+        <state relative-caret-position="4386">
+          <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwise-pubsub-wamp/ImportNewAudioFilesAsDialogue_VR2_automated.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="145" column="181" lean-forward="true" selection-start-line="145" selection-start-column="181" selection-end-line="145" selection-end-column="181" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#5603#8168#0" expanded="false" />
+            <element signature="e#8218#8560#0" expanded="false" />
+            <element signature="e#8623#9710#0" expanded="false" />
+            <element signature="e#9786#11347#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -17,29 +17,43 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="TEST_VO_DesertMission_Ryan_03" ID="{44C31AE6-DF32-42FD-BBDD-E50280767FAF}">
+				<Event Name="TEST_VO_DesertMission_Ryan_04" ID="{89C8D54C-1919-4A7E-9ADE-BDD4B7CCDB1F}">
 					<ChildrenList>
-						<Action Name="" ID="{E57DE866-49B2-4FE3-A8D0-1E67E84B8E28}" ShortID="313233269">
+						<Action Name="" ID="{D5C83A31-D1F2-4F8F-9EE6-05CF4D26EF70}" ShortID="474570587">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TEST_VO_DesertMission_Ryan_03" ID="{F107BBBF-69F4-40D0-A7F2-5D26DF87E90F}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
+									<ObjectRef Name="TEST_VO_DesertMission_Ryan_04" ID="{E79FFA50-314D-4781-AB77-C70A19F3E02A}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="TEST_VO_DesertMission_Ryan_04" ID="{5EABB0F0-6BAB-4732-8F61-3D1BCD2E215B}">
+				<Event Name="TEST_VO_DesertMission_Ryan_05" ID="{E474EB8B-2402-4451-AFCB-9FC8241A7F70}">
 					<ChildrenList>
-						<Action Name="" ID="{93A5274A-B8E1-403C-B438-210610E78EB1}" ShortID="946640771">
+						<Action Name="" ID="{8DB55475-A44F-40F0-A53A-4EC3990F63A9}" ShortID="748517724">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TEST_VO_DesertMission_Ryan_04" ID="{A284A7F9-28E2-476A-B0DA-F5CF86C87175}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
+									<ObjectRef Name="TEST_VO_DesertMission_Ryan_05" ID="{F78B6249-823B-401C-8C24-CAF39011DB92}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TEST_VO_DesertMission_Ryan_06" ID="{19966C5A-407E-407F-BEFD-D13FFFAEA90C}">
+					<ChildrenList>
+						<Action Name="" ID="{34E35286-F78C-4F9C-85F1-FAC2B272DE8F}" ShortID="374582966">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TEST_VO_DesertMission_Ryan_06" ID="{DB09A011-621C-411E-9448-216914ACC009}" WorkUnitID="{F9604447-8394-4312-9D3E-501A204CCF96}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
