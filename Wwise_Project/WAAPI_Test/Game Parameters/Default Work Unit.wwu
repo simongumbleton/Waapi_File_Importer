@@ -3,8 +3,30 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{C2A7746B-7127-4200-85DD-C8875C99BF3C}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="X" ID="{093312FB-C539-44E1-AE86-AF9EE8C69847}"/>
-				<GameParameter Name="Y" ID="{5C4C5EEA-AEB5-4310-BA61-CB65C06498DD}"/>
+				<GameParameter Name="X" ID="{093312FB-C539-44E1-AE86-AF9EE8C69847}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Y" ID="{5C4C5EEA-AEB5-4310-BA61-CB65C06498DD}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="67"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="A" ID="{9AA54B02-FF24-4079-BBE4-9EE17902AAF3}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="B" ID="{1F9F95D4-B645-4D44-AB34-03D0FF12E4C1}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-96"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

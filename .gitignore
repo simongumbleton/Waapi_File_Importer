@@ -4,3 +4,6 @@
 *.wsettings
 Wwise_Project/WAAPI_Test/.cache/CacheVersion
 wwise-pubsub-wamp/CleanMissingOriginalsExe.bat
+.idea/misc.xml
+.idea/Waapi_File_Importer.iml
+.idea/workspace.xml

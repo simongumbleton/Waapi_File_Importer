@@ -25,6 +25,9 @@ class MyComponent(AkComponent):
     SelectableRtpcs = {}
     optionmenuRtpcs = []
 
+    xRtpcName = ""
+    yRtpcName = ""
+
     root2 = Tkinter.Tk()
 #Frame setup
     frame = Frame(root2, width=500, height=800, bd=1)
@@ -100,7 +103,26 @@ class MyComponent(AkComponent):
 
 
         def SetRTPCs(rtpcs):
-            print("Setting rtpcs in list")
+            #print("Setting rtpcs in list")
+            #print(rtpcs)
+            print("x rtpc = " + MyComponent.xRtpcName)
+            print("y rtpc = " + MyComponent.yRtpcName)
+            spanXvalues = (
+                    MyComponent.SelectableRtpcs[MyComponent.xRtpcName]["@Max"]
+                    - MyComponent.SelectableRtpcs[MyComponent.xRtpcName]["@Min"]
+            )
+            spanYvalues = (
+                    MyComponent.SelectableRtpcs[MyComponent.yRtpcName]["@Max"]
+                    - MyComponent.SelectableRtpcs[MyComponent.yRtpcName]["@Min"]
+            )
+
+            scaledX = MyComponent.SelectableRtpcs[MyComponent.xRtpcName]["@Min"] + (rtpcs[0] * spanXvalues)
+            scaledY = MyComponent.SelectableRtpcs[MyComponent.yRtpcName]["@Min"] + (rtpcs[1] * spanYvalues)
+
+            Xarguments = {"rtpc": MyComponent.xRtpcName, "value": scaledX, "gameObject": 18446744073709551614}
+            self.call(WAAPI_URI.ak_soundengine_setrtpcvalue, **Xarguments)
+            Yarguments = {"rtpc": MyComponent.yRtpcName, "value": scaledY, "gameObject": 18446744073709551614}
+            self.call(WAAPI_URI.ak_soundengine_setrtpcvalue, **Yarguments)
 
         def BindRTPCsToAxis(rtpc, axis):
             print("bind rtpc to axis")
@@ -109,8 +131,14 @@ class MyComponent(AkComponent):
         def mouseMove(event):
             #print (MyComponent.c.canvasx(event.x),MyComponent.c.canvasy(event.y))
             xnorm = MyComponent.c.canvasx(event.x)/MyComponent.canvasWidth
-            ynorm = MyComponent.c.canvasy(event.y)/MyComponent.canvasHeight
-            print(xnorm,ynorm)
+            ynorm = 1 - (MyComponent.c.canvasy(event.y)/MyComponent.canvasHeight)
+            #print(xnorm,ynorm)
+            SetRTPCs([xnorm,ynorm])
+            # Xarguments = {"rtpc": MyComponent.xRtpcName, "value": xnorm, "gameObject": 0}
+            # yield From(self.call(WAAPI_URI.ak_soundengine_setrtpcvalue, **Xarguments))
+            # Yarguments = {"rtpc": MyComponent.xRtpcName, "value": ynorm, "gameObject": 0}
+            # yield From(self.call(WAAPI_URI.ak_soundengine_setrtpcvalue, **Yarguments))
+
             #set rtpcs with mouse movement
 
         def show_width(event):
@@ -120,19 +148,24 @@ class MyComponent(AkComponent):
             MyComponent.canvasWidth = event.widget.winfo_width()
 
         def changeDropdown(*args):
-            print(MyComponent.Xrtpc.get())
+            MyComponent.xRtpcName = str(MyComponent.Xrtpc.get())
+            print("X axis RTPC is " + MyComponent.xRtpcName)
+            MyComponent.yRtpcName = str(MyComponent.Yrtpc.get())
+            print("Y axis RTPC is " + MyComponent.yRtpcName)
 
         def setupDropDownMenu():
 
-            MyComponent.Xrtpc.set("")
-            Xoptions = OptionMenu(MyComponent.frame, MyComponent.Xrtpc, MyComponent.optionmenuRtpcs)
+            MyComponent.Xrtpc.set(MyComponent.optionmenuRtpcs[0])
+            MyComponent.xRtpcName = str(MyComponent.optionmenuRtpcs[0])
+            Xoptions = OptionMenu(MyComponent.frame, MyComponent.Xrtpc, *MyComponent.optionmenuRtpcs)
             # Label(frame,text="Choose RTPC for X axis").grid(row=1,column=1)
             Xoptions.grid(row=1, column=10)
             Xoptions.pack()
 
 
-            MyComponent.Yrtpc.set("")
-            Yoptions = OptionMenu(MyComponent.frame, MyComponent.Yrtpc, MyComponent.optionmenuRtpcs)
+            MyComponent.Yrtpc.set(MyComponent.optionmenuRtpcs[1])
+            MyComponent.yRtpcName = str(MyComponent.optionmenuRtpcs[1])
+            Yoptions = OptionMenu(MyComponent.frame, MyComponent.Yrtpc, *MyComponent.optionmenuRtpcs)
             # Label(frame,text="Choose RTPC for X axis").grid(row=1,column=1)
             Yoptions.grid(row=1, column=1)
             Yoptions.pack()
@@ -163,6 +196,7 @@ class MyComponent(AkComponent):
         MyComponent.c.bind('<Motion>', mouseMove)
         MyComponent.c.bind("<Configure>", show_width)
         MyComponent.Xrtpc.trace('w',changeDropdown)
+        MyComponent.Yrtpc.trace('w', changeDropdown)
 
         MyComponent.root2.mainloop()
 
@@ -176,7 +210,7 @@ class MyComponent(AkComponent):
 
 
 if __name__ == '__main__':
-    runner = ApplicationRunner(url=u"ws://127.0.0.1:8080/waapi", realm=u"realm1")
+    runner = ApplicationRunner(url=u"ws://127.0.0.1:8095/waapi", realm=u"realm1")
     try:
         runner.run(MyComponent)
     except Exception as e:
