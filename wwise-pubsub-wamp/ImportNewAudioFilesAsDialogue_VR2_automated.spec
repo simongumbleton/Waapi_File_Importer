@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['ImportNewAudioFilesAsDialogue_VR2_automated.py'],
-             pathex=['E:\\Projects\\Personal\\Wwise\\WAAPI\\Waapi_File_Importer\\wwise-pubsub-wamp'],
+             pathex=['E:\\Fdrive_Backup_5thNov\\LocalWork\\Projects\\Wwise WAAPI\\Waapi_File_Importer\\wwise-pubsub-wamp'],
              binaries=[],
              datas=[],
              hiddenimports=[],
