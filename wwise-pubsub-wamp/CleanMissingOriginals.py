@@ -236,8 +236,11 @@ class MyComponent(AkComponent):
 
         numberOfFilesCleaned = len(MyComponent.WwiseAudioMissingOriginals)
         print(str(numberOfFilesCleaned) + " Files cleaned from " + MyComponent.Input_ParentObjectName)
+        if numberOfFilesCleaned > 0:
+            saveWwiseProject()
 
         endUndoGroup()
+		
 
         exit()
 
