@@ -25,8 +25,14 @@ class MyComponent(AkComponent):
     SelectableRtpcs = {}
     optionmenuRtpcs = []
 
+    transportObject = 18446744073709551614
+
     xRtpcName = ""
     yRtpcName = ""
+
+    xTextValue = ""
+    yTextValue = ""
+
 
     root2 = Tkinter.Tk()
 #Frame setup
@@ -101,12 +107,26 @@ class MyComponent(AkComponent):
                     i +=1
 
 
+        def CreateTransport():
+            args = {"object": "{D6EA19C7-A50C-4DF4-95B2-FCAB0A2A9BE1}"}
+            try:
+                yield From(self.call(WAAPI_URI.ak_wwise_core_transport_create, [], **args))
+            except Exception as ex:
+                print("call error: {}".format(ex))
+
+        def GetTransport():
+            try:
+                transport = yield From(self.call(WAAPI_URI.ak_wwise_core_transport_getlist))
+            except Exception as ex:
+                print("call error: {}".format(ex))
+            else:
+                print (transport.kwresults['list'])
 
         def SetRTPCs(rtpcs):
             #print("Setting rtpcs in list")
             #print(rtpcs)
-            print("x rtpc = " + MyComponent.xRtpcName)
-            print("y rtpc = " + MyComponent.yRtpcName)
+            #print("x rtpc = " + MyComponent.xRtpcName)
+            #print("y rtpc = " + MyComponent.yRtpcName)
             spanXvalues = (
                     MyComponent.SelectableRtpcs[MyComponent.xRtpcName]["@Max"]
                     - MyComponent.SelectableRtpcs[MyComponent.xRtpcName]["@Min"]
@@ -119,9 +139,11 @@ class MyComponent(AkComponent):
             scaledX = MyComponent.SelectableRtpcs[MyComponent.xRtpcName]["@Min"] + (rtpcs[0] * spanXvalues)
             scaledY = MyComponent.SelectableRtpcs[MyComponent.yRtpcName]["@Min"] + (rtpcs[1] * spanYvalues)
 
-            Xarguments = {"rtpc": MyComponent.xRtpcName, "value": scaledX, "gameObject": 18446744073709551614}
+            print(MyComponent.xRtpcName+" = "+str(scaledX)+ "  "+MyComponent.yRtpcName+" = "+str(scaledY))
+
+            Xarguments = {"rtpc": MyComponent.xRtpcName, "value": scaledX, "gameObject": MyComponent.transportObject}
             self.call(WAAPI_URI.ak_soundengine_setrtpcvalue, **Xarguments)
-            Yarguments = {"rtpc": MyComponent.yRtpcName, "value": scaledY, "gameObject": 18446744073709551614}
+            Yarguments = {"rtpc": MyComponent.yRtpcName, "value": scaledY, "gameObject": MyComponent.transportObject}
             self.call(WAAPI_URI.ak_soundengine_setrtpcvalue, **Yarguments)
 
         def BindRTPCsToAxis(rtpc, axis):
@@ -138,6 +160,8 @@ class MyComponent(AkComponent):
             # yield From(self.call(WAAPI_URI.ak_soundengine_setrtpcvalue, **Xarguments))
             # Yarguments = {"rtpc": MyComponent.xRtpcName, "value": ynorm, "gameObject": 0}
             # yield From(self.call(WAAPI_URI.ak_soundengine_setrtpcvalue, **Yarguments))
+
+
 
             #set rtpcs with mouse movement
 
@@ -159,16 +183,20 @@ class MyComponent(AkComponent):
             MyComponent.xRtpcName = str(MyComponent.optionmenuRtpcs[0])
             Xoptions = OptionMenu(MyComponent.frame, MyComponent.Xrtpc, *MyComponent.optionmenuRtpcs)
             # Label(frame,text="Choose RTPC for X axis").grid(row=1,column=1)
-            Xoptions.grid(row=1, column=10)
-            Xoptions.pack()
+            #Xoptions.grid(row=1, column=10)
+            xText = Label(MyComponent.frame, text="Choose rtpc for X axis ", bg="red", fg="white")
+            xText.pack(side=LEFT)
+            Xoptions.pack(side=LEFT)
 
 
             MyComponent.Yrtpc.set(MyComponent.optionmenuRtpcs[1])
             MyComponent.yRtpcName = str(MyComponent.optionmenuRtpcs[1])
             Yoptions = OptionMenu(MyComponent.frame, MyComponent.Yrtpc, *MyComponent.optionmenuRtpcs)
             # Label(frame,text="Choose RTPC for X axis").grid(row=1,column=1)
-            Yoptions.grid(row=1, column=1)
-            Yoptions.pack()
+            #Yoptions.grid(row=2, column=1)
+            yText = Label(MyComponent.frame, text="Choose rtpc for Y axis ", bg="blue", fg="white")
+            yText.pack(side=LEFT)
+            Yoptions.pack(side=LEFT)
 
         ###### End of function definitions  #########
 
@@ -184,12 +212,17 @@ class MyComponent(AkComponent):
             print("Hello {} {}".format(res.kwresults['displayName'], res.kwresults['version']['displayName']))
 
 
+
+
         yield getRTPCsInWwise()
 
         setupDropDownMenu()
         #populate drop down lists X and Y axis
 
         #bind selected rtpc to axis
+
+        #MyComponent.xTextValue = MyComponent.c.create_text(100, 100, text=str(MyComponent.xRtpcName) + " = ")
+        #MyComponent.yTextValue = MyComponent.c.create_text(200, 100, text=str(MyComponent.yRtpcName) + " = ")
 
 
         #MyComponent.c.create_rectangle('16m','10.5m','21m','15.5m',fill='blue')
