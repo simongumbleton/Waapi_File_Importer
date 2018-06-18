@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3E48A989-35D0-4E99-98FC-8156D2800E1F}" SchemaVersion="85">
 	<Queries>
-		<WorkUnit Name="Default Work Unit" ID="{3E48A989-35D0-4E99-98FC-8156D2800E1F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3E48A989-35D0-4E99-98FC-8156D2800E1F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Query Name="SoundbankReferencing" ID="{E36E4814-4E5B-4415-9119-653D270E5D0F}">
+					<PropertyList>
+						<Property Name="ObjectType" Type="int32" Value="900"/>
+					</PropertyList>
+					<ChildrenList>
+						<SearchCriteria Name="SoundBankSoundBanks referencing" ID="{F116BD23-D379-41E0-A578-8933091AF099}" SearchOperationID="{6CE17C88-C693-4A60-BE13-565AF2E835A9}"/>
+					</ChildrenList>
+				</Query>
+			</ChildrenList>
+		</WorkUnit>
 	</Queries>
 </WwiseDocument>
