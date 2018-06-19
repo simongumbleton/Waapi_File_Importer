@@ -189,15 +189,15 @@ class MyComponent(AkComponent):
 
 
         ## Get the soundbank query ID from project
-        yield GetSoundbankQuery()
+ #       yield GetSoundbankQuery()
 
         ## Set the query property  Property Name="ObjectReferenced" to GUID
-        yield getQuerySearchCriteria(MyComponent.SoundbankQuery['id'])
+#        yield getQuerySearchCriteria(MyComponent.SoundbankQuery['id'])
 
         yield GetSoundbanksFromPath()
 
         #Get the actor mixers from project
-        yield getActorMixersInProject()
+ #       yield getActorMixersInProject()
 
         #Loop through actor mixer list, setting query and running, append bank list
 #        yield SearchForBankRefsAndUpdateLists(MyComponent.ActorMixersInProject)
